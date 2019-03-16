@@ -1,0 +1,3012 @@
+Microchip MPLAB XC8 Compiler V2.00 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.00\pic\dat\en_msgs.txt \
+  -cs -h+dist/default/production\Wii_reg_code.X.production.sym \
+  --cmf=dist/default/production\Wii_reg_code.X.production.cmf -z -Q16F15324 \
+  -oC:\Users\TURNQU~1\AppData\Local\Temp\sm2c.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/Wii_reg_code.X.production.map -E1 -ver=XC8 \
+  --acfsm=1493 -ASTACK=0202Fh-021efh -pstack=STACK -ACODE=00h-07FFhx2 \
+  -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
+  -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh -ABANK3=01A0h-01EFh \
+  -ABANK4=0220h-026Fh -ABANK5=02A0h-02EFh -ABANK6=0320h-032Fh \
+  -ABIGRAM=02000h-021EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh,0220h-026Fh,02A0h-02EFh,0320h-032Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh,0220h-026Fh,02A0h-02EFh,0320h-032Fh \
+  -ASFR0=00h-01Fh -ASFR1=080h-09Fh -ASFR2=0100h-011Fh -ASFR3=0180h-019Fh \
+  -ASFR4=0200h-021Fh -ASFR5=0280h-029Fh -ASFR6=0300h-031Fh \
+  -ASFR7=0380h-03EFh -ASFR8=0400h-046Fh -ASFR9=0480h-04EFh \
+  -ASFR10=0500h-056Fh -ASFR11=0580h-05EFh -ASFR12=0600h-066Fh \
+  -ASFR13=0680h-06EFh -ASFR14=0700h-076Fh -ASFR15=0780h-07EFh \
+  -ASFR16=0800h-086Fh -ASFR17=0880h-08EFh -ASFR18=0900h-096Fh \
+  -ASFR19=0980h-09EFh -ASFR20=0A00h-0A6Fh -ASFR21=0A80h-0AEFh \
+  -ASFR22=0B00h-0B6Fh -ASFR23=0B80h-0BEFh -ASFR24=0C00h-0C6Fh \
+  -ASFR25=0C80h-0CEFh -ASFR26=0D00h-0D6Fh -ASFR27=0D80h-0DEFh \
+  -ASFR28=0E00h-0E6Fh -ASFR29=0E80h-0EEFh -ASFR30=0F00h-0F6Fh \
+  -ASFR31=0F80h-0FEFh -ASFR32=01000h-0106Fh -ASFR33=01080h-010EFh \
+  -ASFR34=01100h-0116Fh -ASFR35=01180h-011EFh -ASFR36=01200h-0126Fh \
+  -ASFR37=01280h-012EFh -ASFR38=01300h-0136Fh -ASFR39=01380h-013EFh \
+  -ASFR40=01400h-0146Fh -ASFR41=01480h-014EFh -ASFR42=01500h-0156Fh \
+  -ASFR43=01580h-015EFh -ASFR44=01600h-0166Fh -ASFR45=01680h-016EFh \
+  -ASFR46=01700h-0176Fh -ASFR47=01780h-017EFh -ASFR48=01800h-0186Fh \
+  -ASFR49=01880h-018EFh -ASFR50=01900h-0196Fh -ASFR51=01980h-019EFh \
+  -ASFR52=01A00h-01A6Fh -ASFR53=01A80h-01AEFh -ASFR54=01B00h-01B6Fh \
+  -ASFR55=01B80h-01BEFh -ASFR56=01C00h-01C6Fh -ASFR57=01C80h-01CEFh \
+  -ASFR58=01D00h-01D6Fh -ASFR59=01D80h-01DEFh -ASFR60=01E00h-01E6Fh \
+  -ASFR61=01E80h-01EEFh -ASFR62=01F00h-01F6Fh -ASFR63=01F80h-01FEFh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
+  -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\TURNQU~1\AppData\Local\Temp\sm2c.o \
+  dist/default/production\Wii_reg_code.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 16F15324
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\TURNQU~1\AppData\Local\Temp\sm2c.o
+                end_init                             18       18        2        8       0
+                reset_vec                             0        0        2        0       0
+                config                             8007     8007        5    1000E       0
+dist/default/production\Wii_reg_code.X.production.o
+                cinit                                1A       1A       10        8       0
+                intentry                              4        4       14        8       0
+                text51                              745      745        4        8       0
+                text50                              6C1      6C1        E        8       0
+                text49                              733      733        6        8       0
+                text48                              72D      72D        6        8       0
+                text47                              6F6      6F6        8        8       0
+                text46                              69F      69F       14        8       0
+                text45                              47A      47A       31        8       0
+                text44                              6EE      6EE        8        8       0
+                text43                              71A      71A        7        8       0
+                text42                              414      414       34        8       0
+                text41                              609      609       20        8       0
+                text40                              5C6      5C6       23        8       0
+                text39                              6CF      6CF        D        8       0
+                text38                              675      675       16        8       0
+                text37                              713      713        7        8       0
+                text36                               BA       BA       84        8       0
+                text34                              6B3      6B3        E        8       0
+                text33                              727      727        6        8       0
+                text32                              721      721        6        8       0
+                text31                              6DC      6DC        A        8       0
+                text30                              65E      65E       17        8       0
+                text29                              3A9      3A9       37        8       0
+                text28                              1A8      1A8       62        8       0
+                text27                              4DA      4DA       2F        8       0
+                text26                              371      371       38        8       0
+                text25                              6E6      6E6        8        8       0
+                text24                              70C      70C        7        8       0
+                text23                              3E0      3E0       34        8       0
+                text22                              533      533       26        8       0
+                text21                              57E      57E       25        8       0
+                text20                              4AB      4AB       2F        8       0
+                text19                              20A      20A       51        8       0
+                text18                              13E      13E       6A        8       0
+                text17                              5A3      5A3       23        8       0
+                text16                              334      334       3D        8       0
+                text15                               2A       2A       90        8       0
+                text14                              25B      25B       4D        8       0
+                text13                              741      741        4        8       0
+                text12                              73D      73D        4        8       0
+                text11                              559      559       25        8       0
+                text10                              509      509       2A        8       0
+                text9                               629      629       1E        8       0
+                text8                               448      448       32        8       0
+                text7                               739      739        4        8       0
+                text6                               705      705        7        8       0
+                text5                               6FE      6FE        7        8       0
+                text4                               647      647       17        8       0
+                text3                               5E9      5E9       20        8       0
+                text2                               68B      68B       14        8       0
+                text1                               2F1      2F1       43        8       0
+                maintext                            2A8      2A8       49        8       0
+                cstackBANK0                          20       20       26       20       1
+                cstackCOMMON                         70       70        C       70       1
+                bssBANK0                             46       46        9       20       1
+                bssCOMMON                            7C       7C        2       70       1
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                             18       18        2         0
+                cinit                                1A       1A       10         0
+                intentry                              4        4       14         0
+                reset_vec                             0        0        2         0
+                text51                              745      745        4         0
+                text50                              6C1      6C1        E         0
+                text49                              733      733        6         0
+                text48                              72D      72D        6         0
+                text47                              6F6      6F6        8         0
+                text46                              69F      69F       14         0
+                text45                              47A      47A       31         0
+                text44                              6EE      6EE        8         0
+                text43                              71A      71A        7         0
+                text42                              414      414       34         0
+                text41                              609      609       20         0
+                text40                              5C6      5C6       23         0
+                text39                              6CF      6CF        D         0
+                text38                              675      675       16         0
+                text37                              713      713        7         0
+                text36                               BA       BA       84         0
+                text34                              6B3      6B3        E         0
+                text33                              727      727        6         0
+                text32                              721      721        6         0
+                text31                              6DC      6DC        A         0
+                text30                              65E      65E       17         0
+                text29                              3A9      3A9       37         0
+                text28                              1A8      1A8       62         0
+                text27                              4DA      4DA       2F         0
+                text26                              371      371       38         0
+                text25                              6E6      6E6        8         0
+                text24                              70C      70C        7         0
+                text23                              3E0      3E0       34         0
+                text22                              533      533       26         0
+                text21                              57E      57E       25         0
+                text20                              4AB      4AB       2F         0
+                text19                              20A      20A       51         0
+                text18                              13E      13E       6A         0
+                text17                              5A3      5A3       23         0
+                text16                              334      334       3D         0
+                text15                               2A       2A       90         0
+                text14                              25B      25B       4D         0
+                text13                              741      741        4         0
+                text12                              73D      73D        4         0
+                text11                              559      559       25         0
+                text10                              509      509       2A         0
+                text9                               629      629       1E         0
+                text8                               448      448       32         0
+                text7                               739      739        4         0
+                text6                               705      705        7         0
+                text5                               6FE      6FE        7         0
+                text4                               647      647       17         0
+                text3                               5E9      5E9       20         0
+                text2                               68B      68B       14         0
+                text1                               2F1      2F1       43         0
+                maintext                            2A8      2A8       49         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        C         1
+                bssCOMMON                            7C       7C        2         1
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       26         1
+                bssBANK0                             46       46        9         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   SFR4           
+
+        CLASS   SFR5           
+
+        CLASS   SFR6           
+
+        CLASS   SFR7           
+
+        CLASS   SFR8           
+
+        CLASS   SFR9           
+
+        CLASS   SFR10          
+
+        CLASS   SFR11          
+
+        CLASS   SFR12          
+
+        CLASS   SFR13          
+
+        CLASS   SFR14          
+
+        CLASS   SFR15          
+
+        CLASS   SFR16          
+
+        CLASS   SFR17          
+
+        CLASS   SFR18          
+
+        CLASS   SFR19          
+
+        CLASS   SFR20          
+
+        CLASS   SFR21          
+
+        CLASS   SFR22          
+
+        CLASS   SFR23          
+
+        CLASS   SFR24          
+
+        CLASS   SFR25          
+
+        CLASS   SFR26          
+
+        CLASS   SFR27          
+
+        CLASS   SFR28          
+
+        CLASS   SFR29          
+
+        CLASS   SFR30          
+
+        CLASS   SFR31          
+
+        CLASS   SFR32          
+
+        CLASS   SFR33          
+
+        CLASS   SFR34          
+
+        CLASS   SFR35          
+
+        CLASS   SFR36          
+
+        CLASS   SFR37          
+
+        CLASS   SFR38          
+
+        CLASS   SFR39          
+
+        CLASS   SFR40          
+
+        CLASS   SFR41          
+
+        CLASS   SFR42          
+
+        CLASS   SFR43          
+
+        CLASS   SFR44          
+
+        CLASS   SFR45          
+
+        CLASS   SFR46          
+
+        CLASS   SFR47          
+
+        CLASS   SFR48          
+
+        CLASS   SFR49          
+
+        CLASS   SFR50          
+
+        CLASS   SFR51          
+
+        CLASS   SFR52          
+
+        CLASS   SFR53          
+
+        CLASS   SFR54          
+
+        CLASS   SFR55          
+
+        CLASS   SFR56          
+
+        CLASS   SFR57          
+
+        CLASS   SFR58          
+
+        CLASS   SFR59          
+
+        CLASS   SFR60          
+
+        CLASS   SFR61          
+
+        CLASS   SFR62          
+
+        CLASS   SFR63          
+
+        CLASS   CONFIG         
+                config                             8007     8007        5         0
+
+        CLASS   IDLOC          
+
+        CLASS   BANK63         
+
+        CLASS   BANK62         
+
+        CLASS   BANK61         
+
+        CLASS   BANK60         
+
+        CLASS   BANK59         
+
+        CLASS   BANK58         
+
+        CLASS   BANK57         
+
+        CLASS   BANK56         
+
+        CLASS   BANK55         
+
+        CLASS   BANK54         
+
+        CLASS   BANK53         
+
+        CLASS   BANK52         
+
+        CLASS   BANK51         
+
+        CLASS   BANK50         
+
+        CLASS   BANK49         
+
+        CLASS   BANK48         
+
+        CLASS   BANK47         
+
+        CLASS   BANK46         
+
+        CLASS   BANK45         
+
+        CLASS   BANK44         
+
+        CLASS   BANK43         
+
+        CLASS   BANK42         
+
+        CLASS   BANK41         
+
+        CLASS   BANK40         
+
+        CLASS   BANK39         
+
+        CLASS   BANK38         
+
+        CLASS   BANK37         
+
+        CLASS   BANK36         
+
+        CLASS   BANK35         
+
+        CLASS   BANK34         
+
+        CLASS   BANK33         
+
+        CLASS   BANK32         
+
+        CLASS   BANK31         
+
+        CLASS   BANK30         
+
+        CLASS   BANK29         
+
+        CLASS   BANK28         
+
+        CLASS   BANK27         
+
+        CLASS   BANK26         
+
+        CLASS   BANK25         
+
+        CLASS   BANK24         
+
+        CLASS   BANK23         
+
+        CLASS   BANK22         
+
+        CLASS   BANK21         
+
+        CLASS   BANK20         
+
+        CLASS   BANK19         
+
+        CLASS   BANK18         
+
+        CLASS   BANK17         
+
+        CLASS   BANK16         
+
+        CLASS   BANK15         
+
+        CLASS   BANK14         
+
+        CLASS   BANK13         
+
+        CLASS   BANK12         
+
+        CLASS   BANK11         
+
+        CLASS   BANK10         
+
+        CLASS   BANK9          
+
+        CLASS   BANK8          
+
+        CLASS   BANK7          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  000745  000749         8       0  CODE        2
+                cstackBANK0                    000020  00002F  00004F        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                config                         008007  000005  00800C     1000E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0004F-0006F              21           1
+        BANK1            000A0-000EF              50           1
+        BANK2            00120-0016F              50           1
+        BANK3            001A0-001EF              50           1
+        BANK4            00220-0026F              50           1
+        BANK5            002A0-002EF              50           1
+        BANK6            00320-0032F              10           1
+        BIGRAM           02000-021EF             1F0           1
+        CODE             00002-00003               2           2
+                         00749-00FFF              B7
+        CONST            00002-00003               2           2
+                         00749-00FFF             100
+        ENTRY            00002-00003               2           2
+                         00749-00FFF             100
+        IDLOC            08000-08003               4           2
+        RAM              0004F-0006F              21           1
+                         000A0-000EF              50
+                         00120-0016F              50
+                         001A0-001EF              50
+                         00220-0026F              50
+                         002A0-002EF              50
+                         00320-0032F              10
+        SFR0             00000-0001F              20           1
+        SFR1             00080-0009F              20           1
+        SFR10            00500-0056F              70           1
+        SFR11            00580-005EF              70           1
+        SFR12            00600-0066F              70           1
+        SFR13            00680-006EF              70           1
+        SFR14            00700-0076F              70           1
+        SFR15            00780-007EF              70           1
+        SFR16            00800-0086F              70           1
+        SFR17            00880-008EF              70           1
+        SFR18            00900-0096F              70           1
+        SFR19            00980-009EF              70           1
+        SFR2             00100-0011F              20           1
+        SFR20            00A00-00A6F              70           1
+        SFR21            00A80-00AEF              70           1
+        SFR22            00B00-00B6F              70           1
+        SFR23            00B80-00BEF              70           1
+        SFR24            00C00-00C6F              70           1
+        SFR25            00C80-00CEF              70           1
+        SFR26            00D00-00D6F              70           1
+        SFR27            00D80-00DEF              70           1
+        SFR28            00E00-00E6F              70           1
+        SFR29            00E80-00EEF              70           1
+        SFR3             00180-0019F              20           1
+        SFR30            00F00-00F6F              70           1
+        SFR31            00F80-00FEF              70           1
+        SFR32            01000-0106F              70           1
+        SFR33            01080-010EF              70           1
+        SFR34            01100-0116F              70           1
+        SFR35            01180-011EF              70           1
+        SFR36            01200-0126F              70           1
+        SFR37            01280-012EF              70           1
+        SFR38            01300-0136F              70           1
+        SFR39            01380-013EF              70           1
+        SFR4             00200-0021F              20           1
+        SFR40            01400-0146F              70           1
+        SFR41            01480-014EF              70           1
+        SFR42            01500-0156F              70           1
+        SFR43            01580-015EF              70           1
+        SFR44            01600-0166F              70           1
+        SFR45            01680-016EF              70           1
+        SFR46            01700-0176F              70           1
+        SFR47            01780-017EF              70           1
+        SFR48            01800-0186F              70           1
+        SFR49            01880-018EF              70           1
+        SFR5             00280-0029F              20           1
+        SFR50            01900-0196F              70           1
+        SFR51            01980-019EF              70           1
+        SFR52            01A00-01A6F              70           1
+        SFR53            01A80-01AEF              70           1
+        SFR54            01B00-01B6F              70           1
+        SFR55            01B80-01BEF              70           1
+        SFR56            01C00-01C6F              70           1
+        SFR57            01C80-01CEF              70           1
+        SFR58            01D00-01D6F              70           1
+        SFR59            01D80-01DEF              70           1
+        SFR6             00300-0031F              20           1
+        SFR60            01E00-01E6F              70           1
+        SFR61            01E80-01EEF              70           1
+        SFR62            01F00-01F6F              70           1
+        SFR63            01F80-01FEF              70           1
+        SFR7             00380-003EF              70           1
+        SFR8             00400-0046F              70           1
+        SFR9             00480-004EF              70           1
+        STACK            0202F-021EF             1C1           1
+        STRCODE          00002-00003               2           2
+                         00749-00FFF             8B7
+        STRING           00002-00003               2           2
+                         00749-00FFF             100
+
+                                  Symbol Table
+
+?_BQ_Read                            cstackBANK0  00023
+?___awdiv                            cstackBANK0  00026
+?___lldiv                            cstackBANK0  00020
+?___wmul                             cstackBANK0  00020
+?_readADC                            cstackBANK0  00020
+BQ_Read@data                         cstackBANK0  00028
+BQ_Read@reg                          cstackBANK0  00027
+BQ_Write@data                        cstackBANK0  00021
+BQ_Write@reg                         cstackBANK0  00022
+I2C_Master_Init@clk                  cstackBANK0  0002E
+I2C_Master_Read@ack                  cstackBANK0  00021
+I2C_Master_Read@data                 cstackBANK0  00022
+I2C_Master_Write@data                cstackBANK0  00020
+Map@inMax                            cstackBANK0  00032
+Map@inMin                            cstackBANK0  00031
+Map@outMax                           cstackBANK0  00034
+Map@outMin                           cstackBANK0  00033
+Map@x                                cstackBANK0  0002F
+STUSB_Write@data_1                   cstackBANK0  00021
+STUSB_Write@data_2                   cstackBANK0  00022
+STUSB_Write@data_3                   cstackBANK0  00023
+STUSB_Write@data_4                   cstackBANK0  00024
+STUSB_Write@reg                      cstackBANK0  00025
+_ADCON0                              (abs)        0009D
+_ADCON0bits                          (abs)        0009D
+_ADCON1                              (abs)        0009E
+_ADRESH                              (abs)        0009C
+_ANSELA                              (abs)        01F38
+_ANSELC                              (abs)        01F4E
+_BQ_Read                             text10       00509
+_BQ_Write                            text30       0065E
+_BQ_init                             text29       003A9
+_I2C_Master_Ack                      text13       00741
+_I2C_Master_Init                     text27       004DA
+_I2C_Master_Read                     text11       00559
+_I2C_Master_Start                    text33       00727
+_I2C_Master_Stop                     text32       00721
+_I2C_Master_Wait                     text34       006B3
+_I2C_Master_Write                    text31       006DC
+_I2C_Master_nAck                     text12       0073D
+_INTCON                              (abs)        0000B
+_INTCONbits                          (abs)        0000B
+_IOCAF                               (abs)        01F3F
+_IOCAF5                              (abs)        0F9FD
+_IOCAN                               (abs)        01F3E
+_IOCAP                               (abs)        01F3D
+_ISR                                 intentry     00004
+_Map                                 text16       00334
+_PIC_init                            text26       00371
+_PIE0bits                            (abs)        00716
+_PPSLOCK                             (abs)        01E8F
+_PPS_lock                            text25       006E6
+_PPS_unlock                          text24       0070C
+_PR2                                 (abs)        0028D
+_PWM3CON                             (abs)        00316
+_PWM3DCH                             (abs)        00315
+_PWM3DCL                             (abs)        00314
+_PWM3EN                              (abs)        018B7
+_PWM4CON                             (abs)        0031A
+_PWM4DCH                             (abs)        00319
+_PWM4DCL                             (abs)        00318
+_PWM4EN                              (abs)        018D7
+_PWM5CON                             (abs)        0031E
+_PWM5DCH                             (abs)        0031D
+_PWM5DCL                             (abs)        0031C
+_PWM5EN                              (abs)        018F7
+_PWM_init                            text23       003E0
+_RA5                                 (abs)        00065
+_RC0PPS                              (abs)        01F20
+_RC1PPS                              (abs)        01F21
+_RC2PPS                              (abs)        01F22
+_RC3PPS                              (abs)        01F23
+_RC4PPS                              (abs)        01F24
+_RC5                                 (abs)        00075
+_RGB_fade                            text19       0020A
+_SSP1ADD                             (abs)        0018D
+_SSP1BUF                             (abs)        0018C
+_SSP1CLKPPS                          (abs)        01EC5
+_SSP1CON1                            (abs)        00190
+_SSP1CON2                            (abs)        00191
+_SSP1CON2bits                        (abs)        00191
+_SSP1DATPPS                          (abs)        01EC6
+_SSP1STAT                            (abs)        0018F
+_STUSB_9V_12V                        text21       0057E
+_STUSB_Write                         text22       00533
+_T1CLK                               (abs)        00211
+_T1CON                               (abs)        0020E
+_T1GCONbits                          (abs)        0020F
+_T2CKPS0                             (abs)        01474
+_T2CKPS1                             (abs)        01475
+_T2CKPS2                             (abs)        01476
+_T2CLKCON                            (abs)        00290
+_T2OUTPS0                            (abs)        01470
+_T2OUTPS1                            (abs)        01471
+_T2OUTPS2                            (abs)        01472
+_T2OUTPS3                            (abs)        01473
+_TMR1H                               (abs)        0020D
+_TMR1IE                              (abs)        038D0
+_TMR1IF                              (abs)        03880
+_TMR1L                               (abs)        0020C
+_TMR1ON                              (abs)        01070
+_TMR2                                (abs)        0028C
+_TMR2IF                              (abs)        03881
+_TMR2ON                              (abs)        01477
+_TRISA                               (abs)        00012
+_TRISAbits                           (abs)        00012
+_TRISC                               (abs)        00014
+_TRISCbits                           (abs)        00014
+_VREGCON                             (abs)        00812
+_WPUA                                (abs)        01F39
+__CFG_BBEN$OFF                       (abs)        00000
+__CFG_BBSIZE$BB512                   (abs)        00000
+__CFG_BOREN$ON                       (abs)        00000
+__CFG_BORV$LO                        (abs)        00000
+__CFG_CLKOUTEN$OFF                   (abs)        00000
+__CFG_CP$OFF                         (abs)        00000
+__CFG_CSWEN$ON                       (abs)        00000
+__CFG_FCMEN$ON                       (abs)        00000
+__CFG_FEXTOSC$OFF                    (abs)        00000
+__CFG_LPBOREN$OFF                    (abs)        00000
+__CFG_LVP$ON                         (abs)        00000
+__CFG_MCLRE$OFF                      (abs)        00000
+__CFG_PPS1WAY$OFF                    (abs)        00000
+__CFG_PWRTE$OFF                      (abs)        00000
+__CFG_RSTOSC$HFINTPLL                (abs)        00000
+__CFG_SAFEN$OFF                      (abs)        00000
+__CFG_STVREN$ON                      (abs)        00000
+__CFG_WDTCCS$SC                      (abs)        00000
+__CFG_WDTCPS$WDTCPS_31               (abs)        00000
+__CFG_WDTCWS$WDTCWS_7                (abs)        00000
+__CFG_WDTE$OFF                       (abs)        00000
+__CFG_WRTAPP$OFF                     (abs)        00000
+__CFG_WRTB$OFF                       (abs)        00000
+__CFG_WRTC$OFF                       (abs)        00000
+__CFG_WRTSAF$OFF                     (abs)        00000
+__CFG_ZCD$OFF                        (abs)        00000
+__Habs1                              abs1         00000
+__Hbank0                             bank0        00000
+__Hbank1                             bank1        00000
+__Hbank10                            bank10       00000
+__Hbank11                            bank11       00000
+__Hbank12                            bank12       00000
+__Hbank13                            bank13       00000
+__Hbank14                            bank14       00000
+__Hbank15                            bank15       00000
+__Hbank16                            bank16       00000
+__Hbank17                            bank17       00000
+__Hbank18                            bank18       00000
+__Hbank19                            bank19       00000
+__Hbank2                             bank2        00000
+__Hbank20                            bank20       00000
+__Hbank21                            bank21       00000
+__Hbank22                            bank22       00000
+__Hbank23                            bank23       00000
+__Hbank24                            bank24       00000
+__Hbank25                            bank25       00000
+__Hbank26                            bank26       00000
+__Hbank27                            bank27       00000
+__Hbank28                            bank28       00000
+__Hbank29                            bank29       00000
+__Hbank3                             bank3        00000
+__Hbank30                            bank30       00000
+__Hbank31                            bank31       00000
+__Hbank32                            bank32       00000
+__Hbank33                            bank33       00000
+__Hbank34                            bank34       00000
+__Hbank35                            bank35       00000
+__Hbank36                            bank36       00000
+__Hbank37                            bank37       00000
+__Hbank38                            bank38       00000
+__Hbank39                            bank39       00000
+__Hbank4                             bank4        00000
+__Hbank40                            bank40       00000
+__Hbank41                            bank41       00000
+__Hbank42                            bank42       00000
+__Hbank43                            bank43       00000
+__Hbank44                            bank44       00000
+__Hbank45                            bank45       00000
+__Hbank46                            bank46       00000
+__Hbank47                            bank47       00000
+__Hbank48                            bank48       00000
+__Hbank49                            bank49       00000
+__Hbank5                             bank5        00000
+__Hbank50                            bank50       00000
+__Hbank51                            bank51       00000
+__Hbank52                            bank52       00000
+__Hbank53                            bank53       00000
+__Hbank54                            bank54       00000
+__Hbank55                            bank55       00000
+__Hbank56                            bank56       00000
+__Hbank57                            bank57       00000
+__Hbank58                            bank58       00000
+__Hbank59                            bank59       00000
+__Hbank6                             bank6        00000
+__Hbank60                            bank60       00000
+__Hbank61                            bank61       00000
+__Hbank62                            bank62       00000
+__Hbank63                            bank63       00000
+__Hbank7                             bank7        00000
+__Hbank8                             bank8        00000
+__Hbank9                             bank9        00000
+__Hbigram                            bigram       00000
+__HbssBANK0                          bssBANK0     00000
+__HbssCOMMON                         bssCOMMON    00000
+__Hcinit                             cinit        0002A
+__Hclrtext                           clrtext      00000
+__Hcode                              code         00000
+__Hcommon                            common       00000
+__Hconfig                            config       0800C
+__HcstackBANK0                       cstackBANK0  00000
+__HcstackCOMMON                      cstackCOMMON 00000
+__Heeprom_data                       eeprom_data  00000
+__Hend_init                          end_init     0001A
+__Hfunctab                           functab      00000
+__Hidloc                             idloc        00000
+__Hinit                              init         00018
+__Hintentry                          intentry     00018
+__Hmaintext                          maintext     00000
+__Hpowerup                           powerup      00000
+__Hram                               ram          00000
+__Hreset_vec                         reset_vec    00002
+__Hsfr0                              sfr0         00000
+__Hsfr1                              sfr1         00000
+__Hsfr10                             sfr10        00000
+__Hsfr11                             sfr11        00000
+__Hsfr12                             sfr12        00000
+__Hsfr13                             sfr13        00000
+__Hsfr14                             sfr14        00000
+__Hsfr15                             sfr15        00000
+__Hsfr16                             sfr16        00000
+__Hsfr17                             sfr17        00000
+__Hsfr18                             sfr18        00000
+__Hsfr19                             sfr19        00000
+__Hsfr2                              sfr2         00000
+__Hsfr20                             sfr20        00000
+__Hsfr21                             sfr21        00000
+__Hsfr22                             sfr22        00000
+__Hsfr23                             sfr23        00000
+__Hsfr24                             sfr24        00000
+__Hsfr25                             sfr25        00000
+__Hsfr26                             sfr26        00000
+__Hsfr27                             sfr27        00000
+__Hsfr28                             sfr28        00000
+__Hsfr29                             sfr29        00000
+__Hsfr3                              sfr3         00000
+__Hsfr30                             sfr30        00000
+__Hsfr31                             sfr31        00000
+__Hsfr32                             sfr32        00000
+__Hsfr33                             sfr33        00000
+__Hsfr34                             sfr34        00000
+__Hsfr35                             sfr35        00000
+__Hsfr36                             sfr36        00000
+__Hsfr37                             sfr37        00000
+__Hsfr38                             sfr38        00000
+__Hsfr39                             sfr39        00000
+__Hsfr4                              sfr4         00000
+__Hsfr40                             sfr40        00000
+__Hsfr41                             sfr41        00000
+__Hsfr42                             sfr42        00000
+__Hsfr43                             sfr43        00000
+__Hsfr44                             sfr44        00000
+__Hsfr45                             sfr45        00000
+__Hsfr46                             sfr46        00000
+__Hsfr47                             sfr47        00000
+__Hsfr48                             sfr48        00000
+__Hsfr49                             sfr49        00000
+__Hsfr5                              sfr5         00000
+__Hsfr50                             sfr50        00000
+__Hsfr51                             sfr51        00000
+__Hsfr52                             sfr52        00000
+__Hsfr53                             sfr53        00000
+__Hsfr54                             sfr54        00000
+__Hsfr55                             sfr55        00000
+__Hsfr56                             sfr56        00000
+__Hsfr57                             sfr57        00000
+__Hsfr58                             sfr58        00000
+__Hsfr59                             sfr59        00000
+__Hsfr6                              sfr6         00000
+__Hsfr60                             sfr60        00000
+__Hsfr61                             sfr61        00000
+__Hsfr62                             sfr62        00000
+__Hsfr63                             sfr63        00000
+__Hsfr7                              sfr7         00000
+__Hsfr8                              sfr8         00000
+__Hsfr9                              sfr9         00000
+__Hspace_0                           (abs)        0800C
+__Hspace_1                           (abs)        0007E
+__Hspace_2                           (abs)        00000
+__Hspace_3                           (abs)        00000
+__Hstack                             stack        00000
+__Hstrings                           strings      00000
+__Htext                              text         00000
+__Labs1                              abs1         00000
+__Lbank0                             bank0        00000
+__Lbank1                             bank1        00000
+__Lbank10                            bank10       00000
+__Lbank11                            bank11       00000
+__Lbank12                            bank12       00000
+__Lbank13                            bank13       00000
+__Lbank14                            bank14       00000
+__Lbank15                            bank15       00000
+__Lbank16                            bank16       00000
+__Lbank17                            bank17       00000
+__Lbank18                            bank18       00000
+__Lbank19                            bank19       00000
+__Lbank2                             bank2        00000
+__Lbank20                            bank20       00000
+__Lbank21                            bank21       00000
+__Lbank22                            bank22       00000
+__Lbank23                            bank23       00000
+__Lbank24                            bank24       00000
+__Lbank25                            bank25       00000
+__Lbank26                            bank26       00000
+__Lbank27                            bank27       00000
+__Lbank28                            bank28       00000
+__Lbank29                            bank29       00000
+__Lbank3                             bank3        00000
+__Lbank30                            bank30       00000
+__Lbank31                            bank31       00000
+__Lbank32                            bank32       00000
+__Lbank33                            bank33       00000
+__Lbank34                            bank34       00000
+__Lbank35                            bank35       00000
+__Lbank36                            bank36       00000
+__Lbank37                            bank37       00000
+__Lbank38                            bank38       00000
+__Lbank39                            bank39       00000
+__Lbank4                             bank4        00000
+__Lbank40                            bank40       00000
+__Lbank41                            bank41       00000
+__Lbank42                            bank42       00000
+__Lbank43                            bank43       00000
+__Lbank44                            bank44       00000
+__Lbank45                            bank45       00000
+__Lbank46                            bank46       00000
+__Lbank47                            bank47       00000
+__Lbank48                            bank48       00000
+__Lbank49                            bank49       00000
+__Lbank5                             bank5        00000
+__Lbank50                            bank50       00000
+__Lbank51                            bank51       00000
+__Lbank52                            bank52       00000
+__Lbank53                            bank53       00000
+__Lbank54                            bank54       00000
+__Lbank55                            bank55       00000
+__Lbank56                            bank56       00000
+__Lbank57                            bank57       00000
+__Lbank58                            bank58       00000
+__Lbank59                            bank59       00000
+__Lbank6                             bank6        00000
+__Lbank60                            bank60       00000
+__Lbank61                            bank61       00000
+__Lbank62                            bank62       00000
+__Lbank63                            bank63       00000
+__Lbank7                             bank7        00000
+__Lbank8                             bank8        00000
+__Lbank9                             bank9        00000
+__Lbigram                            bigram       00000
+__LbssBANK0                          bssBANK0     00000
+__LbssCOMMON                         bssCOMMON    00000
+__Lcinit                             cinit        0001A
+__Lclrtext                           clrtext      00000
+__Lcode                              code         00000
+__Lcommon                            common       00000
+__Lconfig                            config       08007
+__LcstackBANK0                       cstackBANK0  00000
+__LcstackCOMMON                      cstackCOMMON 00000
+__Leeprom_data                       eeprom_data  00000
+__Lend_init                          end_init     00018
+__Lfunctab                           functab      00000
+__Lidloc                             idloc        00000
+__Linit                              init         00018
+__Lintentry                          intentry     00004
+__Lmaintext                          maintext     00000
+__Lpowerup                           powerup      00000
+__Lram                               ram          00000
+__Lreset_vec                         reset_vec    00000
+__Lsfr0                              sfr0         00000
+__Lsfr1                              sfr1         00000
+__Lsfr10                             sfr10        00000
+__Lsfr11                             sfr11        00000
+__Lsfr12                             sfr12        00000
+__Lsfr13                             sfr13        00000
+__Lsfr14                             sfr14        00000
+__Lsfr15                             sfr15        00000
+__Lsfr16                             sfr16        00000
+__Lsfr17                             sfr17        00000
+__Lsfr18                             sfr18        00000
+__Lsfr19                             sfr19        00000
+__Lsfr2                              sfr2         00000
+__Lsfr20                             sfr20        00000
+__Lsfr21                             sfr21        00000
+__Lsfr22                             sfr22        00000
+__Lsfr23                             sfr23        00000
+__Lsfr24                             sfr24        00000
+__Lsfr25                             sfr25        00000
+__Lsfr26                             sfr26        00000
+__Lsfr27                             sfr27        00000
+__Lsfr28                             sfr28        00000
+__Lsfr29                             sfr29        00000
+__Lsfr3                              sfr3         00000
+__Lsfr30                             sfr30        00000
+__Lsfr31                             sfr31        00000
+__Lsfr32                             sfr32        00000
+__Lsfr33                             sfr33        00000
+__Lsfr34                             sfr34        00000
+__Lsfr35                             sfr35        00000
+__Lsfr36                             sfr36        00000
+__Lsfr37                             sfr37        00000
+__Lsfr38                             sfr38        00000
+__Lsfr39                             sfr39        00000
+__Lsfr4                              sfr4         00000
+__Lsfr40                             sfr40        00000
+__Lsfr41                             sfr41        00000
+__Lsfr42                             sfr42        00000
+__Lsfr43                             sfr43        00000
+__Lsfr44                             sfr44        00000
+__Lsfr45                             sfr45        00000
+__Lsfr46                             sfr46        00000
+__Lsfr47                             sfr47        00000
+__Lsfr48                             sfr48        00000
+__Lsfr49                             sfr49        00000
+__Lsfr5                              sfr5         00000
+__Lsfr50                             sfr50        00000
+__Lsfr51                             sfr51        00000
+__Lsfr52                             sfr52        00000
+__Lsfr53                             sfr53        00000
+__Lsfr54                             sfr54        00000
+__Lsfr55                             sfr55        00000
+__Lsfr56                             sfr56        00000
+__Lsfr57                             sfr57        00000
+__Lsfr58                             sfr58        00000
+__Lsfr59                             sfr59        00000
+__Lsfr6                              sfr6         00000
+__Lsfr60                             sfr60        00000
+__Lsfr61                             sfr61        00000
+__Lsfr62                             sfr62        00000
+__Lsfr63                             sfr63        00000
+__Lsfr7                              sfr7         00000
+__Lsfr8                              sfr8         00000
+__Lsfr9                              sfr9         00000
+__Lspace_0                           (abs)        00000
+__Lspace_1                           (abs)        00000
+__Lspace_2                           (abs)        00000
+__Lspace_3                           (abs)        00000
+__Lstack                             stack        00000
+__Lstrings                           strings      00000
+__Ltext                              text         00000
+__S0                                 (abs)        0800C
+__S1                                 (abs)        0007E
+__S2                                 (abs)        00000
+___awdiv                             text18       0013E
+___awdiv@counter                     cstackBANK0  0002B
+___awdiv@dividend                    cstackBANK0  00028
+___awdiv@divisor                     cstackBANK0  00026
+___awdiv@quotient                    cstackBANK0  0002D
+___awdiv@sign                        cstackBANK0  0002C
+___int_sp                            stack        00000
+___latbits                           (abs)        00001
+___lldiv                             text28       001A8
+___lldiv@counter                     cstackBANK0  0002D
+___lldiv@dividend                    cstackBANK0  00024
+___lldiv@divisor                     cstackBANK0  00020
+___lldiv@quotient                    cstackBANK0  00029
+___sp                                stack        00000
+___wmul                              text17       005A3
+___wmul@multiplicand                 cstackBANK0  00022
+___wmul@multiplier                   cstackBANK0  00020
+___wmul@product                      cstackBANK0  00024
+__end_of_BQ_Read                     text10       00533
+__end_of_BQ_Write                    text30       00675
+__end_of_BQ_init                     text29       003E0
+__end_of_I2C_Master_Ack              text13       00745
+__end_of_I2C_Master_Init             text27       00509
+__end_of_I2C_Master_Read             text11       0057E
+__end_of_I2C_Master_Start            text33       0072D
+__end_of_I2C_Master_Stop             text32       00727
+__end_of_I2C_Master_Wait             text34       006C1
+__end_of_I2C_Master_Write            text31       006E6
+__end_of_I2C_Master_nAck             text12       00741
+__end_of_ISR                         intentry     00018
+__end_of_Map                         text16       00371
+__end_of_PIC_init                    text26       003A9
+__end_of_PPS_lock                    text25       006EE
+__end_of_PPS_unlock                  text24       00713
+__end_of_PWM_init                    text23       00414
+__end_of_RGB_fade                    text19       0025B
+__end_of_STUSB_9V_12V                text21       005A3
+__end_of_STUSB_Write                 text22       00559
+__end_of___awdiv                     text18       001A8
+__end_of___lldiv                     text28       0020A
+__end_of___wmul                      text17       005C6
+__end_of__initialization             cinit        00026
+__end_of_battery_fade                text15       000BA
+__end_of_battery_read                text9        00647
+__end_of_charge_state                text8        0047A
+__end_of_chrg_led                    text20       004DA
+__end_of_get_battery_volts           text7        0073D
+__end_of_get_mode                    text51       00749
+__end_of_led_modes                   text14       002A8
+__end_of_main                        maintext     002F1
+__end_of_on_off_tact                 text36       0013E
+__end_of_power_down                  text4        0065E
+__end_of_power_up                    text39       006DC
+__end_of_readADC                     text3        00609
+__end_of_read_bq_status              text1        00334
+__end_of_set_battery_volts           text6        0070C
+__end_of_set_mode                    text5        00705
+__end_of_thermal_protection          text2        0069F
+__end_ofi1_BQ_Write                  text46       006B3
+__end_ofi1_BQ_init                   text45       004AB
+__end_ofi1_I2C_Master_Start          text49       00739
+__end_ofi1_I2C_Master_Stop           text48       00733
+__end_ofi1_I2C_Master_Wait           text50       006CF
+__end_ofi1_I2C_Master_Write          text47       006FE
+__end_ofi1_PPS_lock                  text44       006F6
+__end_ofi1_PPS_unlock                text43       00721
+__end_ofi1_PWM_init                  text42       00448
+__end_ofi1_STUSB_9V_12V              text40       005E9
+__end_ofi1_STUSB_Write               text41       00629
+__end_ofi1_power_down                text38       0068B
+__end_ofi1_set_mode                  text37       0071A
+__initialization                     cinit        0001A
+__pbssBANK0                          bssBANK0     00046
+__pbssCOMMON                         bssCOMMON    0007C
+__pcstackBANK0                       cstackBANK0  00020
+__pcstackCOMMON                      cstackCOMMON 00070
+__pintentry                          intentry     00004
+__pmaintext                          maintext     002A8
+__ptext1                             text1        002F1
+__ptext10                            text10       00509
+__ptext11                            text11       00559
+__ptext12                            text12       0073D
+__ptext13                            text13       00741
+__ptext14                            text14       0025B
+__ptext15                            text15       0002A
+__ptext16                            text16       00334
+__ptext17                            text17       005A3
+__ptext18                            text18       0013E
+__ptext19                            text19       0020A
+__ptext2                             text2        0068B
+__ptext20                            text20       004AB
+__ptext21                            text21       0057E
+__ptext22                            text22       00533
+__ptext23                            text23       003E0
+__ptext24                            text24       0070C
+__ptext25                            text25       006E6
+__ptext26                            text26       00371
+__ptext27                            text27       004DA
+__ptext28                            text28       001A8
+__ptext29                            text29       003A9
+__ptext3                             text3        005E9
+__ptext30                            text30       0065E
+__ptext31                            text31       006DC
+__ptext32                            text32       00721
+__ptext33                            text33       00727
+__ptext34                            text34       006B3
+__ptext36                            text36       000BA
+__ptext37                            text37       00713
+__ptext38                            text38       00675
+__ptext39                            text39       006CF
+__ptext4                             text4        00647
+__ptext40                            text40       005C6
+__ptext41                            text41       00609
+__ptext42                            text42       00414
+__ptext43                            text43       0071A
+__ptext44                            text44       006EE
+__ptext45                            text45       0047A
+__ptext46                            text46       0069F
+__ptext47                            text47       006F6
+__ptext48                            text48       0072D
+__ptext49                            text49       00733
+__ptext5                             text5        006FE
+__ptext50                            text50       006C1
+__ptext51                            text51       00745
+__ptext6                             text6        00705
+__ptext7                             text7        00739
+__ptext8                             text8        00448
+__ptext9                             text9        00629
+__size_of_BQ_Read                    (abs)        00000
+__size_of_BQ_Write                   (abs)        00000
+__size_of_BQ_init                    (abs)        00000
+__size_of_I2C_Master_Ack             (abs)        00000
+__size_of_I2C_Master_Init            (abs)        00000
+__size_of_I2C_Master_Read            (abs)        00000
+__size_of_I2C_Master_Start           (abs)        00000
+__size_of_I2C_Master_Stop            (abs)        00000
+__size_of_I2C_Master_Wait            (abs)        00000
+__size_of_I2C_Master_Write           (abs)        00000
+__size_of_I2C_Master_nAck            (abs)        00000
+__size_of_ISR                        (abs)        00000
+__size_of_Map                        (abs)        00000
+__size_of_PIC_init                   (abs)        00000
+__size_of_PPS_lock                   (abs)        00000
+__size_of_PPS_unlock                 (abs)        00000
+__size_of_PWM_init                   (abs)        00000
+__size_of_RGB_fade                   (abs)        00000
+__size_of_STUSB_9V_12V               (abs)        00000
+__size_of_STUSB_Write                (abs)        00000
+__size_of___awdiv                    (abs)        00000
+__size_of___lldiv                    (abs)        00000
+__size_of___wmul                     (abs)        00000
+__size_of_battery_fade               (abs)        00000
+__size_of_battery_read               (abs)        00000
+__size_of_charge_state               (abs)        00000
+__size_of_chrg_led                   (abs)        00000
+__size_of_get_battery_volts          (abs)        00000
+__size_of_get_mode                   (abs)        00000
+__size_of_led_modes                  (abs)        00000
+__size_of_main                       (abs)        00000
+__size_of_on_off_tact                (abs)        00000
+__size_of_power_down                 (abs)        00000
+__size_of_power_up                   (abs)        00000
+__size_of_readADC                    (abs)        00000
+__size_of_read_bq_status             (abs)        00000
+__size_of_set_battery_volts          (abs)        00000
+__size_of_set_mode                   (abs)        00000
+__size_of_thermal_protection         (abs)        00000
+__size_ofi1_BQ_Write                 (abs)        00000
+__size_ofi1_BQ_init                  (abs)        00000
+__size_ofi1_I2C_Master_Start         (abs)        00000
+__size_ofi1_I2C_Master_Stop          (abs)        00000
+__size_ofi1_I2C_Master_Wait          (abs)        00000
+__size_ofi1_I2C_Master_Write         (abs)        00000
+__size_ofi1_PPS_lock                 (abs)        00000
+__size_ofi1_PPS_unlock               (abs)        00000
+__size_ofi1_PWM_init                 (abs)        00000
+__size_ofi1_STUSB_9V_12V             (abs)        00000
+__size_ofi1_STUSB_Write              (abs)        00000
+__size_ofi1_power_down               (abs)        00000
+__size_ofi1_set_mode                 (abs)        00000
+_battery_fade                        text15       0002A
+_battery_read                        text9        00629
+_battery_volts                       bssBANK0     00048
+_battery_volts_temp                  bssBANK0     0004C
+_charge_state                        text8        00448
+_charge_state$380                    cstackBANK0  0002A
+_charge_state$381                    cstackBANK0  0002B
+_chrg_led                            text20       004AB
+_chrg_stat                           bssBANK0     00046
+_color                               bssBANK0     00049
+_get_battery_volts                   text7        00739
+_get_mode                            text51       00745
+_i                                   bssCOMMON    0007C
+_led_modes                           text14       0025B
+_main                                maintext     002A8
+_mode                                bssBANK0     0004A
+_mode_temp                           bssBANK0     0004D
+_on_off_tact                         text36       000BA
+_power_down                          text4        00647
+_power_up                            text39       006CF
+_readADC                             text3        005E9
+_read_bq_status                      text1        002F1
+_reg_state                           bssCOMMON    0007D
+_set_battery_volts                   text6        00705
+_set_mode                            text5        006FE
+_thermal_protection                  text2        0068B
+_tmr1_count                          bssBANK0     0004E
+_vbus_stat                           bssBANK0     00047
+_vbus_stat_temp                      bssBANK0     0004B
+battery_fade@battery_max             cstackBANK0  00042
+battery_fade@battery_min             cstackBANK0  00041
+battery_fade@v                       cstackBANK0  00043
+btemp                                (abs)        0007E
+charge_state@temp                    cstackBANK0  0002C
+end_of_initialization                cinit        00026
+i1BQ_Write@data                      cstackCOMMON 00071
+i1BQ_Write@reg                       cstackCOMMON 00072
+i1I2C_Master_Write@data              cstackCOMMON 00070
+i1STUSB_Write@data_1                 cstackCOMMON 00071
+i1STUSB_Write@data_2                 cstackCOMMON 00072
+i1STUSB_Write@data_3                 cstackCOMMON 00073
+i1STUSB_Write@data_4                 cstackCOMMON 00074
+i1STUSB_Write@reg                    cstackCOMMON 00075
+i1_BQ_Write                          text46       0069F
+i1_BQ_init                           text45       0047A
+i1_I2C_Master_Start                  text49       00733
+i1_I2C_Master_Stop                   text48       0072D
+i1_I2C_Master_Wait                   text50       006C1
+i1_I2C_Master_Write                  text47       006F6
+i1_PPS_lock                          text44       006EE
+i1_PPS_unlock                        text43       0071A
+i1_PWM_init                          text42       00414
+i1_STUSB_9V_12V                      text40       005C6
+i1_STUSB_Write                       text41       00609
+i1_power_down                        text38       00675
+i1_set_mode                          text37       00713
+i1power_down@ship_mode               cstackCOMMON 00074
+i1set_mode@mode_temp                 cstackCOMMON 00071
+int$flags                            (abs)        0007E
+intlevel0                            functab      00000
+intlevel1                            functab      00000
+intlevel2                            functab      00000
+intlevel3                            functab      00000
+intlevel4                            functab      00000
+intlevel5                            functab      00000
+on_off_tact@count                    cstackCOMMON 0007B
+on_off_tact@exit                     cstackCOMMON 0007A
+power_down@ship_mode                 cstackBANK0  00024
+reset_vec                            reset_vec    00000
+set_battery_volts@battery_volts_temp cstackBANK0  00021
+set_mode@mode_temp                   cstackBANK0  00021
+stackhi                              (abs)        021EF
+stacklo                              (abs)        0202F
+start                                init         00018
+start_initialization                 cinit        0001A
+wtemp0                               (abs)        0007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 187 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   13
+ This function calls:
+		_BQ_init
+		_I2C_Master_Init
+		_PIC_init
+		_PPS_lock
+		_PPS_unlock
+		_PWM_init
+		_STUSB_9V_12V
+		_chrg_led
+		_led_modes
+		_read_bq_status
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _read_bq_status *****************
+ Defined at:
+		line 87 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_battery_read
+		_charge_state
+		_get_battery_volts
+		_set_battery_volts
+		_set_mode
+		_thermal_protection
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _thermal_protection *****************
+ Defined at:
+		line 76 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_power_down
+		_readADC
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _readADC *****************
+ Defined at:
+		line 27 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       2       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_thermal_protection
+ This function uses a non-reentrant model
+
+
+ *************** function _power_down *****************
+ Defined at:
+		line 187 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  ship_mode       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  ship_mode       1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_BQ_Write
+ This function is called by:
+		_thermal_protection
+ This function uses a non-reentrant model
+
+
+ *************** function _set_mode *****************
+ Defined at:
+		line 45 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  mode_temp       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  mode_temp       1    1[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _set_battery_volts *****************
+ Defined at:
+		line 53 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  battery_volt    1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  battery_volt    1    1[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _get_battery_volts *****************
+ Defined at:
+		line 49 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _charge_state *****************
+ Defined at:
+		line 118 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            1   12[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_BQ_Read
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _battery_read *****************
+ Defined at:
+		line 111 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_BQ_Read
+		_BQ_Write
+ This function is called by:
+		_read_bq_status
+ This function uses a non-reentrant model
+
+
+ *************** function _BQ_Read *****************
+ Defined at:
+		line 94 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  reg             1    7[BANK0 ] unsigned char 
+  data            1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    3[BANK0 ] unsigned short 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       2       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_I2C_Master_Read
+		_I2C_Master_Start
+		_I2C_Master_Stop
+		_I2C_Master_Write
+ This function is called by:
+		_battery_read
+		_charge_state
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Read *****************
+ Defined at:
+		line 60 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  ack             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  ack             1    1[BANK0 ] unsigned char 
+  data            1    2[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_I2C_Master_Ack
+		_I2C_Master_Wait
+		_I2C_Master_nAck
+ This function is called by:
+		_BQ_Read
+		_STUSB_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_nAck *****************
+ Defined at:
+		line 54 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_I2C_Master_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Ack *****************
+ Defined at:
+		line 48 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_I2C_Master_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _led_modes *****************
+ Defined at:
+		line 269 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_RGB_fade
+		_battery_fade
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _battery_fade *****************
+ Defined at:
+		line 234 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  v               1   35[BANK0 ] unsigned char 
+  battery_max     1   34[BANK0 ] unsigned char 
+  battery_min     1   33[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0
+      Temps:          0       6       0       0       0       0       0       0
+      Totals:         0       9       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_Map
+ This function is called by:
+		_led_modes
+ This function uses a non-reentrant model
+
+
+ *************** function _Map *****************
+ Defined at:
+		line 22 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  x               2   15[BANK0 ] int 
+  inMin           1   17[BANK0 ] unsigned char 
+  inMax           1   18[BANK0 ] unsigned char 
+  outMin          1   19[BANK0 ] unsigned char 
+  outMax          1   20[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       6       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       6       0       0       0       0       0       0
+      Totals:         0      12       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		___awdiv
+		___wmul
+ This function is called by:
+		_battery_fade
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[BANK0 ] unsigned int 
+  multiplicand    2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       4       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_Map
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    6[BANK0 ] int 
+  dividend        2    8[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  quotient        2   13[BANK0 ] int 
+  sign            1   12[BANK0 ] unsigned char 
+  counter         1   11[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    6[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       4       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       9       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_Map
+ This function uses a non-reentrant model
+
+
+ *************** function _RGB_fade *****************
+ Defined at:
+		line 203 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_led_modes
+ This function uses a non-reentrant model
+
+
+ *************** function _chrg_led *****************
+ Defined at:
+		line 128 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _STUSB_9V_12V *****************
+ Defined at:
+		line 41 in file "STUSB4500.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_STUSB_Write
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _STUSB_Write *****************
+ Defined at:
+		line 12 in file "STUSB4500.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     unsigned char 
+  data_1          1    1[BANK0 ] unsigned char 
+  data_2          1    2[BANK0 ] unsigned char 
+  data_3          1    3[BANK0 ] unsigned char 
+  data_4          1    4[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  reg             1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       4       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       5       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_I2C_Master_Start
+		_I2C_Master_Stop
+		_I2C_Master_Write
+ This function is called by:
+		_STUSB_9V_12V
+ This function uses a non-reentrant model
+
+
+ *************** function _PWM_init *****************
+ Defined at:
+		line 69 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_PPS_lock
+		_PPS_unlock
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _PPS_unlock *****************
+ Defined at:
+		line 57 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_PWM_init
+ This function uses a non-reentrant model
+
+
+ *************** function _PPS_lock *****************
+ Defined at:
+		line 63 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_PWM_init
+ This function uses a non-reentrant model
+
+
+ *************** function _PIC_init *****************
+ Defined at:
+		line 135 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Init *****************
+ Defined at:
+		line 11 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  clk             4   14[BANK0 ] const unsigned long 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       4       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		___lldiv
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c"
+ Parameters:    Size  Location     Type
+  divisor         4    0[BANK0 ] unsigned long 
+  dividend        4    4[BANK0 ] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4    9[BANK0 ] unsigned long 
+  counter         1   13[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4    0[BANK0 ] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       8       0       0       0       0       0       0
+      Locals:         0       5       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0      14       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_I2C_Master_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _BQ_init *****************
+ Defined at:
+		line 100 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_BQ_Write
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _BQ_Write *****************
+ Defined at:
+		line 77 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     unsigned char 
+  data            1    1[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  reg             1    2[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       1       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_I2C_Master_Start
+		_I2C_Master_Stop
+		_I2C_Master_Write
+ This function is called by:
+		_BQ_init
+		_battery_read
+		_power_down
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Write *****************
+ Defined at:
+		line 42 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  data            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  data            1    0[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_I2C_Master_Wait
+ This function is called by:
+		_BQ_Write
+		_BQ_Read
+		_STUSB_Write
+		_LM_Write
+		_STUSB_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Stop *****************
+ Defined at:
+		line 36 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_I2C_Master_Wait
+ This function is called by:
+		_BQ_Write
+		_BQ_Read
+		_STUSB_Write
+		_LM_Write
+		_STUSB_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Start *****************
+ Defined at:
+		line 24 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_I2C_Master_Wait
+ This function is called by:
+		_BQ_Write
+		_BQ_Read
+		_STUSB_Write
+		_LM_Write
+		_STUSB_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C_Master_Wait *****************
+ Defined at:
+		line 19 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_I2C_Master_Start
+		_I2C_Master_Stop
+		_I2C_Master_Write
+		_I2C_Master_Read
+		_I2C_Master_Repeated_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR *****************
+ Defined at:
+		line 119 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_on_off_tact
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _on_off_tact *****************
+ Defined at:
+		line 22 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  count           1   11[COMMON] unsigned char 
+  exit            1   10[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_get_mode
+		_power_up
+		i1_power_down
+		i1_set_mode
+ This function is called by:
+		_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function i1_set_mode *****************
+ Defined at:
+		line 45 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  mode_temp       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  mode_temp       1    1[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_on_off_tact
+ This function uses a non-reentrant model
+
+
+ *************** function i1_power_down *****************
+ Defined at:
+		line 187 in file "Functions.c"
+ Parameters:    Size  Location     Type
+  ship_mode       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  ship_mode       1    4[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i1_BQ_Write
+ This function is called by:
+		_on_off_tact
+ This function uses a non-reentrant model
+
+
+ *************** function _power_up *****************
+ Defined at:
+		line 168 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		i1_BQ_init
+		i1_PWM_init
+		i1_STUSB_9V_12V
+ This function is called by:
+		_on_off_tact
+ This function uses a non-reentrant model
+
+
+ *************** function i1_STUSB_9V_12V *****************
+ Defined at:
+		line 41 in file "STUSB4500.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i1_STUSB_Write
+ This function is called by:
+		_power_up
+ This function uses a non-reentrant model
+
+
+ *************** function i1_STUSB_Write *****************
+ Defined at:
+		line 12 in file "STUSB4500.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     unsigned char 
+  data_1          1    1[COMMON] unsigned char 
+  data_2          1    2[COMMON] unsigned char 
+  data_3          1    3[COMMON] unsigned char 
+  data_4          1    4[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  reg             1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         4       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_I2C_Master_Start
+		i1_I2C_Master_Stop
+		i1_I2C_Master_Write
+ This function is called by:
+		i1_STUSB_9V_12V
+ This function uses a non-reentrant model
+
+
+ *************** function i1_PWM_init *****************
+ Defined at:
+		line 69 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1_PPS_lock
+		i1_PPS_unlock
+ This function is called by:
+		_power_up
+ This function uses a non-reentrant model
+
+
+ *************** function i1_PPS_unlock *****************
+ Defined at:
+		line 57 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_PWM_init
+ This function uses a non-reentrant model
+
+
+ *************** function i1_PPS_lock *****************
+ Defined at:
+		line 63 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_PWM_init
+ This function uses a non-reentrant model
+
+
+ *************** function i1_BQ_init *****************
+ Defined at:
+		line 100 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i1_BQ_Write
+ This function is called by:
+		_power_up
+ This function uses a non-reentrant model
+
+
+ *************** function i1_BQ_Write *****************
+ Defined at:
+		line 77 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     unsigned char 
+  data            1    1[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  reg             1    2[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         1       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_I2C_Master_Start
+		i1_I2C_Master_Stop
+		i1_I2C_Master_Write
+ This function is called by:
+		i1_BQ_init
+		i1_power_down
+ This function uses a non-reentrant model
+
+
+ *************** function i1_I2C_Master_Write *****************
+ Defined at:
+		line 42 in file "I2C.c"
+ Parameters:    Size  Location     Type
+  data            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  data            1    0[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1_I2C_Master_Wait
+ This function is called by:
+		i1_BQ_Write
+		i1_STUSB_Write
+ This function uses a non-reentrant model
+
+
+ *************** function i1_I2C_Master_Stop *****************
+ Defined at:
+		line 36 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1_I2C_Master_Wait
+ This function is called by:
+		i1_BQ_Write
+		i1_STUSB_Write
+ This function uses a non-reentrant model
+
+
+ *************** function i1_I2C_Master_Start *****************
+ Defined at:
+		line 24 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1_I2C_Master_Wait
+ This function is called by:
+		i1_BQ_Write
+		i1_STUSB_Write
+ This function uses a non-reentrant model
+
+
+ *************** function i1_I2C_Master_Wait *****************
+ Defined at:
+		line 19 in file "I2C.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_I2C_Master_Start
+		i1_I2C_Master_Stop
+		i1_I2C_Master_Write
+ This function uses a non-reentrant model
+
+
+ *************** function _get_mode *****************
+ Defined at:
+		line 41 in file "Functions.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
+      Params:         0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_on_off_tact
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+STUSB4500.c
+		_STUSB_Write   		CODE           	0533	0000	39
+		_STUSB_9V_12V  		CODE           	057E	0000	38
+
+STUSB4500.c estimated size: 77
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+		___wmul        		CODE           	05A3	0000	36
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c estimated size: 36
+
+I2C.c
+		_BQ_Read       		CODE           	0509	0000	43
+		_I2C_Master_Read		CODE           	0559	0000	38
+		_I2C_Master_nAck		CODE           	073D	0000	5
+		_I2C_Master_Wait		CODE           	06B3	0000	15
+		_I2C_Master_Init		CODE           	04DA	0000	48
+		_I2C_Master_Stop		CODE           	0721	0000	7
+		_BQ_Write      		CODE           	065E	0000	24
+		_I2C_Master_Write		CODE           	06DC	0000	11
+		_I2C_Master_Start		CODE           	0727	0000	7
+		_I2C_Master_Ack		CODE           	0741	0000	5
+
+I2C.c estimated size: 203
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c
+		___lldiv       		CODE           	01A8	0000	99
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\__lldiv.c estimated size: 99
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+		___awdiv       		CODE           	013E	0000	107
+
+C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c estimated size: 107
+
+Functions.c
+		_battery_fade  		CODE           	002A	0000	145
+		_battery_read  		CODE           	0629	0000	31
+		_chrg_led      		CODE           	04AB	0000	48
+		_set_battery_volts		CODE           	0705	0000	8
+		_RGB_fade      		CODE           	020A	0000	82
+		_charge_state  		CODE           	0448	0000	51
+		_get_mode      		CODE           	0745	0000	5
+		_power_up      		CODE           	06CF	0000	14
+		_PPS_lock      		CODE           	06E6	0000	9
+		_set_mode      		CODE           	06FE	0000	8
+		_PWM_init      		CODE           	03E0	0000	53
+		_BQ_init       		CODE           	03A9	0000	56
+		_power_down    		CODE           	0647	0000	24
+		_led_modes     		CODE           	025B	0000	78
+		_PPS_unlock    		CODE           	070C	0000	8
+		_Map           		CODE           	0334	0000	62
+		_readADC       		CODE           	05E9	0000	33
+		_get_battery_volts		CODE           	0739	0000	5
+
+Functions.c estimated size: 720
+
+shared
+		i1_I2C_Master_Start		CODE           	0733	0000	7
+		i1_STUSB_Write 		CODE           	0609	0000	33
+		i1_BQ_Write    		CODE           	069F	0000	21
+		i1_STUSB_9V_12V		CODE           	05C6	0000	36
+		i1_PPS_lock    		CODE           	06EE	0000	9
+		__initialization		CODE           	001A	0000	13
+		i1_PPS_unlock  		CODE           	071A	0000	8
+		i1_I2C_Master_Wait		CODE           	06C1	0000	15
+		i1_BQ_init     		CODE           	047A	0000	50
+		i1_I2C_Master_Stop		CODE           	072D	0000	7
+		i1_power_down  		CODE           	0675	0000	23
+		i1_PWM_init    		CODE           	0414	0000	53
+		i1_I2C_Master_Write		CODE           	06F6	0000	9
+		i1_set_mode    		CODE           	0713	0000	8
+
+shared estimated size: 292
+
+main.c
+		_ISR           		CODE           	0004	0000	21
+		_on_off_tact   		CODE           	00BA	0000	133
+		_main          		CODE           	02A8	0000	74
+		_read_bq_status		CODE           	02F1	0000	68
+		_PIC_init      		CODE           	0371	0000	57
+		_thermal_protection		CODE           	068B	0000	21
+
+main.c estimated size: 374
+
