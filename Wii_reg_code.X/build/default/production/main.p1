@@ -126,9 +126,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
 "31 Functions.h
 [v _BQ_init `(v ~T0 @X0 0 ef ]
-"19 STUSB4500.h
-[v _STUSB_9V_12V `(v ~T0 @X0 0 ef ]
-"24 Functions.h
+"24
 [v _PWM_init `(v ~T0 @X0 0 ef ]
 "28
 [v _chrg_led `(v ~T0 @X0 0 ef ]
@@ -7828,9 +7826,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 203: BQ_init();
 "203
 [e ( _BQ_init ..  ]
-[; ;main.c: 206: STUSB_9V_12V();
-"206
-[e ( _STUSB_9V_12V ..  ]
 [; ;main.c: 209: PWM_init();
 "209
 [e ( _PWM_init ..  ]

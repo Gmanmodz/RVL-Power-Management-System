@@ -68,9 +68,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S31 . . ]
 "561
 [v _TRISAbits `VS31 ~T0 @X0 0 e@18 ]
-"19 STUSB4500.h
-[v _STUSB_9V_12V `(v ~T0 @X0 0 ef ]
-"21804 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15324.h
+"21804
 [v _RC5 `Vb ~T0 @X0 0 e@117 ]
 "21456
 [v _PWM3EN `Vb ~T0 @X0 0 e@6327 ]
@@ -7759,9 +7757,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Functions.c: 171: BQ_init();
 "171
 [e ( _BQ_init ..  ]
-[; ;Functions.c: 174: STUSB_9V_12V();
-"174
-[e ( _STUSB_9V_12V ..  ]
 [; ;Functions.c: 177: TRISCbits.TRISC5 = 0;
 "177
 [e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]

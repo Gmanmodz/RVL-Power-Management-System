@@ -11184,10 +11184,7 @@ void power_up() {
 
 BQ_init();
 
-
-STUSB_9V_12V();
-
-
+# 177
 TRISCbits.TRISC5 = 0;
 RC5 = 1;
 

@@ -171,7 +171,7 @@ void power_up() {
     BQ_init();
 
     //set STUSB4500
-    STUSB_9V_12V();
+    //STUSB_9V_12V();
 
     //turn on regulators
     TRISCbits.TRISC5 = 0;

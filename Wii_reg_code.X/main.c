@@ -203,7 +203,7 @@ void main() {
     BQ_init();    
     
     //set STUSB4500
-    STUSB_9V_12V();
+    //STUSB_9V_12V();
     
     //turn on PWM
     PWM_init();        
