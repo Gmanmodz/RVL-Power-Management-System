@@ -1,0 +1,88 @@
+EESchema Schematic File Version 4
+LIBS:RGB LED pcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Wiiboy_parts:LTST-C19HE1WT U1
+U 1 1 5C51ABEB
+P 6350 2950
+F 0 "U1" H 6328 2446 50  0000 L CNN
+F 1 "LTST-C19HE1WT" H 6328 2355 50  0000 L CNN
+F 2 "Wiiboy Parts:LTST-C19HE1WT" H 6350 2950 50  0001 C CNN
+F 3 "" H 6350 2950 50  0001 C CNN
+	1    6350 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 3150 1    50   Input ~ 0
+R
+Text GLabel 6200 3150 1    50   Input ~ 0
+G
+Text GLabel 6200 3850 3    50   Input ~ 0
+B
+Text GLabel 6050 3850 3    50   Input ~ 0
+A
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C55BCA8
+P 7150 3050
+F 0 "TP1" H 7208 3170 50  0000 L CNN
+F 1 "TestPoint" H 7208 3079 50  0000 L CNN
+F 2 "Wiiboy Parts:1.25mm pad" H 7350 3050 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C55BCDA
+P 7600 3050
+F 0 "TP2" H 7658 3170 50  0000 L CNN
+F 1 "TestPoint" H 7658 3079 50  0000 L CNN
+F 2 "Wiiboy Parts:1.25mm pad" H 7800 3050 50  0001 C CNN
+F 3 "~" H 7800 3050 50  0001 C CNN
+	1    7600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C55BD18
+P 8050 3050
+F 0 "TP3" H 8108 3170 50  0000 L CNN
+F 1 "TestPoint" H 8108 3079 50  0000 L CNN
+F 2 "Wiiboy Parts:1.25mm pad" H 8250 3050 50  0001 C CNN
+F 3 "~" H 8250 3050 50  0001 C CNN
+	1    8050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C55BD64
+P 8500 3050
+F 0 "TP4" H 8558 3170 50  0000 L CNN
+F 1 "TestPoint" H 8558 3079 50  0000 L CNN
+F 2 "Wiiboy Parts:1.25mm pad" H 8700 3050 50  0001 C CNN
+F 3 "~" H 8700 3050 50  0001 C CNN
+	1    8500 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 3050 3    50   Input ~ 0
+R
+Text GLabel 7600 3050 3    50   Input ~ 0
+G
+Text GLabel 8050 3050 3    50   Input ~ 0
+B
+Text GLabel 8500 3050 3    50   Input ~ 0
+A
+$EndSCHEMATC
