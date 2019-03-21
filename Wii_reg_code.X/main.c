@@ -16,8 +16,66 @@ char reg_state = 0;             //reg enable state
 char tmr1_count = 0;            //tmr1 flag count
 char mode_temp = 0;             //temp var for holding the mode state
 char battery_volts_temp = 0;    //temp var for holding the battery voltage level
+char mode_en = 0;               //when 0, mode cannot be changed
 
 char vbus_stat_temp = 0;
+
+void thermal_protection(){    
+    //calculating setpoint = 255 / [(Therm_resistance(at temp) / 10,000 ) + 1]
+    //For temp = 75C, setpoint = 222
+    
+    if(readADC() >= 222) {
+        reg_state = 0;
+        power_down(1);  //power down in shipping mode
+        
+    }    
+}
+
+void read_bq_status(){ 
+    
+    if(reg_state && TMR1IF) {
+        TMR1IF = 0;  //reset TMR1
+        tmr1_count++;
+        
+        //we don't really need to check these statuses all that often so it is in a timed event
+        if(tmr1_count >= 10) { 
+            tmr1_count = 0; //reset count
+            
+            //read charge status
+            vbus_stat_temp = charge_state();
+            
+            //mode cannot be changed if the charger is plugged in
+            if(vbus_stat_temp != 0) {
+                mode_en = 0;
+            }
+            else {
+                mode_en = 1;
+            }
+            
+            //read battery voltage
+            battery_volts_temp = battery_read();
+            //store battery volts variable
+            set_battery_volts(battery_volts_temp);
+            
+            //if battery is < 3v, shut down system to avoid Power On Reset
+            if(get_battery_volts() <= 4) {
+                //reg_state = 0;
+                //power_down(0);
+            }
+            
+            //if battery is low, revert to mode 2 to warn user
+            //.02V/bit, 2.304V offset
+            //bit value = [(desired cutoff voltage) - 2.304] / .02V/bit
+            if(get_battery_volts() <= 50) {     //45 = (3.2 - 2.304)/.02
+                mode_temp = 2;
+                set_mode(mode_temp);
+            }   
+            
+            thermal_protection();   //checks thermistor resistance and shuts down if over temp
+
+        }   
+    }    
+}
 
 void on_off_tact(){
     
@@ -59,8 +117,8 @@ void on_off_tact(){
         
     }    
  
-    //if button is tapped, cycle through modes. Only works when system is on
-    else if(count >= 2 && reg_state) {
+    //if button is tapped, cycle through modes. Only works when system is on and mode_en
+    else if(count >= 2 && reg_state && mode_en) {
         mode_temp++; 
         set_mode(mode_temp);
         
@@ -71,49 +129,6 @@ void on_off_tact(){
         }
     }
     
-}
-
-void thermal_protection(){    
-    //calculating setpoint = 255 / [(Therm_resistance(at temp) / 10,000 ) + 1]
-    //For temp = 75C, setpoint = 222
-    
-    if(readADC() >= 222) {
-        reg_state = 0;
-        power_down(1);  //power down in shipping mode
-        
-    }    
-}
-
-void read_bq_status(){ 
-    
-    if(reg_state && TMR1IF) {
-        TMR1IF = 0;  //reset TMR1
-        tmr1_count++;
-        
-        //we don't really need to check these statuses all that often so it is in a timed event
-        if(tmr1_count >= 60) { 
-            tmr1_count = 0; //reset count
-            
-            //read charge status
-            vbus_stat_temp = charge_state();
-            
-            //read battery voltage
-            battery_volts_temp = battery_read();
-            //store battery volts variable
-            set_battery_volts(battery_volts_temp);
-            
-            //if battery is low, revert to mode 2 to warn user
-            //.02V/bit, 2.304V offset
-            //bit value = [(desired cutoff voltage) - 2.304] / .02V/bit
-            if(get_battery_volts() <= 50) {     //45 = (3.2 - 2.304)/.02
-                mode_temp = 2;
-                set_mode(mode_temp);
-            }   
-            
-            thermal_protection();   //checks thermistor resistance and shuts down if over temp
-
-        }   
-    }    
 }
 
 void interrupt ISR(){
@@ -218,6 +233,7 @@ void main() {
 
             if(vbus_stat_temp != 0) {
                 chrg_led();
+                //B_fade();
             }
              
             else {

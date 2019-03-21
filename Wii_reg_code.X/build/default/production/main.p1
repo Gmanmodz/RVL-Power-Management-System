@@ -1,18 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"22596 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15324.h
-[v _TMR2IF `Vb ~T0 @X0 0 e@14465 ]
-"21684
-[v _RA5 `Vb ~T0 @X0 0 e@101 ]
-"29 Functions.h
-[v _power_up `(v ~T0 @X0 0 ef ]
-"17
-[v _get_mode `(uc ~T0 @X0 0 ef ]
+"15 Functions.h
+[v _readADC `(ui ~T0 @X0 0 ef ]
 "30
 [v _power_down `(v ~T0 @X0 0 ef1`uc ]
-"18
-[v _set_mode `(v ~T0 @X0 0 ef1`uc ]
-"15
-[v _readADC `(ui ~T0 @X0 0 ef ]
 "22560 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15324.h
 [v _TMR1IF `Vb ~T0 @X0 0 e@14464 ]
 "27 Functions.h
@@ -23,6 +13,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _set_battery_volts `(v ~T0 @X0 0 ef1`uc ]
 "19
 [v _get_battery_volts `(uc ~T0 @X0 0 ef ]
+"18
+[v _set_mode `(v ~T0 @X0 0 ef1`uc ]
+"22596 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15324.h
+[v _TMR2IF `Vb ~T0 @X0 0 e@14465 ]
+"21684
+[v _RA5 `Vb ~T0 @X0 0 e@101 ]
+"29 Functions.h
+[v _power_up `(v ~T0 @X0 0 ef ]
+"17
+[v _get_mode `(uc ~T0 @X0 0 ef ]
 "3762 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f15324.h
 [v _TMR2 `Vuc ~T0 @X0 0 e@652 ]
 "19929
@@ -7412,482 +7412,518 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 [; ;main.c: 18: char battery_volts_temp = 0;
-"20
+"19
+[v _mode_en `uc ~T0 @X0 1 e ]
+[i _mode_en
+-> -> 0 `i `uc
+]
+[; ;main.c: 19: char mode_en = 0;
+"21
 [v _vbus_stat_temp `uc ~T0 @X0 1 e ]
 [i _vbus_stat_temp
 -> -> 0 `i `uc
 ]
-[; ;main.c: 20: char vbus_stat_temp = 0;
-"22
-[v _on_off_tact `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 22: void on_off_tact(){
-[e :U _on_off_tact ]
-[f ]
-"27
-[v _count `uc ~T0 @X0 1 a ]
-[; ;main.c: 27: char count = 0;
-[e = _count -> -> 0 `i `uc ]
-"28
-[v _exit `uc ~T0 @X0 1 a ]
-[; ;main.c: 28: char exit = 0;
-[e = _exit -> -> 0 `i `uc ]
-[; ;main.c: 30: while(RA5 == 0 && exit == 0) {
-"30
-[e $U 872  ]
-[e :U 873 ]
-{
-[; ;main.c: 31: if(TMR2IF == 1) {
-"31
-[e $ ! == -> _TMR2IF `i -> 1 `i 875  ]
-{
-[; ;main.c: 32: count++;
-"32
-[e ++ _count -> -> 1 `i `uc ]
-[; ;main.c: 33: TMR2IF = 0;
-"33
-[e = _TMR2IF -> -> 0 `i `b ]
-"34
-}
-[e :U 875 ]
-[; ;main.c: 34: }
-[; ;main.c: 35: if(count >= 120) {
-"35
-[e $ ! >= -> _count `i -> 120 `i 876  ]
-{
-[; ;main.c: 36: exit = 1;
-"36
-[e = _exit -> -> 1 `i `uc ]
-"37
-}
-[e :U 876 ]
-"38
-}
-[e :U 872 ]
-"30
-[e $ && == -> _RA5 `i -> 0 `i == -> _exit `i -> 0 `i 873  ]
-[e :U 874 ]
-[; ;main.c: 37: }
-[; ;main.c: 38: }
-[; ;main.c: 40: if(count >= 120){
-"40
-[e $ ! >= -> _count `i -> 120 `i 877  ]
-{
-[; ;main.c: 41: reg_state =! reg_state;
-"41
-[e = _reg_state -> -> ! != -> _reg_state `i -> -> -> 0 `i `uc `i `i `uc ]
-[; ;main.c: 43: if(reg_state == 1){
-"43
-[e $ ! == -> _reg_state `i -> 1 `i 878  ]
-{
-[; ;main.c: 44: power_up();
-"44
-[e ( _power_up ..  ]
-"45
-}
-[; ;main.c: 45: }
-[e $U 879  ]
-"47
-[e :U 878 ]
-[; ;main.c: 47: else if(reg_state == 0){
-[e $ ! == -> _reg_state `i -> 0 `i 880  ]
-{
-[; ;main.c: 49: if(get_mode() == 3) {
-"49
-[e $ ! == -> ( _get_mode ..  `i -> 3 `i 881  ]
-{
-[; ;main.c: 50: power_down(1);
-"50
-[e ( _power_down (1 -> -> 1 `i `uc ]
-"51
-}
-[; ;main.c: 51: }
-[e $U 882  ]
-"53
-[e :U 881 ]
-[; ;main.c: 53: else {
-{
-[; ;main.c: 54: power_down(0);
-"54
-[e ( _power_down (1 -> -> 0 `i `uc ]
-"55
-}
-[e :U 882 ]
-"56
-}
-[e :U 880 ]
-"58
-[e :U 879 ]
-[; ;main.c: 55: }
-[; ;main.c: 56: }
-[; ;main.c: 58: while(RA5 == 0) {}
-[e $U 883  ]
-[e :U 884 ]
-{
-}
-[e :U 883 ]
-[e $ == -> _RA5 `i -> 0 `i 884  ]
-[e :U 885 ]
-"60
-}
-[; ;main.c: 60: }
-[e $U 886  ]
-"63
-[e :U 877 ]
-[; ;main.c: 63: else if(count >= 2 && reg_state) {
-[e $ ! && >= -> _count `i -> 2 `i != -> _reg_state `i -> -> -> 0 `i `uc `i 887  ]
-{
-[; ;main.c: 64: mode_temp++;
-"64
-[e ++ _mode_temp -> -> 1 `i `uc ]
-[; ;main.c: 65: set_mode(mode_temp);
-"65
-[e ( _set_mode (1 _mode_temp ]
-[; ;main.c: 68: if(get_mode() > 3) {
-"68
-[e $ ! > -> ( _get_mode ..  `i -> 3 `i 888  ]
-{
-[; ;main.c: 69: mode_temp = 0;
-"69
-[e = _mode_temp -> -> 0 `i `uc ]
-[; ;main.c: 70: set_mode(mode_temp);
-"70
-[e ( _set_mode (1 _mode_temp ]
-"71
-}
-[e :U 888 ]
-"72
-}
-[e :U 887 ]
-"74
-[e :U 886 ]
-[; ;main.c: 71: }
-[; ;main.c: 72: }
-[; ;main.c: 74: }
-[e :UE 871 ]
-}
-"76
+[; ;main.c: 21: char vbus_stat_temp = 0;
+"23
 [v _thermal_protection `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 76: void thermal_protection(){
+[; ;main.c: 23: void thermal_protection(){
 [e :U _thermal_protection ]
 [f ]
-[; ;main.c: 80: if(readADC() >= 222) {
-"80
-[e $ ! >= ( _readADC ..  -> -> 222 `i `ui 890  ]
+[; ;main.c: 27: if(readADC() >= 222) {
+"27
+[e $ ! >= ( _readADC ..  -> -> 222 `i `ui 872  ]
 {
-[; ;main.c: 81: reg_state = 0;
-"81
+[; ;main.c: 28: reg_state = 0;
+"28
 [e = _reg_state -> -> 0 `i `uc ]
-[; ;main.c: 82: power_down(1);
-"82
+[; ;main.c: 29: power_down(1);
+"29
 [e ( _power_down (1 -> -> 1 `i `uc ]
-"84
+"31
 }
-[e :U 890 ]
-[; ;main.c: 84: }
-[; ;main.c: 85: }
-"85
-[e :UE 889 ]
+[e :U 872 ]
+[; ;main.c: 31: }
+[; ;main.c: 32: }
+"32
+[e :UE 871 ]
 }
-"87
+"34
 [v _read_bq_status `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 87: void read_bq_status(){
+[; ;main.c: 34: void read_bq_status(){
 [e :U _read_bq_status ]
 [f ]
-[; ;main.c: 89: if(reg_state && TMR1IF) {
-"89
-[e $ ! && != -> _reg_state `i -> -> -> 0 `i `uc `i _TMR1IF 892  ]
+[; ;main.c: 36: if(reg_state && TMR1IF) {
+"36
+[e $ ! && != -> _reg_state `i -> -> -> 0 `i `uc `i _TMR1IF 874  ]
 {
-[; ;main.c: 90: TMR1IF = 0;
-"90
+[; ;main.c: 37: TMR1IF = 0;
+"37
 [e = _TMR1IF -> -> 0 `i `b ]
-[; ;main.c: 91: tmr1_count++;
-"91
+[; ;main.c: 38: tmr1_count++;
+"38
 [e ++ _tmr1_count -> -> 1 `i `uc ]
-[; ;main.c: 94: if(tmr1_count >= 60) {
-"94
-[e $ ! >= -> _tmr1_count `i -> 60 `i 893  ]
+[; ;main.c: 41: if(tmr1_count >= 10) {
+"41
+[e $ ! >= -> _tmr1_count `i -> 10 `i 875  ]
 {
-[; ;main.c: 95: tmr1_count = 0;
-"95
+[; ;main.c: 42: tmr1_count = 0;
+"42
 [e = _tmr1_count -> -> 0 `i `uc ]
-[; ;main.c: 98: vbus_stat_temp = charge_state();
-"98
+[; ;main.c: 45: vbus_stat_temp = charge_state();
+"45
 [e = _vbus_stat_temp ( _charge_state ..  ]
-[; ;main.c: 101: battery_volts_temp = battery_read();
-"101
-[e = _battery_volts_temp ( _battery_read ..  ]
-[; ;main.c: 103: set_battery_volts(battery_volts_temp);
-"103
-[e ( _set_battery_volts (1 _battery_volts_temp ]
-[; ;main.c: 108: if(get_battery_volts() <= 50) {
-"108
-[e $ ! <= -> ( _get_battery_volts ..  `i -> 50 `i 894  ]
+[; ;main.c: 48: if(vbus_stat_temp != 0) {
+"48
+[e $ ! != -> _vbus_stat_temp `i -> 0 `i 876  ]
 {
-[; ;main.c: 109: mode_temp = 2;
-"109
+[; ;main.c: 49: mode_en = 0;
+"49
+[e = _mode_en -> -> 0 `i `uc ]
+"50
+}
+[; ;main.c: 50: }
+[e $U 877  ]
+"51
+[e :U 876 ]
+[; ;main.c: 51: else {
+{
+[; ;main.c: 52: mode_en = 1;
+"52
+[e = _mode_en -> -> 1 `i `uc ]
+"53
+}
+[e :U 877 ]
+[; ;main.c: 53: }
+[; ;main.c: 56: battery_volts_temp = battery_read();
+"56
+[e = _battery_volts_temp ( _battery_read ..  ]
+[; ;main.c: 58: set_battery_volts(battery_volts_temp);
+"58
+[e ( _set_battery_volts (1 _battery_volts_temp ]
+[; ;main.c: 61: if(get_battery_volts() <= 4) {
+"61
+[e $ ! <= -> ( _get_battery_volts ..  `i -> 4 `i 878  ]
+{
+"64
+}
+[e :U 878 ]
+[; ;main.c: 64: }
+[; ;main.c: 69: if(get_battery_volts() <= 50) {
+"69
+[e $ ! <= -> ( _get_battery_volts ..  `i -> 50 `i 879  ]
+{
+[; ;main.c: 70: mode_temp = 2;
+"70
 [e = _mode_temp -> -> 2 `i `uc ]
-[; ;main.c: 110: set_mode(mode_temp);
-"110
+[; ;main.c: 71: set_mode(mode_temp);
+"71
 [e ( _set_mode (1 _mode_temp ]
-"111
+"72
 }
-[e :U 894 ]
-[; ;main.c: 111: }
-[; ;main.c: 113: thermal_protection();
-"113
+[e :U 879 ]
+[; ;main.c: 72: }
+[; ;main.c: 74: thermal_protection();
+"74
 [e ( _thermal_protection ..  ]
-"115
+"76
 }
-[e :U 893 ]
+[e :U 875 ]
+"77
+}
+[e :U 874 ]
+[; ;main.c: 76: }
+[; ;main.c: 77: }
+[; ;main.c: 78: }
+"78
+[e :UE 873 ]
+}
+"80
+[v _on_off_tact `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 80: void on_off_tact(){
+[e :U _on_off_tact ]
+[f ]
+"85
+[v _count `uc ~T0 @X0 1 a ]
+[; ;main.c: 85: char count = 0;
+[e = _count -> -> 0 `i `uc ]
+"86
+[v _exit `uc ~T0 @X0 1 a ]
+[; ;main.c: 86: char exit = 0;
+[e = _exit -> -> 0 `i `uc ]
+[; ;main.c: 88: while(RA5 == 0 && exit == 0) {
+"88
+[e $U 881  ]
+[e :U 882 ]
+{
+[; ;main.c: 89: if(TMR2IF == 1) {
+"89
+[e $ ! == -> _TMR2IF `i -> 1 `i 884  ]
+{
+[; ;main.c: 90: count++;
+"90
+[e ++ _count -> -> 1 `i `uc ]
+[; ;main.c: 91: TMR2IF = 0;
+"91
+[e = _TMR2IF -> -> 0 `i `b ]
+"92
+}
+[e :U 884 ]
+[; ;main.c: 92: }
+[; ;main.c: 93: if(count >= 120) {
+"93
+[e $ ! >= -> _count `i -> 120 `i 885  ]
+{
+[; ;main.c: 94: exit = 1;
+"94
+[e = _exit -> -> 1 `i `uc ]
+"95
+}
+[e :U 885 ]
+"96
+}
+[e :U 881 ]
+"88
+[e $ && == -> _RA5 `i -> 0 `i == -> _exit `i -> 0 `i 882  ]
+[e :U 883 ]
+[; ;main.c: 95: }
+[; ;main.c: 96: }
+[; ;main.c: 98: if(count >= 120){
+"98
+[e $ ! >= -> _count `i -> 120 `i 886  ]
+{
+[; ;main.c: 99: reg_state =! reg_state;
+"99
+[e = _reg_state -> -> ! != -> _reg_state `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;main.c: 101: if(reg_state == 1){
+"101
+[e $ ! == -> _reg_state `i -> 1 `i 887  ]
+{
+[; ;main.c: 102: power_up();
+"102
+[e ( _power_up ..  ]
+"103
+}
+[; ;main.c: 103: }
+[e $U 888  ]
+"105
+[e :U 887 ]
+[; ;main.c: 105: else if(reg_state == 0){
+[e $ ! == -> _reg_state `i -> 0 `i 889  ]
+{
+[; ;main.c: 107: if(get_mode() == 3) {
+"107
+[e $ ! == -> ( _get_mode ..  `i -> 3 `i 890  ]
+{
+[; ;main.c: 108: power_down(1);
+"108
+[e ( _power_down (1 -> -> 1 `i `uc ]
+"109
+}
+[; ;main.c: 109: }
+[e $U 891  ]
+"111
+[e :U 890 ]
+[; ;main.c: 111: else {
+{
+[; ;main.c: 112: power_down(0);
+"112
+[e ( _power_down (1 -> -> 0 `i `uc ]
+"113
+}
+[e :U 891 ]
+"114
+}
+[e :U 889 ]
 "116
+[e :U 888 ]
+[; ;main.c: 113: }
+[; ;main.c: 114: }
+[; ;main.c: 116: while(RA5 == 0) {}
+[e $U 892  ]
+[e :U 893 ]
+{
 }
 [e :U 892 ]
-[; ;main.c: 115: }
-[; ;main.c: 116: }
-[; ;main.c: 117: }
-"117
-[e :UE 891 ]
+[e $ == -> _RA5 `i -> 0 `i 893  ]
+[e :U 894 ]
+"118
 }
-[v $root$_ISR `(v ~T0 @X0 0 e ]
-[v F6328 `(v ~T0 @X0 1 tf ]
-"119
-[v _ISR `IF6328 ~T0 @X0 1 e ]
-{
-[; ;main.c: 119: void interrupt ISR(){
-[e :U _ISR ]
-[f ]
-[; ;main.c: 121: TMR2 = 0;
+[; ;main.c: 118: }
+[e $U 895  ]
 "121
-[e = _TMR2 -> -> 0 `i `uc ]
-[; ;main.c: 122: TMR2IF = 0;
-"122
-[e = _TMR2IF -> -> 0 `i `b ]
-[; ;main.c: 124: on_off_tact();
-"124
-[e ( _on_off_tact ..  ]
-[; ;main.c: 127: IOCAF5 = 0;
-"127
-[e = _IOCAF5 -> -> 0 `i `b ]
-[; ;main.c: 129: if(reg_state == 0) {
-"129
-[e $ ! == -> _reg_state `i -> 0 `i 896  ]
+[e :U 886 ]
+[; ;main.c: 121: else if(count >= 2 && reg_state && mode_en) {
+[e $ ! && && >= -> _count `i -> 2 `i != -> _reg_state `i -> -> -> 0 `i `uc `i != -> _mode_en `i -> -> -> 0 `i `uc `i 896  ]
 {
-[; ;main.c: 130: asm("sleep");
+[; ;main.c: 122: mode_temp++;
+"122
+[e ++ _mode_temp -> -> 1 `i `uc ]
+[; ;main.c: 123: set_mode(mode_temp);
+"123
+[e ( _set_mode (1 _mode_temp ]
+[; ;main.c: 126: if(get_mode() > 3) {
+"126
+[e $ ! > -> ( _get_mode ..  `i -> 3 `i 897  ]
+{
+[; ;main.c: 127: mode_temp = 0;
+"127
+[e = _mode_temp -> -> 0 `i `uc ]
+[; ;main.c: 128: set_mode(mode_temp);
+"128
+[e ( _set_mode (1 _mode_temp ]
+"129
+}
+[e :U 897 ]
 "130
-[; <" sleep ;# ">
-"131
 }
 [e :U 896 ]
-[; ;main.c: 131: }
-[; ;main.c: 133: }
-"133
-[e :UE 895 ]
+"132
+[e :U 895 ]
+[; ;main.c: 129: }
+[; ;main.c: 130: }
+[; ;main.c: 132: }
+[e :UE 880 ]
 }
-"135
-[v _PIC_init `(v ~T0 @X0 1 ef ]
+[v $root$_ISR `(v ~T0 @X0 0 e ]
+[v F6329 `(v ~T0 @X0 1 tf ]
+"134
+[v _ISR `IF6329 ~T0 @X0 1 e ]
 {
-[; ;main.c: 135: void PIC_init(){
-[e :U _PIC_init ]
+[; ;main.c: 134: void interrupt ISR(){
+[e :U _ISR ]
 [f ]
-[; ;main.c: 139: VREGCON = 0b00000011;
-"139
-[e = _VREGCON -> -> 3 `i `uc ]
-[; ;main.c: 140: TMR1ON = 0;
-"140
-[e = _TMR1ON -> -> 0 `i `b ]
-[; ;main.c: 143: TRISA = 0b11111111;
-"143
-[e = _TRISA -> -> 255 `i `uc ]
-[; ;main.c: 144: TRISC = 0b11111111;
-"144
-[e = _TRISC -> -> 255 `i `uc ]
-[; ;main.c: 146: ANSELA = 0b00010000;
-"146
-[e = _ANSELA -> -> 16 `i `uc ]
-[; ;main.c: 147: ANSELC = 0;
-"147
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;main.c: 149: WPUA = 0b00100000;
-"149
-[e = _WPUA -> -> 32 `i `uc ]
-[; ;main.c: 152: T2CLKCON = 0b00000011;
-"152
-[e = _T2CLKCON -> -> 3 `i `uc ]
-[; ;main.c: 153: TMR2ON = 1;
-"153
-[e = _TMR2ON -> -> 1 `i `b ]
-[; ;main.c: 154: T2CKPS0 = 0;
-"154
-[e = _T2CKPS0 -> -> 0 `i `b ]
-[; ;main.c: 155: T2CKPS1 = 0;
-"155
-[e = _T2CKPS1 -> -> 0 `i `b ]
-[; ;main.c: 156: T2CKPS2 = 1;
-"156
-[e = _T2CKPS2 -> -> 1 `i `b ]
-[; ;main.c: 158: T2OUTPS0 = 1;
-"158
-[e = _T2OUTPS0 -> -> 1 `i `b ]
-[; ;main.c: 159: T2OUTPS1 = 1;
-"159
-[e = _T2OUTPS1 -> -> 1 `i `b ]
-[; ;main.c: 160: T2OUTPS2 = 1;
-"160
-[e = _T2OUTPS2 -> -> 1 `i `b ]
-[; ;main.c: 161: T2OUTPS3 = 1;
-"161
-[e = _T2OUTPS3 -> -> 1 `i `b ]
-[; ;main.c: 163: TMR2 = 0;
-"163
+[; ;main.c: 136: TMR2 = 0;
+"136
 [e = _TMR2 -> -> 0 `i `uc ]
-[; ;main.c: 164: PR2 = 255;
-"164
-[e = _PR2 -> -> 255 `i `uc ]
-[; ;main.c: 165: TMR2IF = 0;
-"165
+[; ;main.c: 137: TMR2IF = 0;
+"137
 [e = _TMR2IF -> -> 0 `i `b ]
-[; ;main.c: 168: T1CON = 0b00110101;
-"168
-[e = _T1CON -> -> 53 `i `uc ]
-[; ;main.c: 169: T1GCONbits.GE = 1;
-"169
-[e = . . _T1GCONbits 0 6 -> -> 1 `i `uc ]
-[; ;main.c: 170: T1CLK = 0b00000011;
-"170
-[e = _T1CLK -> -> 3 `i `uc ]
-[; ;main.c: 171: TMR1H = 0xFF;
-"171
-[e = _TMR1H -> -> 255 `i `uc ]
-[; ;main.c: 172: TMR1L = 0xFF;
-"172
-[e = _TMR1L -> -> 255 `i `uc ]
-[; ;main.c: 173: TMR1IE = 0;
-"173
-[e = _TMR1IE -> -> 0 `i `b ]
-[; ;main.c: 176: PIE0bits.IOCIE = 1;
-"176
-[e = . . _PIE0bits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 177: IOCAP = 0b00100000;
-"177
-[e = _IOCAP -> -> 32 `i `uc ]
-[; ;main.c: 178: IOCAN = 0b00100000;
-"178
-[e = _IOCAN -> -> 32 `i `uc ]
-[; ;main.c: 179: IOCAF = 0x00;
-"179
-[e = _IOCAF -> -> 0 `i `uc ]
-[; ;main.c: 180: INTCON = 0b11001000;
-"180
-[e = _INTCON -> -> 200 `i `uc ]
-[; ;main.c: 182: INTCONbits.GIE = 1;
-"182
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 183: INTCONbits.PEIE = 1;
-"183
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 185: }
-"185
-[e :UE 897 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
-"187
-[v _main `(v ~T0 @X0 1 ef ]
+[; ;main.c: 139: on_off_tact();
+"139
+[e ( _on_off_tact ..  ]
+[; ;main.c: 142: IOCAF5 = 0;
+"142
+[e = _IOCAF5 -> -> 0 `i `b ]
+[; ;main.c: 144: if(reg_state == 0) {
+"144
+[e $ ! == -> _reg_state `i -> 0 `i 899  ]
 {
-[; ;main.c: 187: void main() {
-[e :U _main ]
-[f ]
-[; ;main.c: 190: PIC_init();
-"190
-[e ( _PIC_init ..  ]
-[; ;main.c: 193: PPS_unlock();
-"193
-[e ( _PPS_unlock ..  ]
-[; ;main.c: 194: SSP1DATPPS = 0x11;
-"194
-[e = _SSP1DATPPS -> -> 17 `i `uc ]
-[; ;main.c: 195: RC1PPS = 0x16;
-"195
-[e = _RC1PPS -> -> 22 `i `uc ]
-[; ;main.c: 196: SSP1CLKPPS = 0x10;
-"196
-[e = _SSP1CLKPPS -> -> 16 `i `uc ]
-[; ;main.c: 197: RC0PPS = 0x15;
-"197
-[e = _RC0PPS -> -> 21 `i `uc ]
-[; ;main.c: 198: PPS_lock();
-"198
-[e ( _PPS_lock ..  ]
-[; ;main.c: 200: I2C_Master_Init(100000);
-"200
-[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
-[; ;main.c: 203: BQ_init();
-"203
-[e ( _BQ_init ..  ]
-[; ;main.c: 209: PWM_init();
-"209
-[e ( _PWM_init ..  ]
-[; ;main.c: 211: asm("sleep");
-"211
+[; ;main.c: 145: asm("sleep");
+"145
 [; <" sleep ;# ">
-[; ;main.c: 213: while(1){
-"213
-[e :U 900 ]
-{
-[; ;main.c: 215: if(reg_state == 1) {
-"215
-[e $ ! == -> _reg_state `i -> 1 `i 902  ]
-{
-[; ;main.c: 217: read_bq_status();
-"217
-[e ( _read_bq_status ..  ]
-[; ;main.c: 219: if(vbus_stat_temp != 0) {
-"219
-[e $ ! != -> _vbus_stat_temp `i -> 0 `i 903  ]
-{
-[; ;main.c: 220: chrg_led();
-"220
-[e ( _chrg_led ..  ]
-"221
-}
-[; ;main.c: 221: }
-[e $U 904  ]
-"223
-[e :U 903 ]
-[; ;main.c: 223: else {
-{
-[; ;main.c: 224: led_modes();
-"224
-[e ( _led_modes ..  ]
-"225
-}
-[e :U 904 ]
-"227
-}
-[; ;main.c: 225: }
-[; ;main.c: 227: }
-[e $U 905  ]
-"228
-[e :U 902 ]
-[; ;main.c: 228: else {
-{
-[; ;main.c: 230: asm("sleep");
-"230
-[; <" sleep ;# ">
-"232
-}
-[e :U 905 ]
-"234
+"146
 }
 [e :U 899 ]
-"213
-[e $U 900  ]
-[e :U 901 ]
-[; ;main.c: 232: }
-[; ;main.c: 234: }
-[; ;main.c: 236: }
-"236
+[; ;main.c: 146: }
+[; ;main.c: 148: }
+"148
 [e :UE 898 ]
+}
+"150
+[v _PIC_init `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 150: void PIC_init(){
+[e :U _PIC_init ]
+[f ]
+[; ;main.c: 154: VREGCON = 0b00000011;
+"154
+[e = _VREGCON -> -> 3 `i `uc ]
+[; ;main.c: 155: TMR1ON = 0;
+"155
+[e = _TMR1ON -> -> 0 `i `b ]
+[; ;main.c: 158: TRISA = 0b11111111;
+"158
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;main.c: 159: TRISC = 0b11111111;
+"159
+[e = _TRISC -> -> 255 `i `uc ]
+[; ;main.c: 161: ANSELA = 0b00010000;
+"161
+[e = _ANSELA -> -> 16 `i `uc ]
+[; ;main.c: 162: ANSELC = 0;
+"162
+[e = _ANSELC -> -> 0 `i `uc ]
+[; ;main.c: 164: WPUA = 0b00100000;
+"164
+[e = _WPUA -> -> 32 `i `uc ]
+[; ;main.c: 167: T2CLKCON = 0b00000011;
+"167
+[e = _T2CLKCON -> -> 3 `i `uc ]
+[; ;main.c: 168: TMR2ON = 1;
+"168
+[e = _TMR2ON -> -> 1 `i `b ]
+[; ;main.c: 169: T2CKPS0 = 0;
+"169
+[e = _T2CKPS0 -> -> 0 `i `b ]
+[; ;main.c: 170: T2CKPS1 = 0;
+"170
+[e = _T2CKPS1 -> -> 0 `i `b ]
+[; ;main.c: 171: T2CKPS2 = 1;
+"171
+[e = _T2CKPS2 -> -> 1 `i `b ]
+[; ;main.c: 173: T2OUTPS0 = 1;
+"173
+[e = _T2OUTPS0 -> -> 1 `i `b ]
+[; ;main.c: 174: T2OUTPS1 = 1;
+"174
+[e = _T2OUTPS1 -> -> 1 `i `b ]
+[; ;main.c: 175: T2OUTPS2 = 1;
+"175
+[e = _T2OUTPS2 -> -> 1 `i `b ]
+[; ;main.c: 176: T2OUTPS3 = 1;
+"176
+[e = _T2OUTPS3 -> -> 1 `i `b ]
+[; ;main.c: 178: TMR2 = 0;
+"178
+[e = _TMR2 -> -> 0 `i `uc ]
+[; ;main.c: 179: PR2 = 255;
+"179
+[e = _PR2 -> -> 255 `i `uc ]
+[; ;main.c: 180: TMR2IF = 0;
+"180
+[e = _TMR2IF -> -> 0 `i `b ]
+[; ;main.c: 183: T1CON = 0b00110101;
+"183
+[e = _T1CON -> -> 53 `i `uc ]
+[; ;main.c: 184: T1GCONbits.GE = 1;
+"184
+[e = . . _T1GCONbits 0 6 -> -> 1 `i `uc ]
+[; ;main.c: 185: T1CLK = 0b00000011;
+"185
+[e = _T1CLK -> -> 3 `i `uc ]
+[; ;main.c: 186: TMR1H = 0xFF;
+"186
+[e = _TMR1H -> -> 255 `i `uc ]
+[; ;main.c: 187: TMR1L = 0xFF;
+"187
+[e = _TMR1L -> -> 255 `i `uc ]
+[; ;main.c: 188: TMR1IE = 0;
+"188
+[e = _TMR1IE -> -> 0 `i `b ]
+[; ;main.c: 191: PIE0bits.IOCIE = 1;
+"191
+[e = . . _PIE0bits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 192: IOCAP = 0b00100000;
+"192
+[e = _IOCAP -> -> 32 `i `uc ]
+[; ;main.c: 193: IOCAN = 0b00100000;
+"193
+[e = _IOCAN -> -> 32 `i `uc ]
+[; ;main.c: 194: IOCAF = 0x00;
+"194
+[e = _IOCAF -> -> 0 `i `uc ]
+[; ;main.c: 195: INTCON = 0b11001000;
+"195
+[e = _INTCON -> -> 200 `i `uc ]
+[; ;main.c: 197: INTCONbits.GIE = 1;
+"197
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 198: INTCONbits.PEIE = 1;
+"198
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 200: }
+"200
+[e :UE 900 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"202
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 202: void main() {
+[e :U _main ]
+[f ]
+[; ;main.c: 205: PIC_init();
+"205
+[e ( _PIC_init ..  ]
+[; ;main.c: 208: PPS_unlock();
+"208
+[e ( _PPS_unlock ..  ]
+[; ;main.c: 209: SSP1DATPPS = 0x11;
+"209
+[e = _SSP1DATPPS -> -> 17 `i `uc ]
+[; ;main.c: 210: RC1PPS = 0x16;
+"210
+[e = _RC1PPS -> -> 22 `i `uc ]
+[; ;main.c: 211: SSP1CLKPPS = 0x10;
+"211
+[e = _SSP1CLKPPS -> -> 16 `i `uc ]
+[; ;main.c: 212: RC0PPS = 0x15;
+"212
+[e = _RC0PPS -> -> 21 `i `uc ]
+[; ;main.c: 213: PPS_lock();
+"213
+[e ( _PPS_lock ..  ]
+[; ;main.c: 215: I2C_Master_Init(100000);
+"215
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+[; ;main.c: 218: BQ_init();
+"218
+[e ( _BQ_init ..  ]
+[; ;main.c: 224: PWM_init();
+"224
+[e ( _PWM_init ..  ]
+[; ;main.c: 226: asm("sleep");
+"226
+[; <" sleep ;# ">
+[; ;main.c: 228: while(1){
+"228
+[e :U 903 ]
+{
+[; ;main.c: 230: if(reg_state == 1) {
+"230
+[e $ ! == -> _reg_state `i -> 1 `i 905  ]
+{
+[; ;main.c: 232: read_bq_status();
+"232
+[e ( _read_bq_status ..  ]
+[; ;main.c: 234: if(vbus_stat_temp != 0) {
+"234
+[e $ ! != -> _vbus_stat_temp `i -> 0 `i 906  ]
+{
+[; ;main.c: 235: chrg_led();
+"235
+[e ( _chrg_led ..  ]
+"237
+}
+[; ;main.c: 237: }
+[e $U 907  ]
+"239
+[e :U 906 ]
+[; ;main.c: 239: else {
+{
+[; ;main.c: 240: led_modes();
+"240
+[e ( _led_modes ..  ]
+"241
+}
+[e :U 907 ]
+"243
+}
+[; ;main.c: 241: }
+[; ;main.c: 243: }
+[e $U 908  ]
+"244
+[e :U 905 ]
+[; ;main.c: 244: else {
+{
+[; ;main.c: 246: asm("sleep");
+"246
+[; <" sleep ;# ">
+"248
+}
+[e :U 908 ]
+"250
+}
+[e :U 902 ]
+"228
+[e $U 903  ]
+[e :U 904 ]
+[; ;main.c: 248: }
+[; ;main.c: 250: }
+[; ;main.c: 252: }
+"252
+[e :UE 901 ]
 }

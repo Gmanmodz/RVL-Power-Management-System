@@ -11051,8 +11051,66 @@ char reg_state = 0;
 char tmr1_count = 0;
 char mode_temp = 0;
 char battery_volts_temp = 0;
+char mode_en = 0;
 
 char vbus_stat_temp = 0;
+
+void thermal_protection(){
+
+
+
+if(readADC() >= 222) {
+reg_state = 0;
+power_down(1);
+
+}
+}
+
+void read_bq_status(){
+
+if(reg_state && TMR1IF) {
+TMR1IF = 0;
+tmr1_count++;
+
+
+if(tmr1_count >= 10) {
+tmr1_count = 0;
+
+
+vbus_stat_temp = charge_state();
+
+
+if(vbus_stat_temp != 0) {
+mode_en = 0;
+}
+else {
+mode_en = 1;
+}
+
+
+battery_volts_temp = battery_read();
+
+set_battery_volts(battery_volts_temp);
+
+
+if(get_battery_volts() <= 4) {
+
+
+}
+
+
+
+
+if(get_battery_volts() <= 50) {
+mode_temp = 2;
+set_mode(mode_temp);
+}
+
+thermal_protection();
+
+}
+}
+}
 
 void on_off_tact(){
 
@@ -11095,7 +11153,7 @@ while(RA5 == 0) {}
 }
 
 
-else if(count >= 2 && reg_state) {
+else if(count >= 2 && reg_state && mode_en) {
 mode_temp++;
 set_mode(mode_temp);
 
@@ -11106,49 +11164,6 @@ set_mode(mode_temp);
 }
 }
 
-}
-
-void thermal_protection(){
-
-
-
-if(readADC() >= 222) {
-reg_state = 0;
-power_down(1);
-
-}
-}
-
-void read_bq_status(){
-
-if(reg_state && TMR1IF) {
-TMR1IF = 0;
-tmr1_count++;
-
-
-if(tmr1_count >= 60) {
-tmr1_count = 0;
-
-
-vbus_stat_temp = charge_state();
-
-
-battery_volts_temp = battery_read();
-
-set_battery_volts(battery_volts_temp);
-
-
-
-
-if(get_battery_volts() <= 50) {
-mode_temp = 2;
-set_mode(mode_temp);
-}
-
-thermal_protection();
-
-}
-}
 }
 
 void interrupt ISR(){
@@ -11237,7 +11252,7 @@ I2C_Master_Init(100000);
 
 BQ_init();
 
-# 209
+# 224
 PWM_init();
 
 asm("sleep");
@@ -11250,6 +11265,7 @@ read_bq_status();
 
 if(vbus_stat_temp != 0) {
 chrg_led();
+
 }
 
 else {

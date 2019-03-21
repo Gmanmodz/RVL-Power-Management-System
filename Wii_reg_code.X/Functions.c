@@ -13,6 +13,8 @@
 //initialize variables
 char mode = 0; //led mode
 char i = 0; //led fade counting variable
+char c = 0; //fade counting variable
+char dir = 1;   //fade direction
 char color = 0; //led color counter
 char battery_volts = 0; //variable to store voltage on battery
 
@@ -119,37 +121,53 @@ char charge_state() {
 
     char temp = BQ_Read(0x0B); //get charge status
 
-    vbus_stat = (temp >> 4) && 0b00000111;
-    chrg_stat = (temp >> 2) && 0b00000011;
+    vbus_stat = (temp >> 4) & 0b00000111;
+    chrg_stat = (temp >> 2) & 0b00000011;
 
     return vbus_stat;
 }
 
 void chrg_led() {
-
+    
+    if(c >= 255) {
+        dir = 0;
+    }
+    
+    if(c <= 1) {
+        dir = 1;
+    }
+    
+    if(dir == 1) {
+        c++;
+    }
+    else if(dir == 0) {
+        c--;
+    }
+    
+    __delay_ms(5);
+    
     if (chrg_stat == 0b01) {
         //status is pre-charge
         PWM3DCH = 0; //blue
         PWM4DCH = 0; //green
-        PWM5DCH = 255; //red
+        PWM5DCH = c; //red
 
     } else if (chrg_stat == 0b10) {
         //status is fast charge
         PWM3DCH = 0; //blue
-        PWM4DCH = 255; //green
-        PWM5DCH = 255; //red    
+        PWM4DCH = c; //green
+        PWM5DCH = c; //red    
 
     } else if (chrg_stat == 0b11) {
         //charge is complete
         PWM3DCH = 0; //blue
-        PWM4DCH = 255; //green
+        PWM4DCH = c; //green
         PWM5DCH = 0; //red
 
     } else {
         PWM3DCH = 0; //blue
         PWM4DCH = 0; //green
         PWM5DCH = 0; //red
-
     }
 
 }
@@ -249,7 +267,6 @@ void battery_fade() {
 
     v = Map(v, battery_min, battery_max, 0, 127); //map battery voltage to full scale
 
-
     //yellow-red: 63-0
     if (v <= 63) {
         v = Map(v, 0, 63, 0, 255);
@@ -300,4 +317,5 @@ void led_modes() {
         __delay_ms(400);
 
     }
+    
 }

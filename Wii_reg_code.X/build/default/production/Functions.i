@@ -11027,6 +11027,8 @@ void STUSB_9V_12V();
 # 14 "Functions.c"
 char mode = 0;
 char i = 0;
+char c = 0;
+char dir = 1;
 char color = 0;
 char battery_volts = 0;
 
@@ -11133,37 +11135,53 @@ char charge_state() {
 
 char temp = BQ_Read(0x0B);
 
-vbus_stat = (temp >> 4) && 0b00000111;
-chrg_stat = (temp >> 2) && 0b00000011;
+vbus_stat = (temp >> 4) & 0b00000111;
+chrg_stat = (temp >> 2) & 0b00000011;
 
 return vbus_stat;
 }
 
 void chrg_led() {
 
+if(c >= 255) {
+dir = 0;
+}
+
+if(c <= 1) {
+dir = 1;
+}
+
+if(dir == 1) {
+c++;
+}
+else if(dir == 0) {
+c--;
+}
+
+_delay((unsigned long)((5)*(32000000/4000.0)));
+
 if (chrg_stat == 0b01) {
 
 PWM3DCH = 0;
 PWM4DCH = 0;
-PWM5DCH = 255;
+PWM5DCH = c;
 
 } else if (chrg_stat == 0b10) {
 
 PWM3DCH = 0;
-PWM4DCH = 255;
-PWM5DCH = 255;
+PWM4DCH = c;
+PWM5DCH = c;
 
 } else if (chrg_stat == 0b11) {
 
 PWM3DCH = 0;
-PWM4DCH = 255;
+PWM4DCH = c;
 PWM5DCH = 0;
 
 } else {
 PWM3DCH = 0;
 PWM4DCH = 0;
 PWM5DCH = 0;
-
 }
 
 }
@@ -11184,7 +11202,7 @@ void power_up() {
 
 BQ_init();
 
-# 177
+# 195
 TRISCbits.TRISC5 = 0;
 RC5 = 1;
 
@@ -11261,7 +11279,6 @@ v = battery_min;
 v = Map(v, battery_min, battery_max, 0, 127);
 
 
-
 if (v <= 63) {
 v = Map(v, 0, 63, 0, 255);
 PWM3DCH = 0;
@@ -11311,4 +11328,5 @@ PWM5DCH = 0;
 _delay((unsigned long)((400)*(32000000/4000.0)));
 
 }
+
 }
