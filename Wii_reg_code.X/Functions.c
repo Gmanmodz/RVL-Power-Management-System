@@ -101,12 +101,13 @@ void PWM_init() {
 
 void BQ_init() {
 
-    BQ_Write(0x00, 0b01001000); //set input current limit to 
+    BQ_Write(0x00, 0b01111010); //disable Hi-Z, set input current limit to 3A (ILIM pin takes priority)
     BQ_Write(0x03, 0b00011010); //boost OTG disabled, vsys 3v5
     BQ_Write(0x04, 0b01100000); //ICHG set to 3.072 A - good for 1S2P
     BQ_Write(0x07, 0b11001101); //disable STAT pin and WDT
     BQ_Write(0x02, 0b00110101); //enable MaxCharge handshake
-    BQ_Write(0x0D, 0xFF); //Absolute WINDPM mode. Threshold set to 15.3v
+    BQ_Write(0x0D, 0xFF);       //Absolute WINDPM mode. Threshold set to 15.3v
+    BQ_Write(0x08, 0b00000001); //TREG to 80C
 
 }
 

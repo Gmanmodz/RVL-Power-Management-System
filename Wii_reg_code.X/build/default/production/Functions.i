@@ -11115,12 +11115,13 @@ PWM5CON = 0b11100000;
 
 void BQ_init() {
 
-BQ_Write(0x00, 0b01001000);
+BQ_Write(0x00, 0b01111010);
 BQ_Write(0x03, 0b00011010);
 BQ_Write(0x04, 0b01100000);
 BQ_Write(0x07, 0b11001101);
 BQ_Write(0x02, 0b00110101);
 BQ_Write(0x0D, 0xFF);
+BQ_Write(0x08, 0b00000001);
 
 }
 
@@ -11202,7 +11203,7 @@ void power_up() {
 
 BQ_init();
 
-# 195
+# 196
 TRISCbits.TRISC5 = 0;
 RC5 = 1;
 

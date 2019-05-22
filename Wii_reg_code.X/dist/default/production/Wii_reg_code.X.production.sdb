@@ -38,22 +38,22 @@
 "102
 [v _BQ_init BQ_init `(v  1 e 1 0 ]
 [v i1_BQ_init BQ_init `(v  1 e 1 0 ]
-"113
+"114
 [v _battery_read battery_read `(uc  1 e 1 0 ]
-"120
+"121
 [v _charge_state charge_state `(uc  1 e 1 0 ]
-"130
+"131
 [v _chrg_led chrg_led `(v  1 e 1 0 ]
-"186
+"187
 [v _power_up power_up `(v  1 e 1 0 ]
-"205
+"206
 [v _power_down power_down `(v  1 e 1 0 ]
 [v i1_power_down power_down `(v  1 e 1 0 ]
-"221
+"222
 [v _RGB_fade RGB_fade `(v  1 e 1 0 ]
-"252
+"253
 [v _battery_fade battery_fade `(v  1 e 1 0 ]
-"286
+"287
 [v _led_modes led_modes `(v  1 e 1 0 ]
 "11 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
 [v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
@@ -373,14 +373,14 @@
 {
 "41
 } 0
-"205
+"206
 [v _power_down power_down `(v  1 e 1 0 ]
 {
 [v power_down@ship_mode ship_mode `uc  1 a 1 wreg ]
 [v power_down@ship_mode ship_mode `uc  1 a 1 wreg ]
-"207
+"208
 [v power_down@ship_mode ship_mode `uc  1 a 1 4 ]
-"219
+"220
 } 0
 "47
 [v _set_mode set_mode `(v  1 e 1 0 ]
@@ -403,17 +403,17 @@
 {
 "53
 } 0
-"120
+"121
 [v _charge_state charge_state `(uc  1 e 1 0 ]
 {
-"122
+"123
 [v charge_state@temp temp `uc  1 a 1 11 ]
-"128
+"129
 } 0
-"113
+"114
 [v _battery_read battery_read `(uc  1 e 1 0 ]
 {
-"118
+"119
 } 0
 "94 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
 [v _BQ_Read BQ_Read `(us  1 e 2 0 ]
@@ -449,21 +449,21 @@
 {
 "52
 } 0
-"286 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+"287 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
 [v _led_modes led_modes `(v  1 e 1 0 ]
 {
-"321
+"322
 } 0
-"252
+"253
 [v _battery_fade battery_fade `(v  1 e 1 0 ]
 {
-"255
+"256
 [v battery_fade@v v `uc  1 a 1 35 ]
-"259
+"260
 [v battery_fade@battery_max battery_max `uc  1 a 1 34 ]
-"258
+"259
 [v battery_fade@battery_min battery_min `uc  1 a 1 33 ]
-"284
+"285
 } 0
 "24
 [v _Map Map `(uc  1 s 1 Map ]
@@ -498,15 +498,15 @@
 [v ___awdiv@dividend dividend `i  1 p 2 8 ]
 "41
 } 0
-"221 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+"222 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
 [v _RGB_fade RGB_fade `(v  1 e 1 0 ]
 {
-"250
+"251
 } 0
-"130
+"131
 [v _chrg_led chrg_led `(v  1 e 1 0 ]
 {
-"173
+"174
 } 0
 "71
 [v _PWM_init PWM_init `(v  1 e 1 0 ]
@@ -549,7 +549,7 @@
 "102 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
 [v _BQ_init BQ_init `(v  1 e 1 0 ]
 {
-"111
+"112
 } 0
 "77 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
 [v _BQ_Write BQ_Write `(v  1 e 1 0 ]
@@ -607,19 +607,19 @@
 [v i1set_mode@mode_temp mode_temp `uc  1 a 1 1 ]
 "49
 } 0
-"205
+"206
 [v i1_power_down power_down `(v  1 e 1 0 ]
 {
 [v i1power_down@ship_mode ship_mode `uc  1 a 1 wreg ]
 [v i1power_down@ship_mode ship_mode `uc  1 a 1 wreg ]
-"207
+"208
 [v i1power_down@ship_mode ship_mode `uc  1 a 1 4 ]
-"219
+"220
 } 0
-"186
+"187
 [v _power_up power_up `(v  1 e 1 0 ]
 {
-"203
+"204
 } 0
 "71
 [v i1_PWM_init PWM_init `(v  1 e 1 0 ]
@@ -639,7 +639,7 @@
 "102
 [v i1_BQ_init BQ_init `(v  1 e 1 0 ]
 {
-"111
+"112
 } 0
 "77 C:\Users\turnquistg\OneDrive - Wentworth Institute of Technology\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
 [v i1_BQ_Write BQ_Write `(v  1 e 1 0 ]
