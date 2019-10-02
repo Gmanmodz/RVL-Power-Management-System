@@ -1,0 +1,1489 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Wii_reg_code.X.production.o
+cinit CODE 0 1A 1A 15 2
+text1 CODE 0 232 232 4D 2
+text2 CODE 0 668 668 13 2
+text3 CODE 0 5D6 5D6 1D 2
+text4 CODE 0 610 610 17 2
+text5 CODE 0 6C2 6C2 7 2
+text6 CODE 0 6C9 6C9 7 2
+text7 CODE 0 705 705 3 2
+text8 CODE 0 575 575 21 2
+text9 CODE 0 5F3 5F3 1D 2
+text10 CODE 0 496 496 29 2
+text11 CODE 0 52F 52F 23 2
+text12 CODE 0 6FD 6FD 4 2
+text13 CODE 0 701 701 4 2
+text14 CODE 0 27F 27F 47 2
+text15 CODE 0 AC AC 78 2
+text16 CODE 0 4E5 4E5 25 2
+text17 CODE 0 596 596 20 2
+text18 CODE 0 124 124 60 2
+text19 CODE 0 30C 30C 46 2
+text20 CODE 0 1DF 1DF 53 2
+text21 CODE 0 50A 50A 25 2
+text22 CODE 0 4BF 4BF 26 2
+text23 CODE 0 3FF 3FF 34 2
+text24 CODE 0 6D0 6D0 7 2
+text25 CODE 0 6AA 6AA 8 2
+text26 CODE 0 390 390 38 2
+text27 CODE 0 467 467 2F 2
+text28 CODE 0 184 184 5B 2
+text29 CODE 0 352 352 3E 2
+text30 CODE 0 627 627 17 2
+text31 CODE 0 6A0 6A0 A 2
+text32 CODE 0 6E5 6E5 6 2
+text33 CODE 0 6EB 6EB 6 2
+text34 CODE 0 688 688 C 2
+text36 CODE 0 2F 2F 7D 2
+text37 CODE 0 6D7 6D7 7 2
+text38 CODE 0 63E 63E 16 2
+text39 CODE 0 67B 67B D 2
+text40 CODE 0 552 552 23 2
+text41 CODE 0 5B6 5B6 20 2
+text42 CODE 0 433 433 34 2
+text43 CODE 0 6DE 6DE 7 2
+text44 CODE 0 6B2 6B2 8 2
+text45 CODE 0 3C8 3C8 37 2
+text46 CODE 0 654 654 14 2
+text47 CODE 0 6BA 6BA 8 2
+text48 CODE 0 6F1 6F1 6 2
+text49 CODE 0 6F7 6F7 6 2
+text50 CODE 0 694 694 C 2
+text51 CODE 0 708 708 3 2
+maintext CODE 0 2C6 2C6 46 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 22 1
+intentry CODE 0 4 4 14 2
+bssBANK0 BANK0 1 42 42 B 1
+idataBANK0 CODE 0 70B 70B 1 2
+dataBANK0 BANK0 1 4D 4D 1 1
+bssCOMMON COMMON 1 7C 7C 2 1
+$C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 18 18 2 2
+config CONFIG 0 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 4E-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-32F 1
+BANK0 4E-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-32F 1
+CONST 2-3 2
+CONST 70C-FFF 2
+ENTRY 2-3 2
+ENTRY 70C-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+SFR32 1000-106F 1
+SFR33 1080-10EF 1
+SFR34 1100-116F 1
+SFR35 1180-11EF 1
+SFR36 1200-126F 1
+SFR37 1280-12EF 1
+SFR38 1300-136F 1
+SFR39 1380-13EF 1
+SFR40 1400-146F 1
+SFR41 1480-14EF 1
+SFR42 1500-156F 1
+SFR43 1580-15EF 1
+SFR44 1600-166F 1
+SFR45 1680-16EF 1
+SFR46 1700-176F 1
+SFR47 1780-17EF 1
+SFR48 1800-186F 1
+SFR49 1880-18EF 1
+SFR50 1900-196F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+STACK 202E-21EF 1
+CODE 2-3 2
+CODE 70C-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+STRCODE 2-3 2
+STRCODE 70C-FFF 2
+STRING 2-3 2
+STRING 70C-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Wii_reg_code.X.production.o
+1A cinit CODE >2839:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+1A cinit CODE >2842:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+1A cinit CODE >2901:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+1D cinit CODE >2902:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+1E cinit CODE >2907:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+1F cinit CODE >2908:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+20 cinit CODE >2912:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+21 cinit CODE >2913:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+22 cinit CODE >2914:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+23 cinit CODE >2915:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+24 cinit CODE >2916:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+25 cinit CODE >2917:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+26 cinit CODE >2918:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+27 cinit CODE >2919:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+28 cinit CODE >2920:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+29 cinit CODE >2921:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+2A cinit CODE >2922:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+2B cinit CODE >2928:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+2B cinit CODE >2930:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+2C cinit CODE >2931:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+2D cinit CODE >2932:C:\Users\Gunnar\AppData\Local\Temp\shn0.s
+4 intentry CODE >134:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+6 intentry CODE >136:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+8 intentry CODE >137:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+A intentry CODE >139:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+D intentry CODE >142:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+F intentry CODE >144:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+15 intentry CODE >145:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+16 intentry CODE >148:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+708 text51 CODE >43:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+708 text51 CODE >44:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+70A text51 CODE >45:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+694 text50 CODE >19:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+694 text50 CODE >21:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+69F text50 CODE >22:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F7 text49 CODE >24:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F7 text49 CODE >26:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6FA text49 CODE >27:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6FC text49 CODE >28:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F1 text48 CODE >36:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F1 text48 CODE >38:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F4 text48 CODE >39:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F6 text48 CODE >40:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6BA text47 CODE >42:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6BB text47 CODE >44:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6BE text47 CODE >45:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6C1 text47 CODE >46:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+654 text46 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+655 text46 CODE >79:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+658 text46 CODE >80:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+65C text46 CODE >81:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+660 text46 CODE >82:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+664 text46 CODE >83:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+667 text46 CODE >84:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+3C8 text45 CODE >102:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3C8 text45 CODE >104:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3D0 text45 CODE >105:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3D8 text45 CODE >106:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3E0 text45 CODE >107:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3E8 text45 CODE >108:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3F0 text45 CODE >109:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3F8 text45 CODE >110:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3FE text45 CODE >112:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B2 text44 CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B2 text44 CODE >66:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B5 text44 CODE >67:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B7 text44 CODE >68:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B9 text44 CODE >69:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6DE text43 CODE >59:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6DE text43 CODE >60:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6E1 text43 CODE >61:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6E3 text43 CODE >62:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6E4 text43 CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+433 text42 CODE >71:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+433 text42 CODE >73:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+436 text42 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+439 text42 CODE >75:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+43B text42 CODE >76:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+43D text42 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+440 text42 CODE >79:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+442 text42 CODE >80:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+445 text42 CODE >81:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+447 text42 CODE >82:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+449 text42 CODE >83:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+44B text42 CODE >84:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+44D text42 CODE >85:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+450 text42 CODE >87:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+451 text42 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+452 text42 CODE >89:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+454 text42 CODE >90:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+456 text42 CODE >91:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+458 text42 CODE >92:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+45B text42 CODE >94:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+45C text42 CODE >95:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+45D text42 CODE >96:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+45F text42 CODE >97:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+461 text42 CODE >98:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+463 text42 CODE >99:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+466 text42 CODE >100:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5B6 text41 CODE >12:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5B7 text41 CODE >14:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5BA text41 CODE >15:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5BE text41 CODE >16:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5C2 text41 CODE >17:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5C6 text41 CODE >18:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5CA text41 CODE >19:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5CE text41 CODE >20:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5D2 text41 CODE >21:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+5D5 text41 CODE >22:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+552 text40 CODE >41:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+552 text40 CODE >60:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+563 text40 CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+574 text40 CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+67B text39 CODE >189:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+67B text39 CODE >192:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+67E text39 CODE >195:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+681 text39 CODE >198:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+683 text39 CODE >199:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+684 text39 CODE >204:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+687 text39 CODE >206:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+63E text38 CODE >208:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+63F text38 CODE >210:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+641 text38 CODE >213:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+643 text38 CODE >214:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+644 text38 CODE >215:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+645 text38 CODE >217:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+64A text38 CODE >218:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+652 text38 CODE >219:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+652 text38 CODE >221:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+653 text38 CODE >222:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D7 text37 CODE >47:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D8 text37 CODE >48:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6DD text37 CODE >49:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2F text36 CODE >80:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2F text36 CODE >85:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+30 text36 CODE >86:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+31 text36 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+32 text36 CODE >89:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+37 text36 CODE >90:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B text36 CODE >91:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C text36 CODE >93:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+42 text36 CODE >94:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+44 text36 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+44 text36 CODE >96:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+4E text36 CODE >98:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+54 text36 CODE >99:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+5E text36 CODE >101:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+63 text36 CODE >102:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+66 text36 CODE >103:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+67 text36 CODE >105:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+6C text36 CODE >107:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+74 text36 CODE >108:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+78 text36 CODE >109:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+79 text36 CODE >112:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+7D text36 CODE >116:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+83 text36 CODE >121:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+93 text36 CODE >122:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+97 text36 CODE >123:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+9B text36 CODE >126:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+A5 text36 CODE >127:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+A7 text36 CODE >128:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+AB text36 CODE >132:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+688 text34 CODE >19:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+688 text34 CODE >21:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+693 text34 CODE >22:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6EB text33 CODE >24:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6EB text33 CODE >26:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6EE text33 CODE >27:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6F0 text33 CODE >28:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6E5 text32 CODE >36:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6E5 text32 CODE >38:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6E8 text32 CODE >39:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6EA text32 CODE >40:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6A0 text31 CODE >42:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6A2 text31 CODE >44:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6A5 text31 CODE >45:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6A9 text31 CODE >46:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+627 text30 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+629 text30 CODE >79:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+62C text30 CODE >80:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+630 text30 CODE >81:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+635 text30 CODE >82:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+63A text30 CODE >83:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+63D text30 CODE >84:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+352 text29 CODE >102:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+352 text29 CODE >104:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+35B text29 CODE >105:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+364 text29 CODE >106:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+36D text29 CODE >107:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+376 text29 CODE >108:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+37F text29 CODE >109:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+388 text29 CODE >110:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+38F text29 CODE >112:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+184 text28 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+184 text28 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+18D text28 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+195 text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+197 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+198 text28 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+19F text28 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1A3 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1A7 text28 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1AE text28 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1C0 text28 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1C8 text28 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1C9 text28 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1D0 text28 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1D6 text28 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1DE text28 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+467 text27 CODE >11:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+467 text27 CODE >13:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+46A text27 CODE >14:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+46B text27 CODE >15:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+493 text27 CODE >16:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+495 text27 CODE >17:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+390 text26 CODE >150:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+390 text26 CODE >154:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+393 text26 CODE >155:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+395 text26 CODE >158:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+398 text26 CODE >159:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+39A text26 CODE >161:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+39D text26 CODE >162:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+39E text26 CODE >164:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A0 text26 CODE >167:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A3 text26 CODE >168:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A4 text26 CODE >169:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A5 text26 CODE >170:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A6 text26 CODE >171:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A7 text26 CODE >173:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A8 text26 CODE >174:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3A9 text26 CODE >175:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3AA text26 CODE >176:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3AB text26 CODE >178:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3AC text26 CODE >179:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3AE text26 CODE >180:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B0 text26 CODE >183:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B3 text26 CODE >184:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B4 text26 CODE >185:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B6 text26 CODE >186:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3B8 text26 CODE >187:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3BA text26 CODE >188:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3BC text26 CODE >191:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3BD text26 CODE >192:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C0 text26 CODE >193:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C2 text26 CODE >194:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C3 text26 CODE >195:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C5 text26 CODE >197:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C6 text26 CODE >198:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+3C7 text26 CODE >200:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+6AA text25 CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6AA text25 CODE >66:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6AD text25 CODE >67:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6AF text25 CODE >68:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6B1 text25 CODE >69:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D0 text24 CODE >59:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D0 text24 CODE >60:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D3 text24 CODE >61:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D5 text24 CODE >62:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6D6 text24 CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3FF text23 CODE >71:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+3FF text23 CODE >73:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+402 text23 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+405 text23 CODE >75:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+407 text23 CODE >76:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+409 text23 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+40C text23 CODE >79:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+40E text23 CODE >80:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+411 text23 CODE >81:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+413 text23 CODE >82:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+415 text23 CODE >83:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+417 text23 CODE >84:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+419 text23 CODE >85:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+41C text23 CODE >87:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+41D text23 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+41E text23 CODE >89:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+420 text23 CODE >90:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+422 text23 CODE >91:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+424 text23 CODE >92:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+427 text23 CODE >94:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+428 text23 CODE >95:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+429 text23 CODE >96:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+42B text23 CODE >97:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+42D text23 CODE >98:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+42F text23 CODE >99:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+432 text23 CODE >100:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+4BF text22 CODE >12:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4C1 text22 CODE >14:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4C4 text22 CODE >15:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4C8 text22 CODE >16:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4CD text22 CODE >17:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4D2 text22 CODE >18:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4D7 text22 CODE >19:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4DC text22 CODE >20:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4E1 text22 CODE >21:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+4E4 text22 CODE >22:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+50A text21 CODE >41:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+50A text21 CODE >60:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+51C text21 CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+52E text21 CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\STUSB4500.c
+1DF text20 CODE >131:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1DF text20 CODE >133:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1E4 text20 CODE >134:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1E6 text20 CODE >137:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1EC text20 CODE >138:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1EF text20 CODE >141:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1F5 text20 CODE >142:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1F9 text20 CODE >143:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1FA text20 CODE >144:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+1FF text20 CODE >145:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+201 text20 CODE >148:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+20A text20 CODE >150:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+210 text20 CODE >152:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+212 text20 CODE >153:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+213 text20 CODE >154:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+215 text20 CODE >156:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+21C text20 CODE >158:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+21E text20 CODE >159:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+221 text20 CODE >162:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+227 text20 CODE >164:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+229 text20 CODE >165:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+22B text20 CODE >166:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+22C text20 CODE >168:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+22D text20 CODE >169:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+22F text20 CODE >170:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+230 text20 CODE >171:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+231 text20 CODE >174:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+30C text19 CODE >224:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+30C text19 CODE >226:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+311 text19 CODE >227:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+312 text19 CODE >228:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+317 text19 CODE >229:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+31D text19 CODE >230:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+31E text19 CODE >233:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+323 text19 CODE >234:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+32C text19 CODE >236:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+332 text19 CODE >237:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+335 text19 CODE >238:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+337 text19 CODE >239:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+338 text19 CODE >242:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+33E text19 CODE >243:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+340 text19 CODE >244:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+342 text19 CODE >245:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+344 text19 CODE >248:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+34B text19 CODE >249:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+34E text19 CODE >250:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+34F text19 CODE >251:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+351 text19 CODE >253:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+124 text18 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+124 text18 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+126 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+12A text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+12F text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+131 text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+135 text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+13A text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+13E text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+140 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+146 text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+148 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+149 text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+14E text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+152 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+156 text18 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+15B text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+165 text18 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+169 text18 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+16A text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+16F text18 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+175 text18 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+17A text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+17F text18 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+183 text18 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+596 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+596 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+599 text17 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+59D text17 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+5A1 text17 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+5A6 text17 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+5AB text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+5B1 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+5B5 text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+4E5 text16 CODE >24:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+4E5 text16 CODE >26:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+509 text16 CODE >27:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+AC text15 CODE >255:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+AC text15 CODE >258:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+B1 text15 CODE >261:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+B1 text15 CODE >262:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+B1 text15 CODE >264:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+B7 text15 CODE >265:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+BB text15 CODE >271:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+D3 text15 CODE >274:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+D9 text15 CODE >275:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+F1 text15 CODE >276:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+F3 text15 CODE >277:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+F7 text15 CODE >278:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+F9 text15 CODE >279:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+FA text15 CODE >281:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+100 text15 CODE >282:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+11B text15 CODE >283:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+11D text15 CODE >284:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+11F text15 CODE >285:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+123 text15 CODE >287:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+27F text14 CODE >289:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+27F text14 CODE >293:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+285 text14 CODE >294:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+287 text14 CODE >295:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+288 text14 CODE >296:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+289 text14 CODE >297:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+28A text14 CODE >299:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+28F text14 CODE >300:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+292 text14 CODE >301:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+293 text14 CODE >304:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+299 text14 CODE >305:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+29C text14 CODE >306:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+29D text14 CODE >308:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2A3 text14 CODE >310:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2A5 text14 CODE >311:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2A6 text14 CODE >312:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2A8 text14 CODE >314:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2B4 text14 CODE >316:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2B6 text14 CODE >317:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2B7 text14 CODE >318:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2B8 text14 CODE >320:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+2C5 text14 CODE >324:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+701 text13 CODE >48:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+701 text13 CODE >50:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+703 text13 CODE >51:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+704 text13 CODE >52:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6FD text12 CODE >54:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6FD text12 CODE >56:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+6FF text12 CODE >57:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+700 text12 CODE >58:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+52F text11 CODE >60:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+531 text11 CODE >62:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+534 text11 CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+536 text11 CODE >64:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+539 text11 CODE >66:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+53F text11 CODE >67:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+542 text11 CODE >69:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+548 text11 CODE >70:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+54C text11 CODE >72:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+54F text11 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+551 text11 CODE >75:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+496 text10 CODE >94:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+498 text10 CODE >98:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+49B text10 CODE >99:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+49F text10 CODE >100:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4A4 text10 CODE >102:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4A7 text10 CODE >103:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4AB text10 CODE >104:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4B3 text10 CODE >105:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4B6 text10 CODE >106:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+4BE text10 CODE >107:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\I2C.c
+5F3 text9 CODE >114:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5F3 text9 CODE >116:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5FC text9 CODE >117:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+609 text9 CODE >118:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+60F text9 CODE >119:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+575 text8 CODE >121:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+575 text8 CODE >123:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+57E text8 CODE >125:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+589 text8 CODE >126:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+594 text8 CODE >128:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+595 text8 CODE >129:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+705 text7 CODE >51:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+705 text7 CODE >52:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+707 text7 CODE >53:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6C9 text6 CODE >55:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6CB text6 CODE >56:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6CF text6 CODE >57:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6C2 text5 CODE >47:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6C4 text5 CODE >48:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+6C8 text5 CODE >49:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+610 text4 CODE >208:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+612 text4 CODE >210:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+613 text4 CODE >213:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+615 text4 CODE >214:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+616 text4 CODE >215:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+617 text4 CODE >217:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+61D text4 CODE >218:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+625 text4 CODE >219:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+625 text4 CODE >221:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+626 text4 CODE >222:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5D6 text3 CODE >29:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5D6 text3 CODE >31:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5D9 text3 CODE >32:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5DB text3 CODE >34:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5E4 text3 CODE >36:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5E6 text3 CODE >37:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5EA text3 CODE >40:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+5F2 text3 CODE >41:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\Functions.c
+668 text2 CODE >23:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+668 text2 CODE >27:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+675 text2 CODE >28:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+676 text2 CODE >29:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+67A text2 CODE >32:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+232 text1 CODE >34:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+232 text1 CODE >36:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+23D text1 CODE >37:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+23E text1 CODE >38:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+243 text1 CODE >41:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+249 text1 CODE >42:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+24A text1 CODE >45:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+251 text1 CODE >48:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+256 text1 CODE >49:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+257 text1 CODE >50:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+258 text1 CODE >51:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+258 text1 CODE >52:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+25A text1 CODE >56:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+261 text1 CODE >58:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+265 text1 CODE >61:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+268 text1 CODE >69:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+273 text1 CODE >70:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+277 text1 CODE >71:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+27B text1 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+27E text1 CODE >78:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2C6 maintext CODE >202:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2C6 maintext CODE >205:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2C9 maintext CODE >208:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2CC maintext CODE >209:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2CF maintext CODE >210:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2D2 maintext CODE >211:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2D5 maintext CODE >212:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2D8 maintext CODE >213:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2DB maintext CODE >215:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2E7 maintext CODE >218:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2EA maintext CODE >221:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2ED maintext CODE >224:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2F0 maintext CODE >226:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2F1 maintext CODE >230:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2F7 maintext CODE >232:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+2FA maintext CODE >234:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+300 maintext CODE >235:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+303 maintext CODE >237:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+304 maintext CODE >240:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+308 maintext CODE >244:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+308 maintext CODE >246:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\Wii_reg_code.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_c 7C 0 COMMON 1 bssCOMMON dist/default/production\Wii_reg_code.X.production.o
+_i 7D 0 COMMON 1 bssCOMMON dist/default/production\Wii_reg_code.X.production.o
+___latbits 1 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___awdiv@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_ofi1_I2C_Master_Stop DEE 0 CODE 0 text48 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_I2C_Master_Wait D40 0 CODE 0 text50 dist/default/production\Wii_reg_code.X.production.o
+__Hspace_0 800C 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_readADC BE6 0 CODE 0 text3 dist/default/production\Wii_reg_code.X.production.o
+_power_up CF6 0 CODE 0 text39 dist/default/production\Wii_reg_code.X.production.o
+_PWM3CON 316 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM3DCH 315 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM3DCL 314 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM4CON 31A 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM4DCH 319 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM4DCL 318 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM5CON 31E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM5DCH 31D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM5DCL 31C 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_led_modes 4FE 0 CODE 0 text14 dist/default/production\Wii_reg_code.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_on_off_tact 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1power_down@ship_mode 74 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+Map@x 2F 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_get_battery_volts E10 0 CODE 0 text7 dist/default/production\Wii_reg_code.X.production.o
+__end_of_power_up D10 0 CODE 0 text39 dist/default/production\Wii_reg_code.X.production.o
+_TMR2 28C 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_WPUA 1F39 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+_main 58C 0 CODE 0 maintext dist/default/production\Wii_reg_code.X.production.o
+_mode 46 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+start 30 0 CODE 0 init C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+battery_fade@v 3F 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_power_down C4E 0 CODE 0 text4 dist/default/production\Wii_reg_code.X.production.o
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_STUSB_Write 97E 0 CODE 0 text22 dist/default/production\Wii_reg_code.X.production.o
+I2C_Master_Read@ack 21 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_vbus_stat 43 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_read_bq_status 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+on_off_tact@count 7B 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+BQ_Write@reg 22 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_set_battery_volts D92 0 CODE 0 text6 dist/default/production\Wii_reg_code.X.production.o
+i1_STUSB_9V_12V AA4 0 CODE 0 text40 dist/default/production\Wii_reg_code.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+charge_state@temp 2B 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+I2C_Master_Read@data 22 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_thermal_protection CF6 0 CODE 0 text2 dist/default/production\Wii_reg_code.X.production.o
+___awdiv@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+i1STUSB_Write@data_1 71 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+i1STUSB_Write@data_2 72 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+i1STUSB_Write@data_3 73 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+i1STUSB_Write@data_4 74 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+_ADCON0 9D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_ADCON1 9E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_ADRESH 9C 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1_I2C_Master_Stop DE2 0 CODE 0 text48 dist/default/production\Wii_reg_code.X.production.o
+i1_I2C_Master_Wait D28 0 CODE 0 text50 dist/default/production\Wii_reg_code.X.production.o
+_ANSELA 1F38 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_ANSELC 1F4E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___awdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+i1_set_mode DAE 0 CODE 0 text37 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Ack E02 0 CODE 0 text13 dist/default/production\Wii_reg_code.X.production.o
+__size_of_BQ_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+Map@outMax 34 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+Map@outMin 33 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of_BQ_Read 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_BQ_init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of___wmul B6C 0 CODE 0 text17 dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_BQ_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_get_battery_volts E0A 0 CODE 0 text7 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_STUSB_9V_12V AEA 0 CODE 0 text40 dist/default/production\Wii_reg_code.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_thermal_protection CD0 0 CODE 0 text2 dist/default/production\Wii_reg_code.X.production.o
+__end_of___awdiv 308 0 CODE 0 text18 dist/default/production\Wii_reg_code.X.production.o
+__CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of___lldiv 3BE 0 CODE 0 text28 dist/default/production\Wii_reg_code.X.production.o
+_INTCON B 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_IOCAF5 F9FD 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___stackhi 21EF 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+___stacklo 202E 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+__CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+BQ_Read@data 28 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+i1_STUSB_Write B6C 0 CODE 0 text41 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_I2C_Master_Start DFA 0 CODE 0 text49 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_I2C_Master_Write D84 0 CODE 0 text47 dist/default/production\Wii_reg_code.X.production.o
+i1_PPS_lock D64 0 CODE 0 text44 dist/default/production\Wii_reg_code.X.production.o
+_vbus_stat_temp 47 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_PPS1WAY$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___lldiv@counter 2D 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1BQ_Write@reg 72 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+start_initialization 34 0 CODE 0 cinit dist/default/production\Wii_reg_code.X.production.o
+i1BQ_Write@data 71 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Ack E0A 0 CODE 0 text13 dist/default/production\Wii_reg_code.X.production.o
+STUSB_Write@data_1 21 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+STUSB_Write@data_2 22 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+STUSB_Write@data_3 23 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+STUSB_Write@data_4 24 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_BQ_Write C4E 0 CODE 0 text30 dist/default/production\Wii_reg_code.X.production.o
+_TRISAbits 12 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TRISCbits 14 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM3EN 18B7 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM4EN 18D7 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM5EN 18F7 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___lldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_PPS_unlock DA0 0 CODE 0 text24 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_set_mode DBC 0 CODE 0 text37 dist/default/production\Wii_reg_code.X.production.o
+i1_PWM_init 866 0 CODE 0 text42 dist/default/production\Wii_reg_code.X.production.o
+_RC0PPS 1F20 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RC1PPS 1F21 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RC2PPS 1F22 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RC3PPS 1F23 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RC4PPS 1F24 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_BQ_Write C7C 0 CODE 0 text30 dist/default/production\Wii_reg_code.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_T2CLKCON 290 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_on_off_tact 5E 0 CODE 0 text36 dist/default/production\Wii_reg_code.X.production.o
+_TMR1IE 38D0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR1IF 3880 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR1ON 1070 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR2IF 3881 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR2ON 1477 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1_I2C_Master_Start DEE 0 CODE 0 text49 dist/default/production\Wii_reg_code.X.production.o
+i1_I2C_Master_Write D74 0 CODE 0 text47 dist/default/production\Wii_reg_code.X.production.o
+i1_power_down C7C 0 CODE 0 text38 dist/default/production\Wii_reg_code.X.production.o
+__CFG_RSTOSC$HFINTPLL 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_readADC BAC 0 CODE 0 text3 dist/default/production\Wii_reg_code.X.production.o
+_battery_fade 158 0 CODE 0 text15 dist/default/production\Wii_reg_code.X.production.o
+_battery_read BE6 0 CODE 0 text9 dist/default/production\Wii_reg_code.X.production.o
+__size_of_power_down 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_BQ_init 7FE 0 CODE 0 text45 dist/default/production\Wii_reg_code.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+__size_ofi1_BQ_init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_BQ_Read 97E 0 CODE 0 text10 dist/default/production\Wii_reg_code.X.production.o
+__end_of_BQ_init 720 0 CODE 0 text29 dist/default/production\Wii_reg_code.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 5E 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank32 0 0 BANK32 1 bank32 -
+__Hbank33 0 0 BANK33 1 bank33 -
+__Hbank34 0 0 BANK34 1 bank34 -
+__Hbank35 0 0 BANK35 1 bank35 -
+__Hbank36 0 0 BANK36 1 bank36 -
+__Hbank37 0 0 BANK37 1 bank37 -
+__Hbank38 0 0 BANK38 1 bank38 -
+__Hbank39 0 0 BANK39 1 bank39 -
+__Hbank40 0 0 BANK40 1 bank40 -
+__Hbank41 0 0 BANK41 1 bank41 -
+__Hbank42 0 0 BANK42 1 bank42 -
+__Hbank43 0 0 BANK43 1 bank43 -
+__Hbank44 0 0 BANK44 1 bank44 -
+__Hbank45 0 0 BANK45 1 bank45 -
+__Hbank46 0 0 BANK46 1 bank46 -
+__Hbank47 0 0 BANK47 1 bank47 -
+__Hbank48 0 0 BANK48 1 bank48 -
+__Hbank49 0 0 BANK49 1 bank49 -
+__Hbank50 0 0 BANK50 1 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__end_ofi1_PPS_lock D74 0 CODE 0 text44 dist/default/production\Wii_reg_code.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 34 0 CODE 0 cinit -
+_T1GCONbits 20F 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1I2C_Master_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+i1_BQ_init 790 0 CODE 0 text45 dist/default/production\Wii_reg_code.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 30 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 30 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__size_of_PIC_init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_PPS_unlock DAE 0 CODE 0 text24 dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_power_down 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_PWM_init 8CE 0 CODE 0 text42 dist/default/production\Wii_reg_code.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_SSP1CON2 191 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___wmul B2C 0 CODE 0 text17 dist/default/production\Wii_reg_code.X.production.o
+_T2OUTPS0 1470 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T2OUTPS1 1471 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T2OUTPS2 1472 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T2OUTPS3 1473 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_battery_volts_temp 49 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_battery_fade 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_battery_read 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_STUSB_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_ISR 8 0 CODE 0 intentry dist/default/production\Wii_reg_code.X.production.o
+_Map 9CA 0 CODE 0 text16 dist/default/production\Wii_reg_code.X.production.o
+_PR2 28D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RA2 62 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RA5 65 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RC5 75 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__S0 800C 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_dir 4D 0 BANK0 1 dataBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_STUSB_Write 9CA 0 CODE 0 text22 dist/default/production\Wii_reg_code.X.production.o
+?_readADC 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Start DD6 0 CODE 0 text33 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Write D40 0 CODE 0 text31 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_power_down CA8 0 CODE 0 text38 dist/default/production\Wii_reg_code.X.production.o
+STUSB_Write@reg 25 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_ISR 30 0 CODE 0 intentry dist/default/production\Wii_reg_code.X.production.o
+__end_of_Map A14 0 CODE 0 text16 dist/default/production\Wii_reg_code.X.production.o
+__end_of_battery_fade 248 0 CODE 0 text15 dist/default/production\Wii_reg_code.X.production.o
+__end_of_battery_read C20 0 CODE 0 text9 dist/default/production\Wii_reg_code.X.production.o
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_read_bq_status 464 0 CODE 0 text1 dist/default/production\Wii_reg_code.X.production.o
+I2C_Master_Write@data 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of_get_mode 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_STUSB_Write BAC 0 CODE 0 text41 dist/default/production\Wii_reg_code.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Gunnar\AppData\Local\Temp\shn0.o
+I2C_Master_Init@clk 2E 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__pdataBANK0 4D 0 BANK0 1 dataBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PIC_init 720 0 CODE 0 text26 dist/default/production\Wii_reg_code.X.production.o
+_PIE0bits 716 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__ptext10 92C 0 CODE 0 text10 dist/default/production\Wii_reg_code.X.production.o
+__ptext11 A5E 0 CODE 0 text11 dist/default/production\Wii_reg_code.X.production.o
+__ptext12 DFA 0 CODE 0 text12 dist/default/production\Wii_reg_code.X.production.o
+__ptext13 E02 0 CODE 0 text13 dist/default/production\Wii_reg_code.X.production.o
+__ptext14 4FE 0 CODE 0 text14 dist/default/production\Wii_reg_code.X.production.o
+__ptext15 158 0 CODE 0 text15 dist/default/production\Wii_reg_code.X.production.o
+__ptext16 9CA 0 CODE 0 text16 dist/default/production\Wii_reg_code.X.production.o
+__ptext17 B2C 0 CODE 0 text17 dist/default/production\Wii_reg_code.X.production.o
+__ptext18 248 0 CODE 0 text18 dist/default/production\Wii_reg_code.X.production.o
+__ptext19 618 0 CODE 0 text19 dist/default/production\Wii_reg_code.X.production.o
+__ptext20 3BE 0 CODE 0 text20 dist/default/production\Wii_reg_code.X.production.o
+__ptext21 A14 0 CODE 0 text21 dist/default/production\Wii_reg_code.X.production.o
+__ptext22 97E 0 CODE 0 text22 dist/default/production\Wii_reg_code.X.production.o
+__ptext23 7FE 0 CODE 0 text23 dist/default/production\Wii_reg_code.X.production.o
+__ptext24 DA0 0 CODE 0 text24 dist/default/production\Wii_reg_code.X.production.o
+__ptext25 D54 0 CODE 0 text25 dist/default/production\Wii_reg_code.X.production.o
+__ptext26 720 0 CODE 0 text26 dist/default/production\Wii_reg_code.X.production.o
+__ptext27 8CE 0 CODE 0 text27 dist/default/production\Wii_reg_code.X.production.o
+__ptext28 308 0 CODE 0 text28 dist/default/production\Wii_reg_code.X.production.o
+__ptext29 6A4 0 CODE 0 text29 dist/default/production\Wii_reg_code.X.production.o
+__ptext30 C4E 0 CODE 0 text30 dist/default/production\Wii_reg_code.X.production.o
+__ptext31 D40 0 CODE 0 text31 dist/default/production\Wii_reg_code.X.production.o
+__ptext32 DCA 0 CODE 0 text32 dist/default/production\Wii_reg_code.X.production.o
+__ptext33 DD6 0 CODE 0 text33 dist/default/production\Wii_reg_code.X.production.o
+__ptext34 D10 0 CODE 0 text34 dist/default/production\Wii_reg_code.X.production.o
+__ptext36 5E 0 CODE 0 text36 dist/default/production\Wii_reg_code.X.production.o
+__ptext37 DAE 0 CODE 0 text37 dist/default/production\Wii_reg_code.X.production.o
+__ptext38 C7C 0 CODE 0 text38 dist/default/production\Wii_reg_code.X.production.o
+__ptext39 CF6 0 CODE 0 text39 dist/default/production\Wii_reg_code.X.production.o
+__ptext40 AA4 0 CODE 0 text40 dist/default/production\Wii_reg_code.X.production.o
+__ptext41 B6C 0 CODE 0 text41 dist/default/production\Wii_reg_code.X.production.o
+__ptext42 866 0 CODE 0 text42 dist/default/production\Wii_reg_code.X.production.o
+__ptext43 DBC 0 CODE 0 text43 dist/default/production\Wii_reg_code.X.production.o
+__ptext44 D64 0 CODE 0 text44 dist/default/production\Wii_reg_code.X.production.o
+__ptext45 790 0 CODE 0 text45 dist/default/production\Wii_reg_code.X.production.o
+__ptext46 CA8 0 CODE 0 text46 dist/default/production\Wii_reg_code.X.production.o
+__ptext47 D74 0 CODE 0 text47 dist/default/production\Wii_reg_code.X.production.o
+__ptext48 DE2 0 CODE 0 text48 dist/default/production\Wii_reg_code.X.production.o
+__ptext49 DEE 0 CODE 0 text49 dist/default/production\Wii_reg_code.X.production.o
+__ptext50 D28 0 CODE 0 text50 dist/default/production\Wii_reg_code.X.production.o
+__ptext51 E10 0 CODE 0 text51 dist/default/production\Wii_reg_code.X.production.o
+__size_of_thermal_protection 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___awdiv 248 0 CODE 0 text18 dist/default/production\Wii_reg_code.X.production.o
+___lldiv 308 0 CODE 0 text28 dist/default/production\Wii_reg_code.X.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank32 0 0 BANK32 1 bank32 -
+__Lbank33 0 0 BANK33 1 bank33 -
+__Lbank34 0 0 BANK34 1 bank34 -
+__Lbank35 0 0 BANK35 1 bank35 -
+__Lbank36 0 0 BANK36 1 bank36 -
+__Lbank37 0 0 BANK37 1 bank37 -
+__Lbank38 0 0 BANK38 1 bank38 -
+__Lbank39 0 0 BANK39 1 bank39 -
+__Lbank40 0 0 BANK40 1 bank40 -
+__Lbank41 0 0 BANK41 1 bank41 -
+__Lbank42 0 0 BANK42 1 bank42 -
+__Lbank43 0 0 BANK43 1 bank43 -
+__Lbank44 0 0 BANK44 1 bank44 -
+__Lbank45 0 0 BANK45 1 bank45 -
+__Lbank46 0 0 BANK46 1 bank46 -
+__Lbank47 0 0 BANK47 1 bank47 -
+__Lbank48 0 0 BANK48 1 bank48 -
+__Lbank49 0 0 BANK49 1 bank49 -
+__Lbank50 0 0 BANK50 1 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__end_of_PIC_init 790 0 CODE 0 text26 dist/default/production\Wii_reg_code.X.production.o
+__pmaintext 58C 0 CODE 0 maintext dist/default/production\Wii_reg_code.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_BBSIZE$BB512 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_set_mode 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_STUSB_9V_12V A14 0 CODE 0 text21 dist/default/production\Wii_reg_code.X.production.o
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_set_mode 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_reg_state 4C 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_STUSB_9V_12V 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_read_bq_status 4FE 0 CODE 0 text1 dist/default/production\Wii_reg_code.X.production.o
+_tmr1_count 4B 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+_battery_volts 44 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+_SSP1CLKPPS 1EC5 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_get_mode E10 0 CODE 0 text51 dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Init 92C 0 CODE 0 text27 dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Read AA4 0 CODE 0 text11 dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Stop DD6 0 CODE 0 text32 dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Wait D28 0 CODE 0 text34 dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_nAck E02 0 CODE 0 text12 dist/default/production\Wii_reg_code.X.production.o
+_SSP1DATPPS 1EC6 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_ADCON0bits 9D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+i1set_mode@mode_temp 71 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+__end_of_I2C_Master_Start DE2 0 CODE 0 text33 dist/default/production\Wii_reg_code.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__end_of_I2C_Master_Write D54 0 CODE 0 text31 dist/default/production\Wii_reg_code.X.production.o
+__size_of_RGB_fade 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\Wii_reg_code.X.production.o
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_set_battery_volts 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_get_mode E16 0 CODE 0 text51 dist/default/production\Wii_reg_code.X.production.o
+__Lend_init 30 0 CODE 0 end_init -
+_charge_state AEA 0 CODE 0 text8 dist/default/production\Wii_reg_code.X.production.o
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_PPS_lock 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Start 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+end_of_initialization 56 0 CODE 0 cinit dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_I2C_Master_Start 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_I2C_Master_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_PPS_lock 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Hintentry 30 0 CODE 0 intentry -
+__size_of_STUSB_9V_12V 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 2D 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+?___awdiv 26 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+?___lldiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__size_of_chrg_led 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Ack 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_STUSB_Write 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_set_mode D84 0 CODE 0 text5 dist/default/production\Wii_reg_code.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_mode_temp 4A 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_on_off_tact 158 0 CODE 0 text36 dist/default/production\Wii_reg_code.X.production.o
+BQ_Read@reg 27 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+i1_PPS_unlock DBC 0 CODE 0 text43 dist/default/production\Wii_reg_code.X.production.o
+_BQ_Read 92C 0 CODE 0 text10 dist/default/production\Wii_reg_code.X.production.o
+_BQ_init 6A4 0 CODE 0 text29 dist/default/production\Wii_reg_code.X.production.o
+__size_of_PWM_init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__ptext1 464 0 CODE 0 text1 dist/default/production\Wii_reg_code.X.production.o
+__ptext2 CD0 0 CODE 0 text2 dist/default/production\Wii_reg_code.X.production.o
+__ptext3 BAC 0 CODE 0 text3 dist/default/production\Wii_reg_code.X.production.o
+__ptext4 C20 0 CODE 0 text4 dist/default/production\Wii_reg_code.X.production.o
+__ptext5 D84 0 CODE 0 text5 dist/default/production\Wii_reg_code.X.production.o
+__ptext6 D92 0 CODE 0 text6 dist/default/production\Wii_reg_code.X.production.o
+__ptext7 E0A 0 CODE 0 text7 dist/default/production\Wii_reg_code.X.production.o
+__ptext8 AEA 0 CODE 0 text8 dist/default/production\Wii_reg_code.X.production.o
+__ptext9 BE6 0 CODE 0 text9 dist/default/production\Wii_reg_code.X.production.o
+i1_BQ_Write CA8 0 CODE 0 text46 dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_I2C_Master_Stop 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_I2C_Master_Wait 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_PPS_unlock 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_VREGCON 812 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_PWM_init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_set_mode D92 0 CODE 0 text5 dist/default/production\Wii_reg_code.X.production.o
+Map@inMax 32 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+Map@inMin 31 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__end_of_STUSB_9V_12V A5E 0 CODE 0 text21 dist/default/production\Wii_reg_code.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C_Master_Init 8CE 0 CODE 0 text27 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Read A5E 0 CODE 0 text11 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Stop DCA 0 CODE 0 text32 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_Wait D10 0 CODE 0 text34 dist/default/production\Wii_reg_code.X.production.o
+_I2C_Master_nAck DFA 0 CODE 0 text12 dist/default/production\Wii_reg_code.X.production.o
+__size_of_charge_state 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_get_battery_volts 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_RGB_fade 618 0 CODE 0 text19 dist/default/production\Wii_reg_code.X.production.o
+set_mode@mode_temp 21 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+BQ_Write@data 21 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of_readADC 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of__initialization 56 0 CODE 0 cinit dist/default/production\Wii_reg_code.X.production.o
+power_down@ship_mode 24 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+_PPS_lock D54 0 CODE 0 text25 dist/default/production\Wii_reg_code.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__pidataBANK0 E16 0 CODE 0 idataBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_RGB_fade 6A4 0 CODE 0 text19 dist/default/production\Wii_reg_code.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_ofi1_PPS_unlock 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_PPS_lock D64 0 CODE 0 text25 dist/default/production\Wii_reg_code.X.production.o
+__end_of_charge_state B2C 0 CODE 0 text8 dist/default/production\Wii_reg_code.X.production.o
+_chrg_led 3BE 0 CODE 0 text20 dist/default/production\Wii_reg_code.X.production.o
+___lldiv@quotient 29 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+on_off_tact@exit 7A 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+_T2CKPS0 1474 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T2CKPS1 1475 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T2CKPS2 1476 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_PWM_init 7FE 0 CODE 0 text23 dist/default/production\Wii_reg_code.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__Hend_init 34 0 CODE 0 end_init -
+?_BQ_Read 23 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+set_battery_volts@battery_volts_temp 21 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of_power_up 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_main 618 0 CODE 0 maintext dist/default/production\Wii_reg_code.X.production.o
+__end_of_chrg_led 464 0 CODE 0 text20 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_BQ_Write CD0 0 CODE 0 text46 dist/default/production\Wii_reg_code.X.production.o
+__CFG_WRTSAF$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_IOCAF 1F3F 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_IOCAN 1F3E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_IOCAP 1F3D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T1CLK 211 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_T1CON 20E 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR1H 20D 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TMR1L 20C 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TRISA 12 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+_TRISC 14 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__end_of_PWM_init 866 0 CODE 0 text23 dist/default/production\Wii_reg_code.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_color 45 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_ofi1_PPS_unlock DCA 0 CODE 0 text43 dist/default/production\Wii_reg_code.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Wii_reg_code.X.production.o
+__end_of_set_battery_volts DA0 0 CODE 0 text6 dist/default/production\Wii_reg_code.X.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_Map 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+_power_down C20 0 CODE 0 text4 dist/default/production\Wii_reg_code.X.production.o
+__initialization 34 0 CODE 0 cinit dist/default/production\Wii_reg_code.X.production.o
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__pbssBANK0 42 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+_PPSLOCK 1E8F 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\Wii_reg_code.X.production.o
+__end_of_led_modes 58C 0 CODE 0 text14 dist/default/production\Wii_reg_code.X.production.o
+_mode_en 48 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+i1STUSB_Write@reg 75 0 COMMON 1 cstackCOMMON dist/default/production\Wii_reg_code.X.production.o
+_chrg_stat 42 0 BANK0 1 bssBANK0 dist/default/production\Wii_reg_code.X.production.o
+__size_of_led_modes 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Init 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Read 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Stop 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_Wait 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+__size_of_I2C_Master_nAck 0 0 ABS 0 - dist/default/production\Wii_reg_code.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 2E 1
+intentry 0 4 8 708 2
+reset_vec 0 0 0 2 2
+config 0 8007 1000E 5 2
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

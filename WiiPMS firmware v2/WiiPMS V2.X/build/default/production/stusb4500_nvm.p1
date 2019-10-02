@@ -1,0 +1,858 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"24 i2c_driver_stusb4500.h
+[v _i2c_master_write_u8 `(i ~T0 @X0 0 ef3`Cuc`Cuc`Cuc ]
+"32
+[v _i2c_master_read_u8 `(i ~T0 @X0 0 ef3`Cuc`Cuc`*uc ]
+"30
+[v _i2c_master_read `(i ~T0 @X0 0 ef4`Cuc`Cuc`*v`ui ]
+"22
+[v _i2c_master_write `(i ~T0 @X0 0 ef4`Cuc`Cuc`*Cv`ui ]
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef __int24 int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 52: typedef unsigned char uint8_t;
+[; ;stdint.h: 58: typedef unsigned int uint16_t;
+[; ;stdint.h: 65: typedef __uint24 uint24_t;
+[; ;stdint.h: 72: typedef unsigned long int uint32_t;
+[; ;stdint.h: 88: typedef signed char int_least8_t;
+[; ;stdint.h: 96: typedef signed int int_least16_t;
+[; ;stdint.h: 109: typedef __int24 int_least24_t;
+[; ;stdint.h: 118: typedef signed long int int_least32_t;
+[; ;stdint.h: 136: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 143: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 154: typedef __uint24 uint_least24_t;
+[; ;stdint.h: 162: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 181: typedef signed char int_fast8_t;
+[; ;stdint.h: 188: typedef signed int int_fast16_t;
+[; ;stdint.h: 200: typedef __int24 int_fast24_t;
+[; ;stdint.h: 208: typedef signed long int int_fast32_t;
+[; ;stdint.h: 224: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 230: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 240: typedef __uint24 uint_fast24_t;
+[; ;stdint.h: 247: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 268: typedef int32_t intmax_t;
+[; ;stdint.h: 282: typedef uint32_t uintmax_t;
+[; ;stdint.h: 289: typedef int16_t intptr_t;
+[; ;stdint.h: 294: typedef uint16_t uintptr_t;
+[; ;stusb4500_nvm.h: 6: int nvm_flash(void);
+[; ;stusb4500_nvm.h: 7: int nvm_read(uint8_t* sectors_out);
+[; ;stusb4500_nvm.h: 8: int nvm_verify(void);
+[; ;i2c_driver_stusb4500.h: 21: void i2c_master_init(const unsigned long clk);
+[; ;i2c_driver_stusb4500.h: 22: int i2c_master_write(
+[; ;i2c_driver_stusb4500.h: 23: const uint8_t device, const uint8_t reg, const void* buf, uint16_t len);
+[; ;i2c_driver_stusb4500.h: 24: int i2c_master_write_u8(
+[; ;i2c_driver_stusb4500.h: 25: const uint8_t device, const uint8_t reg, const uint8_t data);
+[; ;i2c_driver_stusb4500.h: 26: int i2c_master_write_u16(
+[; ;i2c_driver_stusb4500.h: 27: const uint8_t device, const uint8_t reg, const uint16_t data);
+[; ;i2c_driver_stusb4500.h: 28: int i2c_master_write_u32(
+[; ;i2c_driver_stusb4500.h: 29: const uint8_t device, const uint8_t reg, const uint32_t data);
+[; ;i2c_driver_stusb4500.h: 30: int i2c_master_read(
+[; ;i2c_driver_stusb4500.h: 31: const uint8_t device, const uint8_t reg, void* buf, uint16_t len);
+[; ;i2c_driver_stusb4500.h: 32: int i2c_master_read_u8(const uint8_t device, const uint8_t reg, uint8_t* data);
+[; ;i2c_driver_stusb4500.h: 33: int i2c_master_read_u16(
+[; ;i2c_driver_stusb4500.h: 34: const uint8_t device, const uint8_t reg, uint16_t* data);
+[; ;i2c_driver_stusb4500.h: 35: int i2c_master_read_u32(
+[; ;i2c_driver_stusb4500.h: 36: const uint8_t device, const uint8_t reg, uint32_t* data);
+[v F72 `Cuc ~T0 @X0 -> 8 `i t ]
+"72 stusb4500_nvm.c
+[v _nvm_config `F72 ~T0 @X0 -> 5 `i s ]
+[i _nvm_config
+:U ..
+:U ..
+"73
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 176 `i `uc
+-> -> 170 `i `uc
+-> -> 0 `i `uc
+-> -> 69 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+"74
+-> -> 16 `i `uc
+-> -> 64 `i `uc
+-> -> 156 `i `uc
+-> -> 28 `i `uc
+-> -> 255 `i `uc
+-> -> 1 `i `uc
+-> -> 60 `i `uc
+-> -> 223 `i `uc
+..
+:U ..
+"75
+-> -> 2 `i `uc
+-> -> 64 `i `uc
+-> -> 15 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 252 `i `uc
+-> -> 241 `i `uc
+..
+:U ..
+"76
+-> -> 0 `i `uc
+"77
+-> -> 25 `i `uc
+"78
+-> | << & / - -> 1500 `i -> 250 `i -> 250 `i -> 15 `i -> 4 `i << & -> 3 `i -> 3 `i -> 1 `i `uc
+"79
+-> -> 175 `i `uc
+"80
+-> | & / - -> 3000 `i -> 250 `i -> 250 `i -> 15 `i -> 240 `i `uc
+"81
+-> | << & / - -> 2000 `i -> 250 `i -> 250 `i -> 15 `i -> 4 `i -> 5 `i `uc
+"82
+-> -> 95 `i `uc
+"83
+-> -> 0 `i `uc
+..
+:U ..
+"84
+-> << & / -> 9000 `i -> 50 `i -> 3 `i -> 2 `i `uc
+"85
+-> & >> / -> 9000 `i -> 50 `i -> 2 `i -> 255 `i `uc
+"86
+-> & / -> 12000 `i -> 50 `i -> 255 `i `uc
+"87
+-> | << & / -> 2000 `i -> 10 `i -> 63 `i -> 2 `i & >> / -> 12000 `i -> 50 `i -> 8 `i -> 3 `i `uc
+"88
+-> | & >> / -> 2000 `i -> 10 `i -> 6 `i -> 15 `i -> 64 `i `uc
+"89
+-> -> 0 `i `uc
+"92
+-> | | << & -> 1 `i -> 1 `i -> 4 `i << & -> 0 `i -> 1 `i -> 2 `i -> 64 `i `uc
+"93
+-> -> 251 `i `uc
+..
+..
+]
+[; ;stusb4500_nvm.c: 72: const static uint8_t nvm_config[5][8] = {
+[; ;stusb4500_nvm.c: 73: { 0x00, 0x00, 0xB0, 0xAA, 0x00, 0x45, 0x00, 0x00 },
+[; ;stusb4500_nvm.c: 74: { 0x10, 0x40, 0x9C, 0x1C, 0xFF, 0x01, 0x3C, 0xDF },
+[; ;stusb4500_nvm.c: 75: { 0x02, 0x40, 0x0F, 0x00, 0x32, 0x00, 0xFC, 0xF1 },
+[; ;stusb4500_nvm.c: 76: { 0x00,
+[; ;stusb4500_nvm.c: 77: 0x19,
+[; ;stusb4500_nvm.c: 78: (uint8_t)((((1500 - 250) / 250 & 0x0F) << 4) | ((3 & 0x03) << 1)),
+[; ;stusb4500_nvm.c: 79: 0xAF,
+[; ;stusb4500_nvm.c: 80: (uint8_t)(((3000 - 250) / 250 & 0x0F) | 0xF0),
+[; ;stusb4500_nvm.c: 81: (uint8_t)((((2000 - 250) / 250 & 0x0F) << 4) | 0x05),
+[; ;stusb4500_nvm.c: 82: 0x5F,
+[; ;stusb4500_nvm.c: 83: 0x00 },
+[; ;stusb4500_nvm.c: 84: { (uint8_t)((9000 / 50 & 0x03) << 2),
+[; ;stusb4500_nvm.c: 85: (uint8_t)((9000 / 50 >> 2) & 0xFF),
+[; ;stusb4500_nvm.c: 86: (uint8_t)(12000 / 50 & 0xFF),
+[; ;stusb4500_nvm.c: 87: (uint8_t)(((2000 / 10 & 0x3F) << 2) | ((12000 / 50 >> 8) & 0x03)),
+[; ;stusb4500_nvm.c: 88: (uint8_t)(((2000 / 10 >> 6) & 0x0F) | 0x40),
+[; ;stusb4500_nvm.c: 89: 0x00,
+[; ;stusb4500_nvm.c: 90: (uint8_t)(
+[; ;stusb4500_nvm.c: 91: ((1 & 0x01) << 4) | ((0 & 0x01) << 2) |
+[; ;stusb4500_nvm.c: 92: 0x40),
+[; ;stusb4500_nvm.c: 93: 0xFB },
+[; ;stusb4500_nvm.c: 94: };
+"96
+[v _enter_write_mode `(i ~T0 @X0 1 sf ]
+{
+[; ;stusb4500_nvm.c: 96: static int enter_write_mode(void) {
+[e :U _enter_write_mode ]
+[f ]
+"97
+[v _buffer `uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 97: uint8_t buffer;
+[; ;stusb4500_nvm.c: 100: buffer = 0x47;
+"100
+[e = _buffer -> -> 71 `i `uc ]
+[; ;stusb4500_nvm.c: 101: if (
+[; ;stusb4500_nvm.c: 102: i2c_master_write_u8(0x28, 0x95, buffer) != 0)
+"102
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 149 `i `uc _buffer -> 0 `i 2  ]
+[; ;stusb4500_nvm.c: 103: return -1;
+"103
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 2 ]
+[; ;stusb4500_nvm.c: 106: buffer = 0x00;
+"106
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 107: if (i2c_master_write_u8(0x28, 0x53, buffer) != 0) return -1;
+"107
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 83 `i `uc _buffer -> 0 `i 3  ]
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 3 ]
+[; ;stusb4500_nvm.c: 111: buffer = 0x00;
+"111
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 112: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"112
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 4  ]
+[; ;stusb4500_nvm.c: 113: return -1;
+"113
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 4 ]
+[; ;stusb4500_nvm.c: 116: buffer = 0x80 | 0x40;
+"116
+[e = _buffer -> | -> 128 `i -> 64 `i `uc ]
+[; ;stusb4500_nvm.c: 117: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"117
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 5  ]
+[; ;stusb4500_nvm.c: 118: return -1;
+"118
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 5 ]
+[; ;stusb4500_nvm.c: 123: buffer = (((0x01 | 0x02 | 0x04 | 0x08 | 0x10) << 3) &
+[; ;stusb4500_nvm.c: 124: 0xF8) |
+[; ;stusb4500_nvm.c: 125: (0x02 & 0x07);
+"125
+[e = _buffer -> | & << | | | | -> 1 `i -> 2 `i -> 4 `i -> 8 `i -> 16 `i -> 3 `i -> 248 `i & -> 2 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 126: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"126
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 6  ]
+[; ;stusb4500_nvm.c: 127: return -1;
+"127
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 6 ]
+[; ;stusb4500_nvm.c: 130: buffer = 0x80 | 0x40 | 0x10;
+"130
+[e = _buffer -> | | -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 131: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"131
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 7  ]
+[; ;stusb4500_nvm.c: 132: return -1;
+"132
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 7 ]
+[; ;stusb4500_nvm.c: 135: do {
+"135
+[e :U 10 ]
+{
+[; ;stusb4500_nvm.c: 136: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"136
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 11  ]
+[; ;stusb4500_nvm.c: 137: return -1;
+"137
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 11 ]
+"138
+}
+[; ;stusb4500_nvm.c: 138: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 10  ]
+[e :U 9 ]
+[; ;stusb4500_nvm.c: 141: buffer = 0x07 & 0x07;
+"141
+[e = _buffer -> & -> 7 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 142: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"142
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 12  ]
+[; ;stusb4500_nvm.c: 143: return -1;
+"143
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 12 ]
+[; ;stusb4500_nvm.c: 146: buffer = 0x80 | 0x40 | 0x10;
+"146
+[e = _buffer -> | | -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 147: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"147
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 13  ]
+[; ;stusb4500_nvm.c: 148: return -1;
+"148
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 13 ]
+[; ;stusb4500_nvm.c: 151: do {
+"151
+[e :U 16 ]
+{
+[; ;stusb4500_nvm.c: 152: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"152
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 17  ]
+[; ;stusb4500_nvm.c: 153: return -1;
+"153
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 17 ]
+"154
+}
+[; ;stusb4500_nvm.c: 154: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 16  ]
+[e :U 15 ]
+[; ;stusb4500_nvm.c: 157: buffer = 0x05 & 0x07;
+"157
+[e = _buffer -> & -> 5 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 158: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"158
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 18  ]
+[; ;stusb4500_nvm.c: 159: return -1;
+"159
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 18 ]
+[; ;stusb4500_nvm.c: 162: buffer = 0x80 | 0x40 | 0x10;
+"162
+[e = _buffer -> | | -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 163: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"163
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 19  ]
+[; ;stusb4500_nvm.c: 164: return -1;
+"164
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 19 ]
+[; ;stusb4500_nvm.c: 167: do {
+"167
+[e :U 22 ]
+{
+[; ;stusb4500_nvm.c: 168: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"168
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 23  ]
+[; ;stusb4500_nvm.c: 169: return -1;
+"169
+[e ) -U -> 1 `i ]
+[e $UE 1  ]
+[e :U 23 ]
+"170
+}
+[; ;stusb4500_nvm.c: 170: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 22  ]
+[e :U 21 ]
+[; ;stusb4500_nvm.c: 173: return 0;
+"173
+[e ) -> 0 `i ]
+[e $UE 1  ]
+[; ;stusb4500_nvm.c: 174: }
+"174
+[e :UE 1 ]
+}
+"176
+[v _enter_read_mode `(i ~T0 @X0 1 sf ]
+{
+[; ;stusb4500_nvm.c: 176: static int enter_read_mode(void) {
+[e :U _enter_read_mode ]
+[f ]
+"177
+[v _buffer `uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 177: uint8_t buffer;
+[; ;stusb4500_nvm.c: 180: buffer = 0x47;
+"180
+[e = _buffer -> -> 71 `i `uc ]
+[; ;stusb4500_nvm.c: 181: if (
+[; ;stusb4500_nvm.c: 182: i2c_master_write_u8(0x28, 0x95, buffer) != 0)
+"182
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 149 `i `uc _buffer -> 0 `i 25  ]
+[; ;stusb4500_nvm.c: 183: return -1;
+"183
+[e ) -U -> 1 `i ]
+[e $UE 24  ]
+[e :U 25 ]
+[; ;stusb4500_nvm.c: 187: buffer = 0x00;
+"187
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 188: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"188
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 26  ]
+[; ;stusb4500_nvm.c: 189: return -1;
+"189
+[e ) -U -> 1 `i ]
+[e $UE 24  ]
+[e :U 26 ]
+[; ;stusb4500_nvm.c: 192: buffer = 0x80 | 0x40;
+"192
+[e = _buffer -> | -> 128 `i -> 64 `i `uc ]
+[; ;stusb4500_nvm.c: 193: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"193
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 27  ]
+[; ;stusb4500_nvm.c: 194: return -1;
+"194
+[e ) -U -> 1 `i ]
+[e $UE 24  ]
+[e :U 27 ]
+[; ;stusb4500_nvm.c: 197: return 0;
+"197
+[e ) -> 0 `i ]
+[e $UE 24  ]
+[; ;stusb4500_nvm.c: 198: }
+"198
+[e :UE 24 ]
+}
+"200
+[v _read_sector `(i ~T0 @X0 1 sf2`Cuc`*uc ]
+{
+[; ;stusb4500_nvm.c: 200: static int read_sector(const uint8_t sector, uint8_t* sector_data) {
+[e :U _read_sector ]
+[v _sector `Cuc ~T0 @X0 1 r1 ]
+[v _sector_data `*uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;stusb4500_nvm.c: 201: if (!sector_data) return -1;
+"201
+[e $ ! ! != _sector_data -> -> 0 `i `*uc 29  ]
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 29 ]
+"203
+[v _buffer `uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 203: uint8_t buffer;
+[; ;stusb4500_nvm.c: 206: buffer = 0x80 | 0x40;
+"206
+[e = _buffer -> | -> 128 `i -> 64 `i `uc ]
+[; ;stusb4500_nvm.c: 207: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"207
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 30  ]
+[; ;stusb4500_nvm.c: 208: return -1;
+"208
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 30 ]
+[; ;stusb4500_nvm.c: 211: buffer = (0x00 & 0x07);
+"211
+[e = _buffer -> & -> 0 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 212: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"212
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 31  ]
+[; ;stusb4500_nvm.c: 213: return -1;
+"213
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 31 ]
+[; ;stusb4500_nvm.c: 216: buffer =
+[; ;stusb4500_nvm.c: 217: (sector & 0x07) | 0x80 | 0x40 | 0x10;
+"217
+[e = _buffer -> | | | & -> _sector `i -> 7 `i -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 218: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"218
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 32  ]
+[; ;stusb4500_nvm.c: 219: return -1;
+"219
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 32 ]
+[; ;stusb4500_nvm.c: 222: do {
+"222
+[e :U 35 ]
+{
+[; ;stusb4500_nvm.c: 223: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"223
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 36  ]
+[; ;stusb4500_nvm.c: 224: return -1;
+"224
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 36 ]
+"225
+}
+[; ;stusb4500_nvm.c: 225: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 35  ]
+[e :U 34 ]
+[; ;stusb4500_nvm.c: 228: if (i2c_master_read(0x28, 0x53, sector_data, 8) != 0)
+"228
+[e $ ! != ( _i2c_master_read (4 , , , -> -> 40 `i `uc -> -> 83 `i `uc -> _sector_data `*v -> -> 8 `i `ui -> 0 `i 37  ]
+[; ;stusb4500_nvm.c: 229: return -1;
+"229
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 37 ]
+[; ;stusb4500_nvm.c: 232: buffer = 0x00;
+"232
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 233: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"233
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 38  ]
+[; ;stusb4500_nvm.c: 234: return -1;
+"234
+[e ) -U -> 1 `i ]
+[e $UE 28  ]
+[e :U 38 ]
+[; ;stusb4500_nvm.c: 236: return 0;
+"236
+[e ) -> 0 `i ]
+[e $UE 28  ]
+[; ;stusb4500_nvm.c: 237: }
+"237
+[e :UE 28 ]
+}
+"239
+[v _write_sector `(i ~T0 @X0 1 sf2`Cuc`*Cuc ]
+{
+[; ;stusb4500_nvm.c: 239: static int write_sector(const uint8_t sector_num, const uint8_t* sector_data) {
+[e :U _write_sector ]
+[v _sector_num `Cuc ~T0 @X0 1 r1 ]
+[v _sector_data `*Cuc ~T0 @X0 1 r2 ]
+[f ]
+[; ;stusb4500_nvm.c: 240: if (!sector_data) return -1;
+"240
+[e $ ! ! != _sector_data -> -> 0 `i `*Cuc 40  ]
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 40 ]
+"242
+[v _buffer `uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 242: uint8_t buffer;
+[; ;stusb4500_nvm.c: 245: if (i2c_master_write(0x28, 0x53, sector_data, 8) != 0)
+"245
+[e $ ! != ( _i2c_master_write (4 , , , -> -> 40 `i `uc -> -> 83 `i `uc -> _sector_data `*Cv -> -> 8 `i `ui -> 0 `i 41  ]
+[; ;stusb4500_nvm.c: 246: return -1;
+"246
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 41 ]
+[; ;stusb4500_nvm.c: 249: buffer = 0x80 | 0x40;
+"249
+[e = _buffer -> | -> 128 `i -> 64 `i `uc ]
+[; ;stusb4500_nvm.c: 250: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"250
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 42  ]
+[; ;stusb4500_nvm.c: 251: return -1;
+"251
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 42 ]
+[; ;stusb4500_nvm.c: 254: buffer = (0x01 & 0x07);
+"254
+[e = _buffer -> & -> 1 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 255: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"255
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 43  ]
+[; ;stusb4500_nvm.c: 256: return -1;
+"256
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 43 ]
+[; ;stusb4500_nvm.c: 259: buffer = 0x80 | 0x40 | 0x10;
+"259
+[e = _buffer -> | | -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 260: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"260
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 44  ]
+[; ;stusb4500_nvm.c: 261: return -1;
+"261
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 44 ]
+[; ;stusb4500_nvm.c: 264: do {
+"264
+[e :U 47 ]
+{
+[; ;stusb4500_nvm.c: 265: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"265
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 48  ]
+[; ;stusb4500_nvm.c: 266: return -1;
+"266
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 48 ]
+"267
+}
+[; ;stusb4500_nvm.c: 267: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 47  ]
+[e :U 46 ]
+[; ;stusb4500_nvm.c: 270: buffer = (0x06 & 0x07);
+"270
+[e = _buffer -> & -> 6 `i -> 7 `i `uc ]
+[; ;stusb4500_nvm.c: 271: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"271
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 49  ]
+[; ;stusb4500_nvm.c: 272: return -1;
+"272
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 49 ]
+[; ;stusb4500_nvm.c: 275: buffer = (sector_num & 0x07) | 0x80 | 0x40 |
+[; ;stusb4500_nvm.c: 276: 0x10;
+"276
+[e = _buffer -> | | | & -> _sector_num `i -> 7 `i -> 128 `i -> 64 `i -> 16 `i `uc ]
+[; ;stusb4500_nvm.c: 277: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"277
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 50  ]
+[; ;stusb4500_nvm.c: 278: return -1;
+"278
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 50 ]
+[; ;stusb4500_nvm.c: 281: do {
+"281
+[e :U 53 ]
+{
+[; ;stusb4500_nvm.c: 282: if (i2c_master_read_u8(0x28, 0x96, &buffer) != 0)
+"282
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc &U _buffer -> 0 `i 54  ]
+[; ;stusb4500_nvm.c: 283: return -1;
+"283
+[e ) -U -> 1 `i ]
+[e $UE 39  ]
+[e :U 54 ]
+"284
+}
+[; ;stusb4500_nvm.c: 284: } while (buffer & 0x10);
+[e $ != & -> _buffer `i -> 16 `i -> 0 `i 53  ]
+[e :U 52 ]
+[; ;stusb4500_nvm.c: 286: return 0;
+"286
+[e ) -> 0 `i ]
+[e $UE 39  ]
+[; ;stusb4500_nvm.c: 287: }
+"287
+[e :UE 39 ]
+}
+"289
+[v _exit_rw_mode `(i ~T0 @X0 1 sf ]
+{
+[; ;stusb4500_nvm.c: 289: static int exit_rw_mode(void) {
+[e :U _exit_rw_mode ]
+[f ]
+"290
+[v _buffer `uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 290: uint8_t buffer;
+[; ;stusb4500_nvm.c: 293: buffer = 0x40;
+"293
+[e = _buffer -> -> 64 `i `uc ]
+[; ;stusb4500_nvm.c: 294: if (i2c_master_write_u8(0x28, 0x96, buffer) != 0)
+"294
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 150 `i `uc _buffer -> 0 `i 56  ]
+[; ;stusb4500_nvm.c: 295: return -1;
+"295
+[e ) -U -> 1 `i ]
+[e $UE 55  ]
+[e :U 56 ]
+[; ;stusb4500_nvm.c: 296: buffer = 0x00;
+"296
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 297: if (i2c_master_write_u8(0x28, 0x97, buffer) != 0)
+"297
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 151 `i `uc _buffer -> 0 `i 57  ]
+[; ;stusb4500_nvm.c: 298: return -1;
+"298
+[e ) -U -> 1 `i ]
+[e $UE 55  ]
+[e :U 57 ]
+[; ;stusb4500_nvm.c: 301: buffer = 0x00;
+"301
+[e = _buffer -> -> 0 `i `uc ]
+[; ;stusb4500_nvm.c: 302: if (
+[; ;stusb4500_nvm.c: 303: i2c_master_write_u8(0x28, 0x95, buffer) != 0)
+"303
+[e $ ! != ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 149 `i `uc _buffer -> 0 `i 58  ]
+[; ;stusb4500_nvm.c: 304: return -1;
+"304
+[e ) -U -> 1 `i ]
+[e $UE 55  ]
+[e :U 58 ]
+[; ;stusb4500_nvm.c: 306: return 0;
+"306
+[e ) -> 0 `i ]
+[e $UE 55  ]
+[; ;stusb4500_nvm.c: 307: }
+"307
+[e :UE 55 ]
+}
+"309
+[v _nvm_flash `(i ~T0 @X0 1 ef ]
+{
+[; ;stusb4500_nvm.c: 309: int nvm_flash(void) {
+[e :U _nvm_flash ]
+[f ]
+[; ;stusb4500_nvm.c: 310: if (enter_write_mode() != 0) return -1;
+"310
+[e $ ! != ( _enter_write_mode ..  -> 0 `i 60  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 60 ]
+[; ;stusb4500_nvm.c: 311: if (write_sector(0, nvm_config[0]) != 0) return -1;
+"311
+[e $ ! != ( _write_sector (2 , -> -> 0 `i `uc &U *U + &U _nvm_config * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _nvm_config `ui -> -> 8 `i `ui `ux -> 0 `i 61  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 61 ]
+[; ;stusb4500_nvm.c: 312: if (write_sector(1, nvm_config[1]) != 0) return -1;
+"312
+[e $ ! != ( _write_sector (2 , -> -> 1 `i `uc &U *U + &U _nvm_config * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _nvm_config `ui -> -> 8 `i `ui `ux -> 0 `i 62  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 62 ]
+[; ;stusb4500_nvm.c: 313: if (write_sector(2, nvm_config[2]) != 0) return -1;
+"313
+[e $ ! != ( _write_sector (2 , -> -> 2 `i `uc &U *U + &U _nvm_config * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _nvm_config `ui -> -> 8 `i `ui `ux -> 0 `i 63  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 63 ]
+[; ;stusb4500_nvm.c: 314: if (write_sector(3, nvm_config[3]) != 0) return -1;
+"314
+[e $ ! != ( _write_sector (2 , -> -> 3 `i `uc &U *U + &U _nvm_config * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _nvm_config `ui -> -> 8 `i `ui `ux -> 0 `i 64  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 64 ]
+[; ;stusb4500_nvm.c: 315: if (write_sector(4, nvm_config[4]) != 0) return -1;
+"315
+[e $ ! != ( _write_sector (2 , -> -> 4 `i `uc &U *U + &U _nvm_config * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _nvm_config `ui -> -> 8 `i `ui `ux -> 0 `i 65  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 65 ]
+[; ;stusb4500_nvm.c: 316: if (exit_rw_mode() != 0) return -1;
+"316
+[e $ ! != ( _exit_rw_mode ..  -> 0 `i 66  ]
+[e ) -U -> 1 `i ]
+[e $UE 59  ]
+[e :U 66 ]
+[; ;stusb4500_nvm.c: 318: return 0;
+"318
+[e ) -> 0 `i ]
+[e $UE 59  ]
+[; ;stusb4500_nvm.c: 319: }
+"319
+[e :UE 59 ]
+}
+"321
+[v _nvm_read `(i ~T0 @X0 1 ef1`*uc ]
+{
+[; ;stusb4500_nvm.c: 321: int nvm_read(uint8_t* sectors_out) {
+[e :U _nvm_read ]
+[v _sectors_out `*uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;stusb4500_nvm.c: 322: if (!sectors_out) return -1;
+"322
+[e $ ! ! != _sectors_out -> -> 0 `i `*uc 68  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 68 ]
+[v F102 `uc ~T0 @X0 -> 8 `i t ]
+"324
+[v _sectors `F102 ~T0 @X0 -> 5 `i a ]
+"325
+[v _p_sectors `*uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 324: uint8_t sectors[5][8];
+[; ;stusb4500_nvm.c: 325: uint8_t* p_sectors = (uint8_t*)sectors;
+[e = _p_sectors -> &U _sectors `*uc ]
+[; ;stusb4500_nvm.c: 327: if (enter_read_mode() != 0) return -1;
+"327
+[e $ ! != ( _enter_read_mode ..  -> 0 `i 69  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 69 ]
+[; ;stusb4500_nvm.c: 328: if (read_sector(0, sectors[0]) != 0) return -1;
+"328
+[e $ ! != ( _read_sector (2 , -> -> 0 `i `uc &U *U + &U _sectors * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _sectors `ui -> -> 8 `i `ui `ux -> 0 `i 70  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 70 ]
+[; ;stusb4500_nvm.c: 329: if (read_sector(1, sectors[1]) != 0) return -1;
+"329
+[e $ ! != ( _read_sector (2 , -> -> 1 `i `uc &U *U + &U _sectors * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _sectors `ui -> -> 8 `i `ui `ux -> 0 `i 71  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 71 ]
+[; ;stusb4500_nvm.c: 330: if (read_sector(2, sectors[2]) != 0) return -1;
+"330
+[e $ ! != ( _read_sector (2 , -> -> 2 `i `uc &U *U + &U _sectors * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _sectors `ui -> -> 8 `i `ui `ux -> 0 `i 72  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 72 ]
+[; ;stusb4500_nvm.c: 331: if (read_sector(3, sectors[3]) != 0) return -1;
+"331
+[e $ ! != ( _read_sector (2 , -> -> 3 `i `uc &U *U + &U _sectors * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _sectors `ui -> -> 8 `i `ui `ux -> 0 `i 73  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 73 ]
+[; ;stusb4500_nvm.c: 332: if (read_sector(4, sectors[4]) != 0) return -1;
+"332
+[e $ ! != ( _read_sector (2 , -> -> 4 `i `uc &U *U + &U _sectors * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _sectors `ui -> -> 8 `i `ui `ux -> 0 `i 74  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 74 ]
+[; ;stusb4500_nvm.c: 333: if (exit_rw_mode() != 0) return -1;
+"333
+[e $ ! != ( _exit_rw_mode ..  -> 0 `i 75  ]
+[e ) -U -> 1 `i ]
+[e $UE 67  ]
+[e :U 75 ]
+[; ;stusb4500_nvm.c: 335: for (int i = 0; i < 40; i++) {
+"335
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 76  ]
+[e $U 77  ]
+[e :U 76 ]
+{
+[; ;stusb4500_nvm.c: 336: sectors_out[i] = p_sectors[i];
+"336
+[e = *U + _sectors_out * -> _i `x -> -> # *U _sectors_out `i `x *U + _p_sectors * -> _i `x -> -> # *U _p_sectors `i `x ]
+"337
+}
+"335
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 76  ]
+[e :U 77 ]
+"337
+}
+[; ;stusb4500_nvm.c: 337: }
+[; ;stusb4500_nvm.c: 339: return 0;
+"339
+[e ) -> 0 `i ]
+[e $UE 67  ]
+[; ;stusb4500_nvm.c: 340: }
+"340
+[e :UE 67 ]
+}
+"342
+[v _nvm_verify `(i ~T0 @X0 1 ef ]
+{
+[; ;stusb4500_nvm.c: 342: int nvm_verify(void) {
+[e :U _nvm_verify ]
+[f ]
+[v F108 `uc ~T0 @X0 -> 8 `i t ]
+"343
+[v _sectors `F108 ~T0 @X0 -> 5 `i a ]
+"344
+[v _p_sectors `*uc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 343: uint8_t sectors[5][8];
+[; ;stusb4500_nvm.c: 344: uint8_t* p_sectors = (uint8_t*)sectors;
+[e = _p_sectors -> &U _sectors `*uc ]
+"345
+[v _p_config `*Cuc ~T0 @X0 1 a ]
+[; ;stusb4500_nvm.c: 345: const uint8_t* p_config = (const uint8_t*)nvm_config;
+[e = _p_config -> &U _nvm_config `*Cuc ]
+[; ;stusb4500_nvm.c: 347: if (nvm_read(p_sectors) != 0) return -1;
+"347
+[e $ ! != ( _nvm_read (1 _p_sectors -> 0 `i 80  ]
+[e ) -U -> 1 `i ]
+[e $UE 79  ]
+[e :U 80 ]
+[; ;stusb4500_nvm.c: 349: for (int i = 0; i < 40; i++) {
+"349
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 81  ]
+[e $U 82  ]
+[e :U 81 ]
+{
+[; ;stusb4500_nvm.c: 350: if (p_sectors[i] != p_config[i]) return -1;
+"350
+[e $ ! != -> *U + _p_sectors * -> _i `x -> -> # *U _p_sectors `i `x `i -> *U + _p_config * -> _i `x -> -> # *U _p_config `i `x `i 84  ]
+[e ) -U -> 1 `i ]
+[e $UE 79  ]
+[e :U 84 ]
+"351
+}
+"349
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 81  ]
+[e :U 82 ]
+"351
+}
+[; ;stusb4500_nvm.c: 351: }
+[; ;stusb4500_nvm.c: 353: return 0;
+"353
+[e ) -> 0 `i ]
+[e $UE 79  ]
+[; ;stusb4500_nvm.c: 354: }
+"354
+[e :UE 79 ]
+}
