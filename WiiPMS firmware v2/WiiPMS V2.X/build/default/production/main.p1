@@ -7807,167 +7807,167 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 145: RC5 = 1;
 "145
 [e = _RC5 -> -> 1 `i `b ]
-"147
-}
-[; ;main.c: 147: }
-[e $U 890  ]
 "148
-[e :U 889 ]
-[; ;main.c: 148: else {
-{
-[; ;main.c: 149: TRISCbits.TRISC5 = 1;
+}
+[; ;main.c: 148: }
+[e $U 890  ]
 "149
-[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 150: if(mode == 3) {
+[e :U 889 ]
+[; ;main.c: 149: else {
+{
+[; ;main.c: 150: TRISCbits.TRISC5 = 1;
 "150
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 151: if(mode == 3) {
+"151
 [e $ ! == -> _mode `i -> 3 `i 891  ]
 {
-[; ;main.c: 151: BQ_Write(0x09, 0b01100100);
-"151
-[e ( _BQ_Write (2 , -> -> 9 `i `uc -> -> 100 `i `uc ]
+[; ;main.c: 152: BQ_Write(0x09, 0b01100100);
 "152
-}
-[e :U 891 ]
+[e ( _BQ_Write (2 , -> -> 9 `i `uc -> -> 100 `i `uc ]
 "153
 }
-[e :U 890 ]
+[e :U 891 ]
 "154
 }
-[; ;main.c: 152: }
+[e :U 890 ]
+"155
+}
 [; ;main.c: 153: }
 [; ;main.c: 154: }
+[; ;main.c: 155: }
 [e $U 892  ]
-"155
+"156
 [e :U 888 ]
-[; ;main.c: 155: else if(SYS_ENABLE && btn_time<=50 && !VBUS_CHRG_STATE[1]) {
+[; ;main.c: 156: else if(SYS_ENABLE && btn_time<=50 && !VBUS_CHRG_STATE[1]) {
 [e $ ! && && != -> _SYS_ENABLE `i -> -> -> 0 `i `uc `i <= _btn_time -> -> -> 50 `i `l `ul ! != -> *U + _VBUS_CHRG_STATE * -> -> 1 `i `x -> -> # *U _VBUS_CHRG_STATE `i `x `i -> -> -> 0 `i `uc `i 893  ]
 {
-[; ;main.c: 158: if(BATTERY_VOLTAGE <= 50) {
-"158
+[; ;main.c: 159: if(BATTERY_VOLTAGE <= 50) {
+"159
 [e $ ! <= -> _BATTERY_VOLTAGE `i -> 50 `i 894  ]
 {
-[; ;main.c: 159: mode = 2;
-"159
-[e = _mode -> -> 2 `i `uc ]
+[; ;main.c: 160: mode = 2;
 "160
-}
-[; ;main.c: 160: }
-[e $U 895  ]
+[e = _mode -> -> 2 `i `uc ]
 "161
-[e :U 894 ]
-[; ;main.c: 161: else {
-{
-[; ;main.c: 162: mode++;
-"162
-[e ++ _mode -> -> 1 `i `uc ]
-"163
 }
-[e :U 895 ]
+[; ;main.c: 161: }
+[e $U 895  ]
+"162
+[e :U 894 ]
+[; ;main.c: 162: else {
+{
+[; ;main.c: 163: mode++;
+"163
+[e ++ _mode -> -> 1 `i `uc ]
 "164
 }
-[e :U 893 ]
+[e :U 895 ]
 "165
-[e :U 892 ]
-[; ;main.c: 163: }
-[; ;main.c: 164: }
-[; ;main.c: 165: btn_is_debounced = 0;
-[e = _btn_is_debounced -> -> 0 `i `uc ]
+}
+[e :U 893 ]
 "166
+[e :U 892 ]
+[; ;main.c: 164: }
+[; ;main.c: 165: }
+[; ;main.c: 166: btn_is_debounced = 0;
+[e = _btn_is_debounced -> -> 0 `i `uc ]
+"167
 }
 [e :U 887 ]
-[; ;main.c: 166: }
-[; ;main.c: 168: BQ_UPDATE();
-"168
+[; ;main.c: 167: }
+[; ;main.c: 169: BQ_UPDATE();
+"169
 [e ( _BQ_UPDATE ..  ]
-[; ;main.c: 170: thermal_protection();
-"170
+[; ;main.c: 171: thermal_protection();
+"171
 [e ( _thermal_protection ..  ]
-[; ;main.c: 173: if(VBUS_CHRG_STATE[1] == 0) {
-"173
+[; ;main.c: 174: if(VBUS_CHRG_STATE[1] == 0) {
+"174
 [e $ ! == -> *U + _VBUS_CHRG_STATE * -> -> 1 `i `x -> -> # *U _VBUS_CHRG_STATE `i `x `i -> 0 `i 896  ]
 {
-[; ;main.c: 174: if(SYS_ENABLE) {
-"174
+[; ;main.c: 175: if(SYS_ENABLE) {
+"175
 [e $ ! != -> _SYS_ENABLE `i -> -> -> 0 `i `uc `i 897  ]
 {
-[; ;main.c: 175: led_modes();
-"175
-[e ( _led_modes ..  ]
+[; ;main.c: 176: led_modes();
 "176
+[e ( _led_modes ..  ]
+"177
 }
 [e :U 897 ]
-[; ;main.c: 176: }
-[; ;main.c: 177: if(timer_diff(stusb4500_timeout) >= 500) {
-"177
+[; ;main.c: 177: }
+[; ;main.c: 178: if(timer_diff(stusb4500_timeout) >= 500) {
+"178
 [e $ ! >= ( _timer_diff (1 _stusb4500_timeout -> -> -> 500 `i `l `ul 898  ]
 {
-[; ;main.c: 178: set_stusb4500 = 0;
-"178
-[e = _set_stusb4500 -> -> 0 `i `uc ]
+[; ;main.c: 179: set_stusb4500 = 0;
 "179
-}
-[e :U 898 ]
+[e = _set_stusb4500 -> -> 0 `i `uc ]
 "180
 }
-[; ;main.c: 179: }
-[; ;main.c: 180: }
-[e $U 899  ]
+[e :U 898 ]
 "181
-[e :U 896 ]
-[; ;main.c: 181: else {
-{
-[; ;main.c: 182: chrg_led();
+}
+[; ;main.c: 180: }
+[; ;main.c: 181: }
+[e $U 899  ]
 "182
-[e ( _chrg_led ..  ]
-[; ;main.c: 183: if(!set_stusb4500) {
+[e :U 896 ]
+[; ;main.c: 182: else {
+{
+[; ;main.c: 183: chrg_led();
 "183
+[e ( _chrg_led ..  ]
+[; ;main.c: 184: if(!set_stusb4500) {
+"184
 [e $ ! ! != -> _set_stusb4500 `i -> -> -> 0 `i `uc `i 900  ]
 {
-[; ;main.c: 184: stusb_negotiate();
-"184
-[e ( _stusb_negotiate ..  ]
-[; ;main.c: 185: set_stusb4500 = 1;
+[; ;main.c: 185: stusb_negotiate();
 "185
-[e = _set_stusb4500 -> -> 1 `i `uc ]
-[; ;main.c: 186: stusb4500_timeout = get_time();
+[e ( _stusb_negotiate ..  ]
+[; ;main.c: 186: set_stusb4500 = 1;
 "186
-[e = _stusb4500_timeout ( _get_time ..  ]
+[e = _set_stusb4500 -> -> 1 `i `uc ]
+[; ;main.c: 187: stusb4500_timeout = get_time();
 "187
-}
-[e :U 900 ]
+[e = _stusb4500_timeout ( _get_time ..  ]
 "188
 }
+[e :U 900 ]
+"189
+}
 [e :U 899 ]
-[; ;main.c: 187: }
 [; ;main.c: 188: }
-[; ;main.c: 191: if(!SYS_ENABLE && VBUS_CHRG_STATE[1]==0 && !btn_is_debounced && RA5 && BQ_adc_state==0 && !set_stusb4500) {
-"191
+[; ;main.c: 189: }
+[; ;main.c: 192: if(!SYS_ENABLE && VBUS_CHRG_STATE[1]==0 && !btn_is_debounced && RA5 && BQ_adc_state==0 && !set_stusb4500) {
+"192
 [e $ ! && && && && && ! != -> _SYS_ENABLE `i -> -> -> 0 `i `uc `i == -> *U + _VBUS_CHRG_STATE * -> -> 1 `i `x -> -> # *U _VBUS_CHRG_STATE `i `x `i -> 0 `i ! != -> _btn_is_debounced `i -> -> -> 0 `i `uc `i _RA5 == -> _BQ_adc_state `i -> 0 `i ! != -> _set_stusb4500 `i -> -> -> 0 `i `uc `i 901  ]
 {
-[; ;main.c: 192: PWM_power_down();
-"192
-[e ( _PWM_power_down ..  ]
-[; ;main.c: 193: asm("clrwdt");
+[; ;main.c: 193: PWM_power_down();
 "193
-[; <" clrwdt ;# ">
-[; ;main.c: 194: asm("sleep");
+[e ( _PWM_power_down ..  ]
+[; ;main.c: 194: asm("clrwdt");
 "194
-[; <" sleep ;# ">
-[; ;main.c: 195: asm("reset");
+[; <" clrwdt ;# ">
+[; ;main.c: 195: asm("sleep");
 "195
-[; <" reset ;# ">
+[; <" sleep ;# ">
+[; ;main.c: 196: asm("reset");
 "196
+[; <" reset ;# ">
+"197
 }
 [e :U 901 ]
-"198
+"199
 }
 [e :U 884 ]
 "136
 [e $U 885  ]
 [e :U 886 ]
-[; ;main.c: 196: }
-[; ;main.c: 198: }
+[; ;main.c: 197: }
 [; ;main.c: 199: }
-"199
+[; ;main.c: 200: }
+"200
 [e :UE 883 ]
 }

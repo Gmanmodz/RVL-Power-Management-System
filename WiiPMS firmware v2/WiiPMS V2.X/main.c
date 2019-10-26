@@ -142,7 +142,8 @@ void main() {
                 SYS_ENABLE = !SYS_ENABLE;
                 if(SYS_ENABLE) {
                     TRISCbits.TRISC5 = 0;
-                    enable = 1;                     //turn on regulators      
+                    enable = 1;                     //turn on regulators   
+                    //nvm_flash();
                     //ps2_on();
                 }
                 else {

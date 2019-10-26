@@ -11200,8 +11200,12 @@ BQ_adc_state = 0;
 }
 
 uint8_t REG00_config;
+uint8_t REG01_config;
+uint8_t REG02_config;
 uint8_t REG03_config;
 uint8_t REG04_config;
+uint8_t REG05_config;
+uint8_t REG06_config;
 uint8_t REG07_config;
 uint8_t REG08_config;
 
@@ -11211,6 +11215,21 @@ uint8_t EN_ILIM = 1;
 uint8_t INILIM = 0b111010;
 
 
+uint8_t BHOT = 0b00;
+uint8_t BCOLD = 0b0;
+uint8_t VINDPM_OS = 0b00110;
+
+
+uint8_t CONV_START = 0b0;
+uint8_t CONV_RATE = 0;
+uint8_t BOOST_FREQ = 1;
+uint8_t ICO_EN = 1;
+uint8_t HVDCP_EN = 0;
+uint8_t MAXC_EN = 1;
+uint8_t FORCE_DPDM = 0;
+uint8_t AUTO_DPDM_EN = 1;
+
+
 uint8_t WD_RST = 0;
 uint8_t OTG_CONFIG = 0;
 uint8_t CHG_CONFIG = 1;
@@ -11218,6 +11237,15 @@ uint8_t SYS_MIN = 0b101;
 
 
 uint8_t ICHG = 0b1100000;
+
+
+uint8_t IPRECHG = 0b0001;
+uint8_t ITERM = 0b0011;
+
+
+uint8_t VREG = 0b010110;
+uint8_t BATLOWV = 0;
+uint8_t VRECHG = 0;
 
 
 uint8_t EN_TERM = 1;
@@ -11233,17 +11261,24 @@ uint8_t TREG = 0b01;
 
 void BQ_CONFIG_INIT() {
 REG00_config = (EN_HIZ<<7)|(EN_ILIM<<6)|(INILIM);
+REG01_config = (BHOT<<6)|(BCOLD<<5)|(VINDPM_OS);
+REG02_config = (CONV_START<<7)|(CONV_RATE<<6)|(BOOST_FREQ<<5)|(ICO_EN<<4)|(HVDCP_EN<<3)|(MAXC_EN<<2)|(FORCE_DPDM<<1)|(AUTO_DPDM_EN);
 REG03_config = (WD_RST<<6)|(OTG_CONFIG<<5)|(CHG_CONFIG<<4)|(SYS_MIN<<1);
 REG04_config = (ICHG);
+REG05_config = (IPRECHG<<4)|(ITERM);
+REG06_config = (VREG<<2)|(BATLOWV<<1)|(VRECHG);
 REG07_config = (EN_TERM<<7)|(STAT_DIS<<6)|(WATCHDOG<<4)|(EN_TIMER<<3)|(CHG_TIMER<<1)|0b1;
 REG08_config = (BAT_COMP<<5)|(VCLAMP<<2)|TREG;
 }
 
 void BQ_INIT() {
 BQ_Write(0x00, REG00_config);
+BQ_Write(0x01, REG01_config);
+BQ_Write(0x02, REG02_config);
 BQ_Write(0x03, REG03_config);
 BQ_Write(0x04, REG04_config);
+BQ_Write(0x05, REG05_config);
+BQ_Write(0x06, REG06_config);
 BQ_Write(0x07, REG07_config);
 BQ_Write(0x08, REG08_config);
 }
-

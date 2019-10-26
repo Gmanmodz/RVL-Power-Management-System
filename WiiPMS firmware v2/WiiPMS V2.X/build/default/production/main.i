@@ -11285,6 +11285,7 @@ if(SYS_ENABLE) {
 TRISCbits.TRISC5 = 0;
 RC5 = 1;
 
+
 }
 else {
 TRISCbits.TRISC5 = 1;

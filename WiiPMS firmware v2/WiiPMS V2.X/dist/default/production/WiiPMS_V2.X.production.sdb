@@ -13,9 +13,9 @@
 [v _BQ_get_chrg_state BQ_get_chrg_state `(*.4uc  1 e 1 0 ]
 "60
 [v _BQ_UPDATE BQ_UPDATE `(v  1 e 1 0 ]
-"116
+"144
 [v _BQ_CONFIG_INIT BQ_CONFIG_INIT `(v  1 e 1 0 ]
-"124
+"156
 [v _BQ_INIT BQ_INIT `(v  1 e 1 0 ]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
@@ -140,12 +140,20 @@
 "84
 [v _REG00_config REG00_config `uc  1 e 1 0 ]
 "85
-[v _REG03_config REG03_config `uc  1 e 1 0 ]
+[v _REG01_config REG01_config `uc  1 e 1 0 ]
 "86
-[v _REG04_config REG04_config `uc  1 e 1 0 ]
+[v _REG02_config REG02_config `uc  1 e 1 0 ]
 "87
-[v _REG07_config REG07_config `uc  1 e 1 0 ]
+[v _REG03_config REG03_config `uc  1 e 1 0 ]
 "88
+[v _REG04_config REG04_config `uc  1 e 1 0 ]
+"89
+[v _REG05_config REG05_config `uc  1 e 1 0 ]
+"90
+[v _REG06_config REG06_config `uc  1 e 1 0 ]
+"91
+[v _REG07_config REG07_config `uc  1 e 1 0 ]
+"92
 [v _REG08_config REG08_config `uc  1 e 1 0 ]
 [s S187 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
@@ -183,7 +191,7 @@
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 "883
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-[s S719 . 1 `uc 1 ADON 1 0 :1:0 
+[s S739 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GOnDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -193,11 +201,11 @@
 `uc 1 CHS5 1 0 :1:7 
 ]
 "904
-[s S728 . 1 `uc 1 . 1 0 :2:0 
+[s S748 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CHS 1 0 :6:2 
 ]
-[u S731 . 1 `S719 1 . 1 0 `S728 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES731  1 e 1 @157 ]
+[u S751 . 1 `S739 1 . 1 0 `S748 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES751  1 e 1 @157 ]
 "954
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "1917
@@ -378,7 +386,7 @@
 [v _NVMADRH NVMADRH `VEuc  1 e 1 @2075 ]
 "9407
 [v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
-[s S801 . 1 `uc 1 RD 1 0 :1:0 
+[s S821 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -387,8 +395,8 @@
 `uc 1 NVMREGS 1 0 :1:6 
 ]
 "9535
-[u S809 . 1 `S801 1 . 1 0 ]
-[v _NVMCON1bits NVMCON1bits `VES809  1 e 1 @2078 ]
+[u S829 . 1 `S821 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES829  1 e 1 @2078 ]
 "9575
 [v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
 [s S22 . 1 `uc 1 DOZE 1 0 :3:0 
@@ -520,7 +528,7 @@
 "115 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"199
+"200
 } 0
 "93
 [v _thermal_protection thermal_protection `(v  1 e 1 0 ]
@@ -900,10 +908,10 @@
 {
 "86
 } 0
-"124 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"156 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_INIT BQ_INIT `(v  1 e 1 0 ]
 {
-"130
+"166
 } 0
 "16
 [v _BQ_Write BQ_Write `(v  1 e 1 0 ]
@@ -938,10 +946,10 @@
 {
 "56
 } 0
-"116 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"144 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_CONFIG_INIT BQ_CONFIG_INIT `(v  1 e 1 0 ]
 {
-"122
+"154
 } 0
 "63 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _ISR ISR `II(v  1 e 1 0 ]

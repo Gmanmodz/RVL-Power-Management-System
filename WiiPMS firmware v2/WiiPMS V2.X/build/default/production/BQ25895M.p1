@@ -7518,160 +7518,292 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _REG00_config `uc ~T0 @X0 1 e ]
 [; ;BQ25895M.c: 84: uint8_t REG00_config;
 "85
-[v _REG03_config `uc ~T0 @X0 1 e ]
-[; ;BQ25895M.c: 85: uint8_t REG03_config;
+[v _REG01_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 85: uint8_t REG01_config;
 "86
-[v _REG04_config `uc ~T0 @X0 1 e ]
-[; ;BQ25895M.c: 86: uint8_t REG04_config;
+[v _REG02_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 86: uint8_t REG02_config;
 "87
-[v _REG07_config `uc ~T0 @X0 1 e ]
-[; ;BQ25895M.c: 87: uint8_t REG07_config;
+[v _REG03_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 87: uint8_t REG03_config;
 "88
-[v _REG08_config `uc ~T0 @X0 1 e ]
-[; ;BQ25895M.c: 88: uint8_t REG08_config;
+[v _REG04_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 88: uint8_t REG04_config;
+"89
+[v _REG05_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 89: uint8_t REG05_config;
+"90
+[v _REG06_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 90: uint8_t REG06_config;
 "91
+[v _REG07_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 91: uint8_t REG07_config;
+"92
+[v _REG08_config `uc ~T0 @X0 1 e ]
+[; ;BQ25895M.c: 92: uint8_t REG08_config;
+"95
 [v _EN_HIZ `uc ~T0 @X0 1 e ]
 [i _EN_HIZ
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 91: uint8_t EN_HIZ = 0;
-"92
+[; ;BQ25895M.c: 95: uint8_t EN_HIZ = 0;
+"96
 [v _EN_ILIM `uc ~T0 @X0 1 e ]
 [i _EN_ILIM
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 92: uint8_t EN_ILIM = 1;
-"93
+[; ;BQ25895M.c: 96: uint8_t EN_ILIM = 1;
+"97
 [v _INILIM `uc ~T0 @X0 1 e ]
 [i _INILIM
 -> -> 58 `i `uc
 ]
-[; ;BQ25895M.c: 93: uint8_t INILIM = 0b111010;
-"96
+[; ;BQ25895M.c: 97: uint8_t INILIM = 0b111010;
+"100
+[v _BHOT `uc ~T0 @X0 1 e ]
+[i _BHOT
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 100: uint8_t BHOT = 0b00;
+"101
+[v _BCOLD `uc ~T0 @X0 1 e ]
+[i _BCOLD
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 101: uint8_t BCOLD = 0b0;
+"102
+[v _VINDPM_OS `uc ~T0 @X0 1 e ]
+[i _VINDPM_OS
+-> -> 6 `i `uc
+]
+[; ;BQ25895M.c: 102: uint8_t VINDPM_OS = 0b00110;
+"105
+[v _CONV_START `uc ~T0 @X0 1 e ]
+[i _CONV_START
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 105: uint8_t CONV_START = 0b0;
+"106
+[v _CONV_RATE `uc ~T0 @X0 1 e ]
+[i _CONV_RATE
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 106: uint8_t CONV_RATE = 0;
+"107
+[v _BOOST_FREQ `uc ~T0 @X0 1 e ]
+[i _BOOST_FREQ
+-> -> 1 `i `uc
+]
+[; ;BQ25895M.c: 107: uint8_t BOOST_FREQ = 1;
+"108
+[v _ICO_EN `uc ~T0 @X0 1 e ]
+[i _ICO_EN
+-> -> 1 `i `uc
+]
+[; ;BQ25895M.c: 108: uint8_t ICO_EN = 1;
+"109
+[v _HVDCP_EN `uc ~T0 @X0 1 e ]
+[i _HVDCP_EN
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 109: uint8_t HVDCP_EN = 0;
+"110
+[v _MAXC_EN `uc ~T0 @X0 1 e ]
+[i _MAXC_EN
+-> -> 1 `i `uc
+]
+[; ;BQ25895M.c: 110: uint8_t MAXC_EN = 1;
+"111
+[v _FORCE_DPDM `uc ~T0 @X0 1 e ]
+[i _FORCE_DPDM
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 111: uint8_t FORCE_DPDM = 0;
+"112
+[v _AUTO_DPDM_EN `uc ~T0 @X0 1 e ]
+[i _AUTO_DPDM_EN
+-> -> 1 `i `uc
+]
+[; ;BQ25895M.c: 112: uint8_t AUTO_DPDM_EN = 1;
+"115
 [v _WD_RST `uc ~T0 @X0 1 e ]
 [i _WD_RST
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 96: uint8_t WD_RST = 0;
-"97
+[; ;BQ25895M.c: 115: uint8_t WD_RST = 0;
+"116
 [v _OTG_CONFIG `uc ~T0 @X0 1 e ]
 [i _OTG_CONFIG
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 97: uint8_t OTG_CONFIG = 0;
-"98
+[; ;BQ25895M.c: 116: uint8_t OTG_CONFIG = 0;
+"117
 [v _CHG_CONFIG `uc ~T0 @X0 1 e ]
 [i _CHG_CONFIG
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 98: uint8_t CHG_CONFIG = 1;
-"99
+[; ;BQ25895M.c: 117: uint8_t CHG_CONFIG = 1;
+"118
 [v _SYS_MIN `uc ~T0 @X0 1 e ]
 [i _SYS_MIN
 -> -> 5 `i `uc
 ]
-[; ;BQ25895M.c: 99: uint8_t SYS_MIN = 0b101;
-"102
+[; ;BQ25895M.c: 118: uint8_t SYS_MIN = 0b101;
+"121
 [v _ICHG `uc ~T0 @X0 1 e ]
 [i _ICHG
 -> -> 96 `i `uc
 ]
-[; ;BQ25895M.c: 102: uint8_t ICHG = 0b1100000;
-"105
+[; ;BQ25895M.c: 121: uint8_t ICHG = 0b1100000;
+"124
+[v _IPRECHG `uc ~T0 @X0 1 e ]
+[i _IPRECHG
+-> -> 1 `i `uc
+]
+[; ;BQ25895M.c: 124: uint8_t IPRECHG = 0b0001;
+"125
+[v _ITERM `uc ~T0 @X0 1 e ]
+[i _ITERM
+-> -> 3 `i `uc
+]
+[; ;BQ25895M.c: 125: uint8_t ITERM = 0b0011;
+"128
+[v _VREG `uc ~T0 @X0 1 e ]
+[i _VREG
+-> -> 22 `i `uc
+]
+[; ;BQ25895M.c: 128: uint8_t VREG = 0b010110;
+"129
+[v _BATLOWV `uc ~T0 @X0 1 e ]
+[i _BATLOWV
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 129: uint8_t BATLOWV = 0;
+"130
+[v _VRECHG `uc ~T0 @X0 1 e ]
+[i _VRECHG
+-> -> 0 `i `uc
+]
+[; ;BQ25895M.c: 130: uint8_t VRECHG = 0;
+"133
 [v _EN_TERM `uc ~T0 @X0 1 e ]
 [i _EN_TERM
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 105: uint8_t EN_TERM = 1;
-"106
+[; ;BQ25895M.c: 133: uint8_t EN_TERM = 1;
+"134
 [v _STAT_DIS `uc ~T0 @X0 1 e ]
 [i _STAT_DIS
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 106: uint8_t STAT_DIS = 1;
-"107
+[; ;BQ25895M.c: 134: uint8_t STAT_DIS = 1;
+"135
 [v _WATCHDOG `uc ~T0 @X0 1 e ]
 [i _WATCHDOG
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 107: uint8_t WATCHDOG = 0;
-"108
+[; ;BQ25895M.c: 135: uint8_t WATCHDOG = 0;
+"136
 [v _EN_TIMER `uc ~T0 @X0 1 e ]
 [i _EN_TIMER
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 108: uint8_t EN_TIMER = 1;
-"109
+[; ;BQ25895M.c: 136: uint8_t EN_TIMER = 1;
+"137
 [v _CHG_TIMER `uc ~T0 @X0 1 e ]
 [i _CHG_TIMER
 -> -> 10 `i `uc
 ]
-[; ;BQ25895M.c: 109: uint8_t CHG_TIMER = 10;
-"112
+[; ;BQ25895M.c: 137: uint8_t CHG_TIMER = 10;
+"140
 [v _BAT_COMP `uc ~T0 @X0 1 e ]
 [i _BAT_COMP
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 112: uint8_t BAT_COMP = 0;
-"113
+[; ;BQ25895M.c: 140: uint8_t BAT_COMP = 0;
+"141
 [v _VCLAMP `uc ~T0 @X0 1 e ]
 [i _VCLAMP
 -> -> 0 `i `uc
 ]
-[; ;BQ25895M.c: 113: uint8_t VCLAMP = 0;
-"114
+[; ;BQ25895M.c: 141: uint8_t VCLAMP = 0;
+"142
 [v _TREG `uc ~T0 @X0 1 e ]
 [i _TREG
 -> -> 1 `i `uc
 ]
-[; ;BQ25895M.c: 114: uint8_t TREG = 0b01;
-"116
+[; ;BQ25895M.c: 142: uint8_t TREG = 0b01;
+"144
 [v _BQ_CONFIG_INIT `(v ~T0 @X0 1 ef ]
 {
-[; ;BQ25895M.c: 116: void BQ_CONFIG_INIT() {
+[; ;BQ25895M.c: 144: void BQ_CONFIG_INIT() {
 [e :U _BQ_CONFIG_INIT ]
 [f ]
-[; ;BQ25895M.c: 117: REG00_config = (EN_HIZ<<7)|(EN_ILIM<<6)|(INILIM);
-"117
+[; ;BQ25895M.c: 145: REG00_config = (EN_HIZ<<7)|(EN_ILIM<<6)|(INILIM);
+"145
 [e = _REG00_config -> | | << -> _EN_HIZ `i -> 7 `i << -> _EN_ILIM `i -> 6 `i -> _INILIM `i `uc ]
-[; ;BQ25895M.c: 118: REG03_config = (WD_RST<<6)|(OTG_CONFIG<<5)|(CHG_CONFIG<<4)|(SYS_MIN<<1);
-"118
+[; ;BQ25895M.c: 146: REG01_config = (BHOT<<6)|(BCOLD<<5)|(VINDPM_OS);
+"146
+[e = _REG01_config -> | | << -> _BHOT `i -> 6 `i << -> _BCOLD `i -> 5 `i -> _VINDPM_OS `i `uc ]
+[; ;BQ25895M.c: 147: REG02_config = (CONV_START<<7)|(CONV_RATE<<6)|(BOOST_FREQ<<5)|(ICO_EN<<4)|(HVDCP_EN<<3)|(MAXC_EN<<2)|(FORCE_DPDM<<1)|(AUTO_DPDM_EN);
+"147
+[e = _REG02_config -> | | | | | | | << -> _CONV_START `i -> 7 `i << -> _CONV_RATE `i -> 6 `i << -> _BOOST_FREQ `i -> 5 `i << -> _ICO_EN `i -> 4 `i << -> _HVDCP_EN `i -> 3 `i << -> _MAXC_EN `i -> 2 `i << -> _FORCE_DPDM `i -> 1 `i -> _AUTO_DPDM_EN `i `uc ]
+[; ;BQ25895M.c: 148: REG03_config = (WD_RST<<6)|(OTG_CONFIG<<5)|(CHG_CONFIG<<4)|(SYS_MIN<<1);
+"148
 [e = _REG03_config -> | | | << -> _WD_RST `i -> 6 `i << -> _OTG_CONFIG `i -> 5 `i << -> _CHG_CONFIG `i -> 4 `i << -> _SYS_MIN `i -> 1 `i `uc ]
-[; ;BQ25895M.c: 119: REG04_config = (ICHG);
-"119
+[; ;BQ25895M.c: 149: REG04_config = (ICHG);
+"149
 [e = _REG04_config _ICHG ]
-[; ;BQ25895M.c: 120: REG07_config = (EN_TERM<<7)|(STAT_DIS<<6)|(WATCHDOG<<4)|(EN_TIMER<<3)|(CHG_TIMER<<1)|0b1;
-"120
+[; ;BQ25895M.c: 150: REG05_config = (IPRECHG<<4)|(ITERM);
+"150
+[e = _REG05_config -> | << -> _IPRECHG `i -> 4 `i -> _ITERM `i `uc ]
+[; ;BQ25895M.c: 151: REG06_config = (VREG<<2)|(BATLOWV<<1)|(VRECHG);
+"151
+[e = _REG06_config -> | | << -> _VREG `i -> 2 `i << -> _BATLOWV `i -> 1 `i -> _VRECHG `i `uc ]
+[; ;BQ25895M.c: 152: REG07_config = (EN_TERM<<7)|(STAT_DIS<<6)|(WATCHDOG<<4)|(EN_TIMER<<3)|(CHG_TIMER<<1)|0b1;
+"152
 [e = _REG07_config -> | | | | | << -> _EN_TERM `i -> 7 `i << -> _STAT_DIS `i -> 6 `i << -> _WATCHDOG `i -> 4 `i << -> _EN_TIMER `i -> 3 `i << -> _CHG_TIMER `i -> 1 `i -> 1 `i `uc ]
-[; ;BQ25895M.c: 121: REG08_config = (BAT_COMP<<5)|(VCLAMP<<2)|TREG;
-"121
+[; ;BQ25895M.c: 153: REG08_config = (BAT_COMP<<5)|(VCLAMP<<2)|TREG;
+"153
 [e = _REG08_config -> | | << -> _BAT_COMP `i -> 5 `i << -> _VCLAMP `i -> 2 `i -> _TREG `i `uc ]
-[; ;BQ25895M.c: 122: }
-"122
+[; ;BQ25895M.c: 154: }
+"154
 [e :UE 884 ]
 }
-"124
+"156
 [v _BQ_INIT `(v ~T0 @X0 1 ef ]
 {
-[; ;BQ25895M.c: 124: void BQ_INIT() {
+[; ;BQ25895M.c: 156: void BQ_INIT() {
 [e :U _BQ_INIT ]
 [f ]
-[; ;BQ25895M.c: 125: BQ_Write(0x00, REG00_config);
-"125
+[; ;BQ25895M.c: 157: BQ_Write(0x00, REG00_config);
+"157
 [e ( _BQ_Write (2 , -> -> 0 `i `uc _REG00_config ]
-[; ;BQ25895M.c: 126: BQ_Write(0x03, REG03_config);
-"126
+[; ;BQ25895M.c: 158: BQ_Write(0x01, REG01_config);
+"158
+[e ( _BQ_Write (2 , -> -> 1 `i `uc _REG01_config ]
+[; ;BQ25895M.c: 159: BQ_Write(0x02, REG02_config);
+"159
+[e ( _BQ_Write (2 , -> -> 2 `i `uc _REG02_config ]
+[; ;BQ25895M.c: 160: BQ_Write(0x03, REG03_config);
+"160
 [e ( _BQ_Write (2 , -> -> 3 `i `uc _REG03_config ]
-[; ;BQ25895M.c: 127: BQ_Write(0x04, REG04_config);
-"127
+[; ;BQ25895M.c: 161: BQ_Write(0x04, REG04_config);
+"161
 [e ( _BQ_Write (2 , -> -> 4 `i `uc _REG04_config ]
-[; ;BQ25895M.c: 128: BQ_Write(0x07, REG07_config);
-"128
+[; ;BQ25895M.c: 162: BQ_Write(0x05, REG05_config);
+"162
+[e ( _BQ_Write (2 , -> -> 5 `i `uc _REG05_config ]
+[; ;BQ25895M.c: 163: BQ_Write(0x06, REG06_config);
+"163
+[e ( _BQ_Write (2 , -> -> 6 `i `uc _REG06_config ]
+[; ;BQ25895M.c: 164: BQ_Write(0x07, REG07_config);
+"164
 [e ( _BQ_Write (2 , -> -> 7 `i `uc _REG07_config ]
-[; ;BQ25895M.c: 129: BQ_Write(0x08, REG08_config);
-"129
+[; ;BQ25895M.c: 165: BQ_Write(0x08, REG08_config);
+"165
 [e ( _BQ_Write (2 , -> -> 8 `i `uc _REG08_config ]
-[; ;BQ25895M.c: 130: }
-"130
+[; ;BQ25895M.c: 166: }
+"166
 [e :UE 885 ]
 }
