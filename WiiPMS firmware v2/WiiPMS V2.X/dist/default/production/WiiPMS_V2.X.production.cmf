@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+$C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 init CODE 0 68 68 3 2
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 6B 6B 2 2
@@ -23,7 +23,7 @@ text2 CODE 0 CF9 CF9 29 2
 text3 CODE 0 320 320 FC 2
 text4 CODE 0 AB AB 157 2
 text5 CODE 0 53F 53F 7D 2
-text6 CODE 0 728 728 69 2
+text6 CODE 0 728 728 6F 2
 text7 CODE 0 BB6 BB6 18 2
 text8 CODE 0 B9E B9E 18 2
 text9 CODE 0 B86 B86 18 2
@@ -43,7 +43,7 @@ text22 CODE 0 EA5 EA5 51 2
 text23 CODE 0 6B0 6B0 78 2
 text24 CODE 0 CAB CAB 25 2
 text25 CODE 0 C23 C23 20 2
-text26 CODE 0 791 791 60 2
+text26 CODE 0 797 797 60 2
 text27 CODE 0 637 637 79 2
 text28 CODE 0 4BD 4BD 82 2
 text29 CODE 0 AF3 AF3 C 2
@@ -76,7 +76,7 @@ cstackCOMMON COMMON 1 70 70 8 1
 cstackBANK0 BANK0 1 21 21 3F 1
 cstackBANK1 BANK1 1 A0 A0 43 1
 inittext CODE 0 ABE ABE 6 2
-stringtext1 STRCODE 0 7F1 7F1 28 2
+stringtext1 STRCODE 0 7F7 7F7 28 2
 intentry CODE 0 4 4 64 2
 bssBANK0 BANK0 1 60 60 F 1
 bssBANK1 BANK1 1 E3 E3 9 1
@@ -105,8 +105,8 @@ BANK3 1A0-1EF 1
 BANK4 220-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-32F 1
-CONST 819-A8D 2
-ENTRY 819-A8D 2
+CONST 81F-A8D 2
+ENTRY 81F-A8D 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -163,7 +163,7 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 20D3-21EF 1
-CODE 819-A8D 2
+CODE 81F-A8D 2
 SFR0 0-20 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -175,8 +175,8 @@ SFR7 380-3EF 1
 SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2001-21EF 1
-STRCODE 819-A8D 2
-STRING 819-A8D 2
+STRCODE 81F-A8D 2
+STRING 81F-A8D 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -191,58 +191,58 @@ STRING 819-A8D 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\WiiPMS_V2.X.production.o
-6D cinit CODE >7321:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-6D cinit CODE >7324:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-6D cinit CODE >7601:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-70 cinit CODE >7602:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-71 cinit CODE >7606:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-72 cinit CODE >7607:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-73 cinit CODE >7608:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-74 cinit CODE >7609:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-75 cinit CODE >7610:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-76 cinit CODE >7611:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-77 cinit CODE >7612:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-78 cinit CODE >7613:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-79 cinit CODE >7614:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-7A cinit CODE >7615:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-7D cinit CODE >7619:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-7E cinit CODE >7620:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-7F cinit CODE >7621:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-80 cinit CODE >7622:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-81 cinit CODE >7623:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-82 cinit CODE >7624:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-83 cinit CODE >7625:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-84 cinit CODE >7626:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-85 cinit CODE >7627:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-86 cinit CODE >7628:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-89 cinit CODE >7645:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8A cinit CODE >7646:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8B cinit CODE >7647:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8C cinit CODE >7648:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8D cinit CODE >7649:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8E cinit CODE >7650:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-8F cinit CODE >7654:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-90 cinit CODE >7655:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-91 cinit CODE >7656:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-92 cinit CODE >7657:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-93 cinit CODE >7658:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-94 cinit CODE >7659:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-97 cinit CODE >7663:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-98 cinit CODE >7664:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-99 cinit CODE >7665:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-9A cinit CODE >7666:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-9B cinit CODE >7667:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-9C cinit CODE >7668:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-9F cinit CODE >7672:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A0 cinit CODE >7673:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A1 cinit CODE >7674:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A2 cinit CODE >7675:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A3 cinit CODE >7676:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A4 cinit CODE >7677:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A7 cinit CODE >7683:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A7 cinit CODE >7685:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A8 cinit CODE >7686:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-A9 cinit CODE >7687:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
+6D cinit CODE >7321:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+6D cinit CODE >7324:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+6D cinit CODE >7601:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+70 cinit CODE >7602:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+71 cinit CODE >7606:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+72 cinit CODE >7607:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+73 cinit CODE >7608:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+74 cinit CODE >7609:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+75 cinit CODE >7610:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+76 cinit CODE >7611:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+77 cinit CODE >7612:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+78 cinit CODE >7613:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+79 cinit CODE >7614:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+7A cinit CODE >7615:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+7D cinit CODE >7619:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+7E cinit CODE >7620:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+7F cinit CODE >7621:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+80 cinit CODE >7622:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+81 cinit CODE >7623:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+82 cinit CODE >7624:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+83 cinit CODE >7625:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+84 cinit CODE >7626:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+85 cinit CODE >7627:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+86 cinit CODE >7628:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+89 cinit CODE >7645:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8A cinit CODE >7646:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8B cinit CODE >7647:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8C cinit CODE >7648:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8D cinit CODE >7649:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8E cinit CODE >7650:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+8F cinit CODE >7654:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+90 cinit CODE >7655:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+91 cinit CODE >7656:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+92 cinit CODE >7657:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+93 cinit CODE >7658:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+94 cinit CODE >7659:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+97 cinit CODE >7663:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+98 cinit CODE >7664:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+99 cinit CODE >7665:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+9A cinit CODE >7666:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+9B cinit CODE >7667:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+9C cinit CODE >7668:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+9F cinit CODE >7672:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A0 cinit CODE >7673:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A1 cinit CODE >7674:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A2 cinit CODE >7675:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A3 cinit CODE >7676:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A4 cinit CODE >7677:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A7 cinit CODE >7683:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A7 cinit CODE >7685:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A8 cinit CODE >7686:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+A9 cinit CODE >7687:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
 4 intentry CODE >63:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 6 intentry CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 B intentry CODE >66:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
@@ -546,31 +546,31 @@ AFE text29 CODE >70:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS f
 6AA text27 CODE >42:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 6AB text27 CODE >43:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 6AF text27 CODE >46:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
-791 text26 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-791 text26 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-793 text26 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-797 text26 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-79C text26 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-79E text26 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7A2 text26 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7A7 text26 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7AB text26 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7AD text26 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7B3 text26 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7B5 text26 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7B6 text26 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7BB text26 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7BF text26 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7C3 text26 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7C8 text26 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7D2 text26 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7D6 text26 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7D7 text26 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7DC text26 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7E2 text26 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7E7 text26 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7EC text26 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-7F0 text26 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+797 text26 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+797 text26 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+799 text26 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+79D text26 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7A2 text26 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7A4 text26 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7A8 text26 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7AD text26 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7B1 text26 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7B3 text26 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7B9 text26 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7BB text26 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7BC text26 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7C1 text26 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7C5 text26 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7C9 text26 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7CE text26 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7D8 text26 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7DC text26 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7DD text26 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7E2 text26 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7E8 text26 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7ED text26 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7F2 text26 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7F6 text26 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
 C23 text25 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
 C23 text25 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
 C26 text25 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
@@ -734,57 +734,57 @@ BB6 text7 CODE >73:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS fi
 BB6 text7 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
 BB8 text7 CODE >75:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
 BCD text7 CODE >76:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
-728 text6 CODE >65:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 728 text6 CODE >66:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-728 text6 CODE >69:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+728 text6 CODE >67:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 728 text6 CODE >70:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-738 text6 CODE >73:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-73E text6 CODE >76:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-74F text6 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-75B text6 CODE >81:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-76E text6 CODE >84:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-775 text6 CODE >85:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-783 text6 CODE >87:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-790 text6 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-53F text5 CODE >91:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+728 text6 CODE >71:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+738 text6 CODE >74:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+73E text6 CODE >77:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+74F text6 CODE >78:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+761 text6 CODE >82:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+774 text6 CODE >85:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+77B text6 CODE >86:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+789 text6 CODE >88:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+796 text6 CODE >89:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 53F text5 CODE >92:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-550 text5 CODE >96:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-593 text5 CODE >101:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-5B3 text5 CODE >105:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-5BB text5 CODE >106:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-AB text4 CODE >108:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-AD text4 CODE >109:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-B1 text4 CODE >111:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-B3 text4 CODE >112:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-B5 text4 CODE >113:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-BD text4 CODE >116:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-C0 text4 CODE >117:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-DA text4 CODE >120:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-F2 text4 CODE >121:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-11D text4 CODE >122:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-159 text4 CODE >126:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-19D text4 CODE >128:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1AF text4 CODE >129:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1B3 text4 CODE >130:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1B7 text4 CODE >131:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1BF text4 CODE >132:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1C1 text4 CODE >116:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1D5 text4 CODE >137:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-1FA text4 CODE >139:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-201 text4 CODE >140:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-320 text3 CODE >142:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-320 text3 CODE >149:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-33A text3 CODE >153:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-345 text3 CODE >157:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-35A text3 CODE >158:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-35A text3 CODE >161:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-360 text3 CODE >164:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-375 text3 CODE >170:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-39E text3 CODE >174:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-3B2 text3 CODE >178:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-3D8 text3 CODE >191:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-406 text3 CODE >196:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
-41B text3 CODE >197:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+53F text5 CODE >93:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+550 text5 CODE >97:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+593 text5 CODE >102:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+5B3 text5 CODE >106:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+5BB text5 CODE >107:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+AB text4 CODE >109:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+AD text4 CODE >110:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+B1 text4 CODE >112:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+B3 text4 CODE >113:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+B5 text4 CODE >114:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+BD text4 CODE >117:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+C0 text4 CODE >118:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+DA text4 CODE >121:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+F2 text4 CODE >122:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+11D text4 CODE >123:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+159 text4 CODE >127:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+19D text4 CODE >129:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1AF text4 CODE >130:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1B3 text4 CODE >131:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1B7 text4 CODE >132:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1BF text4 CODE >133:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1C1 text4 CODE >117:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1D5 text4 CODE >138:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+1FA text4 CODE >140:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+201 text4 CODE >141:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+320 text3 CODE >143:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+320 text3 CODE >150:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+33A text3 CODE >154:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+345 text3 CODE >158:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+35A text3 CODE >159:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+35A text3 CODE >162:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+360 text3 CODE >165:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+375 text3 CODE >171:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+39E text3 CODE >175:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+3B2 text3 CODE >179:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+3D8 text3 CODE >192:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+406 text3 CODE >197:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+41B text3 CODE >198:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 CF9 text2 CODE >11:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
 CFB text2 CODE >13:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
 CFE text2 CODE >14:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
@@ -849,22 +849,22 @@ BE6 text1 CODE >101:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS f
 31A maintext CODE >194:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 31B maintext CODE >195:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
 31C maintext CODE >196:C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
-AB8 clrtext CODE >7634:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AB8 clrtext CODE >7635:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AB9 clrtext CODE >7636:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AB9 clrtext CODE >7637:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABA clrtext CODE >7638:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABB clrtext CODE >7639:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABC clrtext CODE >7640:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABD clrtext CODE >7641:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABE inittext CODE >7590:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABE inittext CODE >7591:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABF inittext CODE >7592:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-ABF inittext CODE >7593:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AC0 inittext CODE >7594:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AC1 inittext CODE >7595:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AC2 inittext CODE >7596:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
-AC3 inittext CODE >7597:C:\Users\Gunnar\AppData\Local\Temp\snuk.s
+AB8 clrtext CODE >7634:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AB8 clrtext CODE >7635:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AB9 clrtext CODE >7636:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AB9 clrtext CODE >7637:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABA clrtext CODE >7638:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABB clrtext CODE >7639:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABC clrtext CODE >7640:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABD clrtext CODE >7641:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABE inittext CODE >7590:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABE inittext CODE >7591:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABF inittext CODE >7592:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+ABF inittext CODE >7593:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AC0 inittext CODE >7594:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AC1 inittext CODE >7595:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AC2 inittext CODE >7596:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
+AC3 inittext CODE >7597:C:\Users\Gunnar\AppData\Local\Temp\sosk.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -915,13 +915,13 @@ Map@x 30 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 _TMR1 20C 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _TMR2 28C 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _WPUA 1F39 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 _main 404 0 CODE 0 maintext dist/default/production\WiiPMS_V2.X.production.o
 _mode 6F 0 BANK0 1 dataBANK0 dist/default/production\WiiPMS_V2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 i2c_master_write@device 2A 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
-start D0 0 CODE 0 init C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-__end_of_nvm_config 1032 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
+start D0 0 CODE 0 init C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+__end_of_nvm_config 103E 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
@@ -942,16 +942,16 @@ __Hpowerup 0 0 CODE 0 powerup -
 _REG02_config 66 0 BANK0 1 bssBANK0 dist/default/production\WiiPMS_V2.X.production.o
 readADC@channel 25 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 BQ_Write@reg 23 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
-___resetbits 20 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___resetbits 20 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 BQ_get_chrg_state@data 2C 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 BQ_get_chrg_state@temp 2E 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 i1_get_time 15A6 0 CODE 0 text54 dist/default/production\WiiPMS_V2.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 reset@ok 38 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 i2c_master_receive_byte@ack 22 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
@@ -992,7 +992,7 @@ negotiate_optimal_pdo@src_pdos A8 0 BANK1 1 cstackBANK1 dist/default/production\
 _btn_is_debounced 6A 0 BANK0 1 bssBANK0 dist/default/production\WiiPMS_V2.X.production.o
 ___awdiv@divisor 27 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 _thermal_protection 179C 0 CODE 0 text1 dist/default/production\WiiPMS_V2.X.production.o
-__end_of___awdiv FE2 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
+__end_of___awdiv FEE 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
 ?_write_pdo 3A 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 ?_i2c_master_read_u8 2E 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
@@ -1004,8 +1004,8 @@ __end_ofi1_get_time 15BA 0 CODE 0 text54 dist/default/production\WiiPMS_V2.X.pro
 _REG00_config 68 0 BANK0 1 bssBANK0 dist/default/production\WiiPMS_V2.X.production.o
 _IOCAF5 F9FD 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 __end_of_i2c_master_send_byte 16DC 0 CODE 0 text17 dist/default/production\WiiPMS_V2.X.production.o
-___stackhi 21EF 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\snuk.o
-___stacklo 20D3 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___stackhi 21EF 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\sosk.o
+___stacklo 20D3 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 BQ_Read@data 29 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 __end_of_negotiate_optimal_pdo 404 0 CODE 0 text4 dist/default/production\WiiPMS_V2.X.production.o
@@ -1051,7 +1051,7 @@ negotiate_optimal_pdo@i AF 0 BANK1 1 cstackBANK1 dist/default/production\WiiPMS_
 _readADC 19F2 0 CODE 0 text2 dist/default/production\WiiPMS_V2.X.production.o
 _battery_fade D60 0 CODE 0 text23 dist/default/production\WiiPMS_V2.X.production.o
 _PWM5CONbits 31E 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___int_sp 0 0 STACK 2 stack C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 __end_of_BQ_INIT 1E90 0 CODE 0 text45 dist/default/production\WiiPMS_V2.X.production.o
 __end_of_BQ_Read 19F2 0 CODE 0 text41 dist/default/production\WiiPMS_V2.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
@@ -1290,7 +1290,7 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pstringtext1 FE2 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
+__pstringtext1 FEE 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
 __end_of_PPS_unlock 1596 0 CODE 0 text31 dist/default/production\WiiPMS_V2.X.production.o
 __size_of_PIC_SETUP 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _SSP1CON1 190 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
@@ -1309,7 +1309,7 @@ __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 i1_timer_diff 1654 0 CODE 0 text53 dist/default/production\WiiPMS_V2.X.production.o
-___timeout 104 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___timeout 104 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 __end_of_i2c_master_repeat_start 1558 0 CODE 0 text18 dist/default/production\WiiPMS_V2.X.production.o
 stusb_negotiate@header E1 0 BANK1 1 cstackBANK1 dist/default/production\WiiPMS_V2.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -1360,7 +1360,7 @@ ___lldiv@divisor 2D 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.pr
 I2C_Master_Write@data 21 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 __size_of_get_time 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 reset@res 37 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 _stusb_negotiate 640 0 CODE 0 text3 dist/default/production\WiiPMS_V2.X.production.o
 _i2c_master_read_u8 173C 0 CODE 0 text8 dist/default/production\WiiPMS_V2.X.production.o
 _set_stusb4500 69 0 BANK0 1 bssBANK0 dist/default/production\WiiPMS_V2.X.production.o
@@ -1400,7 +1400,7 @@ __ptext22 1D4A 0 CODE 0 text22 dist/default/production\WiiPMS_V2.X.production.o
 __ptext23 D60 0 CODE 0 text23 dist/default/production\WiiPMS_V2.X.production.o
 __ptext24 1956 0 CODE 0 text24 dist/default/production\WiiPMS_V2.X.production.o
 __ptext25 1846 0 CODE 0 text25 dist/default/production\WiiPMS_V2.X.production.o
-__ptext26 F22 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
+__ptext26 F2E 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
 __ptext27 C6E 0 CODE 0 text27 dist/default/production\WiiPMS_V2.X.production.o
 __ptext28 97A 0 CODE 0 text28 dist/default/production\WiiPMS_V2.X.production.o
 __ptext29 15E6 0 CODE 0 text29 dist/default/production\WiiPMS_V2.X.production.o
@@ -1430,7 +1430,7 @@ __ptext53 1654 0 CODE 0 text53 dist/default/production\WiiPMS_V2.X.production.o
 __ptext54 15A6 0 CODE 0 text54 dist/default/production\WiiPMS_V2.X.production.o
 __size_of_thermal_protection 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _BQ_CONFIG_INIT 190E 0 CODE 0 text51 dist/default/production\WiiPMS_V2.X.production.o
-___awdiv F22 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
+___awdiv F2E 0 CODE 0 text26 dist/default/production\WiiPMS_V2.X.production.o
 i2c_master_write_u32@device 35 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 ___lldiv 1E90 0 CODE 0 text36 dist/default/production\WiiPMS_V2.X.production.o
 ___lwdiv 1BB4 0 CODE 0 text11 dist/default/production\WiiPMS_V2.X.production.o
@@ -1500,7 +1500,7 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 write_pdo@current_mA 3A 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
 __end_ofi1_timer_diff 1680 0 CODE 0 text53 dist/default/production\WiiPMS_V2.X.production.o
-___powerdown 103 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+___powerdown 103 0 ABS 0 - C:\Users\Gunnar\AppData\Local\Temp\sosk.o
 __Hinittext 0 0 ABS 0 inittext -
 __end_of_BQ_get_chrg_state 18C8 0 CODE 0 text40 dist/default/production\WiiPMS_V2.X.production.o
 ___wmul@multiplier 21 0 BANK0 1 cstackBANK0 dist/default/production\WiiPMS_V2.X.production.o
@@ -1675,13 +1675,13 @@ _T1CLK 211 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _TRISA 12 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _TRISC 14 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 __end_of_PWM_INIT 1CB6 0 CODE 0 text30 dist/default/production\WiiPMS_V2.X.production.o
-__end_of_reset F22 0 CODE 0 text6 dist/default/production\WiiPMS_V2.X.production.o
+__end_of_reset F2E 0 CODE 0 text6 dist/default/production\WiiPMS_V2.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 _color 62 0 BANK0 1 bssBANK0 dist/default/production\WiiPMS_V2.X.production.o
 __size_of_i2c_master_read_u8 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 _reset E50 0 CODE 0 text6 dist/default/production\WiiPMS_V2.X.production.o
-_nvm_config FE2 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
+_nvm_config FEE 0 STRCODE 0 stringtext1 dist/default/production\WiiPMS_V2.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\WiiPMS_V2.X.production.o
 __size_of_ISR 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
 __size_of_Map 0 0 ABS 0 - dist/default/production\WiiPMS_V2.X.production.o
@@ -1787,8 +1787,8 @@ cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 21 21 4F 1
 cstackBANK1 1 A0 A0 50 1
 inittext 0 ABE 157C 6 2
-stringtext1 0 7F1 FE2 28 2
-intentry 0 4 8 7ED 2
+stringtext1 0 7F7 FEE 28 2
+intentry 0 4 8 7F3 2
 reset_vec 0 0 0 4 2
 bssBANK2 1 120 120 33 1
 idataBANK1 0 A96 152C 4 2

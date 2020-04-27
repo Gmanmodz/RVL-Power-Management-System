@@ -7284,341 +7284,341 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 137: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 138: extern __bank0 __bit __powerdown;
 [; ;pic.h: 139: extern __bank0 __bit __timeout;
-"56 stusb4500.c
+"57 stusb4500.c
 [v _send_pd_message `(i ~T0 @X0 1 sf1`Cui ]
 {
-[; ;stusb4500.c: 56: static int send_pd_message(const uint16_t msg) {
+[; ;stusb4500.c: 57: static int send_pd_message(const uint16_t msg) {
 [e :U _send_pd_message ]
 [v _msg `Cui ~T0 @X0 1 r1 ]
 [f ]
-"57
+"58
 [v _ok `i ~T0 @X0 1 a ]
-[; ;stusb4500.c: 57: int ok = 0;
+[; ;stusb4500.c: 58: int ok = 0;
 [e = _ok -> 0 `i ]
-[; ;stusb4500.c: 59: if (ok) ok = i2c_master_write_u16(0x28, 0x51, msg);
-"59
+[; ;stusb4500.c: 60: if (ok) ok = i2c_master_write_u16(0x28, 0x51, msg);
+"60
 [e $ ! != _ok -> 0 `i 872  ]
 [e = _ok ( _i2c_master_write_u16 (3 , , -> -> 40 `i `uc -> -> 81 `i `uc _msg ]
 [e :U 872 ]
-[; ;stusb4500.c: 60: if (ok) ok = i2c_master_write_u8(0x28, 0x1A, 0x26);
-"60
+[; ;stusb4500.c: 61: if (ok) ok = i2c_master_write_u8(0x28, 0x1A, 0x26);
+"61
 [e $ ! != _ok -> 0 `i 873  ]
 [e = _ok ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 26 `i `uc -> -> 38 `i `uc ]
 [e :U 873 ]
-[; ;stusb4500.c: 62: return (ok == 0) ? 0 : -1;
-"62
+[; ;stusb4500.c: 63: return (ok == 0) ? 0 : -1;
+"63
 [e ) ? == _ok -> 0 `i : -> 0 `i -U -> 1 `i ]
 [e $UE 871  ]
-[; ;stusb4500.c: 63: }
-"63
+[; ;stusb4500.c: 64: }
+"64
 [e :UE 871 ]
 }
-"65
+"66
 [v _reset `(i ~T0 @X0 1 sf ]
 {
-[; ;stusb4500.c: 65: static int reset(void) {
+[; ;stusb4500.c: 66: static int reset(void) {
 [e :U _reset ]
 [f ]
-"66
+"67
 [v _ok `i ~T0 @X0 1 a ]
-[; ;stusb4500.c: 66: int ok = 0;
+[; ;stusb4500.c: 67: int ok = 0;
 [e = _ok -> 0 `i ]
-[; ;stusb4500.c: 69: if (ok == 0)
-"69
-[e $ ! == _ok -> 0 `i 875  ]
-[; ;stusb4500.c: 70: ok = i2c_master_write_u8(0x28, 0x23, 0x01);
+[; ;stusb4500.c: 70: if (ok == 0)
 "70
+[e $ ! == _ok -> 0 `i 875  ]
+[; ;stusb4500.c: 71: ok = i2c_master_write_u8(0x28, 0x23, 0x01);
+"71
 [e = _ok ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
 [e :U 875 ]
-[; ;stusb4500.c: 73: if (ok == 0) {
-"73
+[; ;stusb4500.c: 74: if (ok == 0) {
+"74
 [e $ ! == _ok -> 0 `i 876  ]
 {
-"74
-[v _res `uc ~T0 @X0 1 a ]
-[; ;stusb4500.c: 74: uint8_t res;
-[; ;stusb4500.c: 75: do {
 "75
+[v _res `uc ~T0 @X0 1 a ]
+[; ;stusb4500.c: 75: uint8_t res;
+[; ;stusb4500.c: 76: do {
+"76
 [e :U 879 ]
 {
-[; ;stusb4500.c: 76: ok = i2c_master_read_u8(0x28, 0x2F, &res);
-"76
-[e = _ok ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 47 `i `uc &U _res ]
+[; ;stusb4500.c: 77: ok = i2c_master_read_u8(0x28, 0x2F, &res);
 "77
-}
-[; ;stusb4500.c: 77: } while (ok == 0 && res != 0x21);
-[e $ && == _ok -> 0 `i != -> _res `i -> 33 `i 879  ]
-[e :U 878 ]
+[e = _ok ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 47 `i `uc &U _res ]
 "78
 }
+[; ;stusb4500.c: 78: } while (ok == 0 && res != 0x25 && res != 0x21);
+[e $ && && == _ok -> 0 `i != -> _res `i -> 37 `i != -> _res `i -> 33 `i 879  ]
+[e :U 878 ]
+"79
+}
 [e :U 876 ]
-[; ;stusb4500.c: 78: }
-[; ;stusb4500.c: 81: if (ok == 0) _delay((unsigned long)((27)*(32000000/4000.0)));
-"81
+[; ;stusb4500.c: 79: }
+[; ;stusb4500.c: 82: if (ok == 0) _delay((unsigned long)((27)*(32000000/4000.0)));
+"82
 [e $ ! == _ok -> 0 `i 880  ]
 [e ( __delay (1 -> * -> -> 27 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 [e :U 880 ]
-[; ;stusb4500.c: 84: if (ok == 0)
-"84
-[e $ ! == _ok -> 0 `i 881  ]
-[; ;stusb4500.c: 85: ok = i2c_master_write_u8(0x28, 0x23, 0x00);
+[; ;stusb4500.c: 85: if (ok == 0)
 "85
+[e $ ! == _ok -> 0 `i 881  ]
+[; ;stusb4500.c: 86: ok = i2c_master_write_u8(0x28, 0x23, 0x00);
+"86
 [e = _ok ( _i2c_master_write_u8 (3 , , -> -> 40 `i `uc -> -> 35 `i `uc -> -> 0 `i `uc ]
 [e :U 881 ]
-[; ;stusb4500.c: 87: return (ok == 0) ? 0 : -1;
-"87
+[; ;stusb4500.c: 88: return (ok == 0) ? 0 : -1;
+"88
 [e ) ? == _ok -> 0 `i : -> 0 `i -U -> 1 `i ]
 [e $UE 874  ]
-[; ;stusb4500.c: 88: }
-"88
+[; ;stusb4500.c: 89: }
+"89
 [e :UE 874 ]
 }
-"91
+"92
 [v _write_pdo `(i ~T0 @X0 1 sf3`ui`ui`uc ]
 {
-[; ;stusb4500.c: 90: static int
-[; ;stusb4500.c: 91: write_pdo(uint16_t current_mA, uint16_t voltage_mV, uint8_t pdo_num) {
+[; ;stusb4500.c: 91: static int
+[; ;stusb4500.c: 92: write_pdo(uint16_t current_mA, uint16_t voltage_mV, uint8_t pdo_num) {
 [e :U _write_pdo ]
 [v _current_mA `ui ~T0 @X0 1 r1 ]
 [v _voltage_mV `ui ~T0 @X0 1 r2 ]
 [v _pdo_num `uc ~T0 @X0 1 r3 ]
 [f ]
-[; ;stusb4500.c: 92: if (pdo_num < 1 || pdo_num > 3) return -1;
-"92
+[; ;stusb4500.c: 93: if (pdo_num < 1 || pdo_num > 3) return -1;
+"93
 [e $ ! || < -> _pdo_num `i -> 1 `i > -> _pdo_num `i -> 3 `i 883  ]
 [e ) -U -> 1 `i ]
 [e $UE 882  ]
 [e :U 883 ]
-"95
-[v _pdo `ul ~T0 @X0 1 a ]
-[; ;stusb4500.c: 95: uint32_t pdo =
-[; ;stusb4500.c: 96: 0x00000000 | ((current_mA / 10) & 0x03FF) | ((uint32_t)((voltage_mV / 50) & 0x03FF) << 10);
 "96
+[v _pdo `ul ~T0 @X0 1 a ]
+[; ;stusb4500.c: 96: uint32_t pdo =
+[; ;stusb4500.c: 97: 0x00000000 | ((current_mA / 10) & 0x03FF) | ((uint32_t)((voltage_mV / 50) & 0x03FF) << 10);
+"97
 [e = _pdo | -> | -> -> 0 `i `ui & / _current_mA -> -> 10 `i `ui -> -> 1023 `i `ui `ul << -> & / _voltage_mV -> -> 50 `i `ui -> -> 1023 `i `ui `ul -> 10 `i ]
-[; ;stusb4500.c: 99: if (
-[; ;stusb4500.c: 100: i2c_master_write_u32(0x28, 0x85 + 4 * (pdo_num - 1), pdo) !=
-[; ;stusb4500.c: 101: 0)
-"101
-[e $ ! != ( _i2c_master_write_u32 (3 , , -> -> 40 `i `uc -> + -> 133 `i * -> 4 `i - -> _pdo_num `i -> 1 `i `uc _pdo -> 0 `i 884  ]
-[; ;stusb4500.c: 102: return -1;
+[; ;stusb4500.c: 100: if (
+[; ;stusb4500.c: 101: i2c_master_write_u32(0x28, 0x85 + 4 * (pdo_num - 1), pdo) !=
+[; ;stusb4500.c: 102: 0)
 "102
+[e $ ! != ( _i2c_master_write_u32 (3 , , -> -> 40 `i `uc -> + -> 133 `i * -> 4 `i - -> _pdo_num `i -> 1 `i `uc _pdo -> 0 `i 884  ]
+[; ;stusb4500.c: 103: return -1;
+"103
 [e ) -U -> 1 `i ]
 [e $UE 882  ]
 [e :U 884 ]
-[; ;stusb4500.c: 105: return reset();
-"105
+[; ;stusb4500.c: 106: return reset();
+"106
 [e ) ( _reset ..  ]
 [e $UE 882  ]
-[; ;stusb4500.c: 106: }
-"106
+[; ;stusb4500.c: 107: }
+"107
 [e :UE 882 ]
 }
-"108
+"109
 [v _negotiate_optimal_pdo `(i ~T0 @X0 1 sf2`*ul`uc ]
 {
-[; ;stusb4500.c: 108: static int negotiate_optimal_pdo(uint32_t* src_pdos, uint8_t num_pdos) {
+[; ;stusb4500.c: 109: static int negotiate_optimal_pdo(uint32_t* src_pdos, uint8_t num_pdos) {
 [e :U _negotiate_optimal_pdo ]
 [v _src_pdos `*ul ~T0 @X0 1 r1 ]
 [v _num_pdos `uc ~T0 @X0 1 r2 ]
 [f ]
-"109
+"110
 [v _ok `i ~T0 @X0 1 a ]
-[; ;stusb4500.c: 109: int ok = -1;
+[; ;stusb4500.c: 110: int ok = -1;
 [e = _ok -U -> 1 `i ]
-"111
-[v _opt_pdo_current `ui ~T0 @X0 1 a ]
-[; ;stusb4500.c: 111: uint16_t opt_pdo_current = 0;
-[e = _opt_pdo_current -> -> 0 `i `ui ]
 "112
-[v _opt_pdo_voltage `ui ~T0 @X0 1 a ]
-[; ;stusb4500.c: 112: uint16_t opt_pdo_voltage = 0;
-[e = _opt_pdo_voltage -> -> 0 `i `ui ]
+[v _opt_pdo_current `ui ~T0 @X0 1 a ]
+[; ;stusb4500.c: 112: uint16_t opt_pdo_current = 0;
+[e = _opt_pdo_current -> -> 0 `i `ui ]
 "113
+[v _opt_pdo_voltage `ui ~T0 @X0 1 a ]
+[; ;stusb4500.c: 113: uint16_t opt_pdo_voltage = 0;
+[e = _opt_pdo_voltage -> -> 0 `i `ui ]
+"114
 [v _opt_pdo_power `ul ~T0 @X0 1 a ]
-[; ;stusb4500.c: 113: uint32_t opt_pdo_power = 0;
+[; ;stusb4500.c: 114: uint32_t opt_pdo_power = 0;
 [e = _opt_pdo_power -> -> -> 0 `i `l `ul ]
-[; ;stusb4500.c: 116: for (int i = 0; i < num_pdos; i++) {
-"116
+[; ;stusb4500.c: 117: for (int i = 0; i < num_pdos; i++) {
+"117
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 889  ]
 [e :U 886 ]
 {
-"117
+"118
 [v _pdo `ul ~T0 @X0 1 a ]
-[; ;stusb4500.c: 117: uint32_t pdo = src_pdos[i];
+[; ;stusb4500.c: 118: uint32_t pdo = src_pdos[i];
 [e = _pdo *U + _src_pdos * -> _i `x -> -> # *U _src_pdos `i `x ]
-"120
-[v _pdo_current `ui ~T0 @X0 1 a ]
-[; ;stusb4500.c: 120: uint16_t pdo_current = ((pdo & 0x03FF) * 10);
-[e = _pdo_current -> * & _pdo -> -> -> 1023 `i `l `ul -> -> -> 10 `i `l `ul `ui ]
 "121
-[v _pdo_voltage `ui ~T0 @X0 1 a ]
-[; ;stusb4500.c: 121: uint16_t pdo_voltage = (((pdo >> 10) & 0x03FF) * 50);
-[e = _pdo_voltage -> * & >> _pdo -> 10 `i -> -> -> 1023 `i `l `ul -> -> -> 50 `i `l `ul `ui ]
+[v _pdo_current `ui ~T0 @X0 1 a ]
+[; ;stusb4500.c: 121: uint16_t pdo_current = ((pdo & 0x03FF) * 10);
+[e = _pdo_current -> * & _pdo -> -> -> 1023 `i `l `ul -> -> -> 10 `i `l `ul `ui ]
 "122
+[v _pdo_voltage `ui ~T0 @X0 1 a ]
+[; ;stusb4500.c: 122: uint16_t pdo_voltage = (((pdo >> 10) & 0x03FF) * 50);
+[e = _pdo_voltage -> * & >> _pdo -> 10 `i -> -> -> 1023 `i `l `ul -> -> -> 50 `i `l `ul `ui ]
+"123
 [v _pdo_power `ul ~T0 @X0 1 a ]
-[; ;stusb4500.c: 122: uint32_t pdo_power = (uint32_t)pdo_current * pdo_voltage / 1000;
+[; ;stusb4500.c: 123: uint32_t pdo_power = (uint32_t)pdo_current * pdo_voltage / 1000;
 [e = _pdo_power / * -> _pdo_current `ul -> _pdo_voltage `ul -> -> -> 1000 `i `l `ul ]
-[; ;stusb4500.c: 124: if (
-[; ;stusb4500.c: 125: ((pdo >> 30) & 0x03) != 0x00 || pdo_current < 0 ||
-[; ;stusb4500.c: 126: pdo_voltage < 5000 || pdo_voltage > 12000)
-"126
-[e $ ! || || || != & >> _pdo -> 30 `i -> -> -> 3 `i `l `ul -> -> -> 0 `i `l `ul < _pdo_current -> -> 0 `i `ui < _pdo_voltage -> -> 5000 `i `ui > _pdo_voltage -> -> 12000 `i `ui 890  ]
-[; ;stusb4500.c: 127: continue;
+[; ;stusb4500.c: 125: if (
+[; ;stusb4500.c: 126: ((pdo >> 30) & 0x03) != 0x00 || pdo_current < 0 ||
+[; ;stusb4500.c: 127: pdo_voltage < 5000 || pdo_voltage > 12000)
 "127
+[e $ ! || || || != & >> _pdo -> 30 `i -> -> -> 3 `i `l `ul -> -> -> 0 `i `l `ul < _pdo_current -> -> 0 `i `ui < _pdo_voltage -> -> 5000 `i `ui > _pdo_voltage -> -> 12000 `i `ui 890  ]
+[; ;stusb4500.c: 128: continue;
+"128
 [e $U 888  ]
 [e :U 890 ]
-[; ;stusb4500.c: 128: if (pdo_power > opt_pdo_power) {
-"128
+[; ;stusb4500.c: 129: if (pdo_power > opt_pdo_power) {
+"129
 [e $ ! > _pdo_power _opt_pdo_power 891  ]
 {
-[; ;stusb4500.c: 129: opt_pdo_current = pdo_current;
-"129
-[e = _opt_pdo_current _pdo_current ]
-[; ;stusb4500.c: 130: opt_pdo_voltage = pdo_voltage;
+[; ;stusb4500.c: 130: opt_pdo_current = pdo_current;
 "130
-[e = _opt_pdo_voltage _pdo_voltage ]
-[; ;stusb4500.c: 131: opt_pdo_power = pdo_power;
+[e = _opt_pdo_current _pdo_current ]
+[; ;stusb4500.c: 131: opt_pdo_voltage = pdo_voltage;
 "131
-[e = _opt_pdo_power _pdo_power ]
-[; ;stusb4500.c: 132: ok = 0;
+[e = _opt_pdo_voltage _pdo_voltage ]
+[; ;stusb4500.c: 132: opt_pdo_power = pdo_power;
 "132
-[e = _ok -> 0 `i ]
+[e = _opt_pdo_power _pdo_power ]
+[; ;stusb4500.c: 133: ok = 0;
 "133
-}
-[e :U 891 ]
+[e = _ok -> 0 `i ]
 "134
 }
-"116
+[e :U 891 ]
+"135
+}
+"117
 [e :U 888 ]
 [e ++ _i -> 1 `i ]
 [e :U 889 ]
 [e $ < _i -> _num_pdos `i 886  ]
 [e :U 887 ]
-"134
+"135
 }
-[; ;stusb4500.c: 133: }
 [; ;stusb4500.c: 134: }
-[; ;stusb4500.c: 137: if (ok == 0) ok = write_pdo(opt_pdo_current, opt_pdo_voltage, 3);
-"137
+[; ;stusb4500.c: 135: }
+[; ;stusb4500.c: 138: if (ok == 0) ok = write_pdo(opt_pdo_current, opt_pdo_voltage, 3);
+"138
 [e $ ! == _ok -> 0 `i 892  ]
 [e = _ok ( _write_pdo (3 , , _opt_pdo_current _opt_pdo_voltage -> -> 3 `i `uc ]
 [e :U 892 ]
-[; ;stusb4500.c: 139: return ok;
-"139
+[; ;stusb4500.c: 140: return ok;
+"140
 [e ) _ok ]
 [e $UE 885  ]
-[; ;stusb4500.c: 140: }
-"140
+[; ;stusb4500.c: 141: }
+"141
 [e :UE 885 ]
 }
-"142
+"143
 [v _stusb_negotiate `(i ~T0 @X0 1 ef ]
 {
-[; ;stusb4500.c: 142: int stusb_negotiate(void) {
+[; ;stusb4500.c: 143: int stusb_negotiate(void) {
 [e :U _stusb_negotiate ]
 [f ]
-"143
-[v _buffer `uc ~T0 @X0 -> 40 `i a ]
 "144
+[v _buffer `uc ~T0 @X0 -> 40 `i a ]
+"145
 [v _header `ui ~T0 @X0 1 a ]
-[; ;stusb4500.c: 143: uint8_t buffer[40];
-[; ;stusb4500.c: 144: uint16_t header;
-[; ;stusb4500.c: 147: if (
-[; ;stusb4500.c: 148: i2c_master_read_u8(0x28, 0x0E, buffer) != 0 ||
-[; ;stusb4500.c: 149: !(buffer[0] & 0x01))
-"149
-[e $ ! || != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 14 `i `uc &U _buffer -> 0 `i ! != & -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 1 `i -> 0 `i 894  ]
-[; ;stusb4500.c: 150: return -1;
+[; ;stusb4500.c: 144: uint8_t buffer[40];
+[; ;stusb4500.c: 145: uint16_t header;
+[; ;stusb4500.c: 148: if (
+[; ;stusb4500.c: 149: i2c_master_read_u8(0x28, 0x0E, buffer) != 0 ||
+[; ;stusb4500.c: 150: !(buffer[0] & 0x01))
 "150
+[e $ ! || != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 14 `i `uc &U _buffer -> 0 `i ! != & -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 1 `i -> 0 `i 894  ]
+[; ;stusb4500.c: 151: return -1;
+"151
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 894 ]
-[; ;stusb4500.c: 153: if (reset() != 0) return -1;
-"153
+[; ;stusb4500.c: 154: if (reset() != 0) return -1;
+"154
 [e $ ! != ( _reset ..  -> 0 `i 895  ]
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 895 ]
-[; ;stusb4500.c: 155: while (1) {
-"155
+[; ;stusb4500.c: 156: while (1) {
+"156
 [e :U 897 ]
 {
-[; ;stusb4500.c: 157: if (i2c_master_read_u8(0x28, 0x16, buffer) != 0)
-"157
-[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 22 `i `uc &U _buffer -> 0 `i 899  ]
-[; ;stusb4500.c: 158: return -1;
+[; ;stusb4500.c: 158: if (i2c_master_read_u8(0x28, 0x16, buffer) != 0)
 "158
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 22 `i `uc &U _buffer -> 0 `i 899  ]
+[; ;stusb4500.c: 159: return -1;
+"159
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 899 ]
-[; ;stusb4500.c: 161: if (!(buffer[0] & 0x04)) continue;
-"161
+[; ;stusb4500.c: 162: if (!(buffer[0] & 0x04)) continue;
+"162
 [e $ ! ! != & -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 4 `i -> 0 `i 900  ]
 [e $U 896  ]
 [e :U 900 ]
-[; ;stusb4500.c: 164: if (i2c_master_read_u16(0x28, 0x31, &header) != 0)
-"164
-[e $ ! != ( _i2c_master_read_u16 (3 , , -> -> 40 `i `uc -> -> 49 `i `uc &U _header -> 0 `i 901  ]
-[; ;stusb4500.c: 165: return -1;
+[; ;stusb4500.c: 165: if (i2c_master_read_u16(0x28, 0x31, &header) != 0)
 "165
+[e $ ! != ( _i2c_master_read_u16 (3 , , -> -> 40 `i `uc -> -> 49 `i `uc &U _header -> 0 `i 901  ]
+[; ;stusb4500.c: 166: return -1;
+"166
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 901 ]
-[; ;stusb4500.c: 168: if (
-[; ;stusb4500.c: 169: !((header >> 12) & 0x07) ||
-[; ;stusb4500.c: 170: (header & 0x0F) != 0x01)
-"170
-[e $ ! || ! != & >> _header -> 12 `i -> -> 7 `i `ui -> -> 0 `i `ui != & _header -> -> 15 `i `ui -> -> 1 `i `ui 902  ]
-[; ;stusb4500.c: 171: continue;
+[; ;stusb4500.c: 169: if (
+[; ;stusb4500.c: 170: !((header >> 12) & 0x07) ||
+[; ;stusb4500.c: 171: (header & 0x0F) != 0x01)
 "171
+[e $ ! || ! != & >> _header -> 12 `i -> -> 7 `i `ui -> -> 0 `i `ui != & _header -> -> 15 `i `ui -> -> 1 `i `ui 902  ]
+[; ;stusb4500.c: 172: continue;
+"172
 [e $U 896  ]
 [e :U 902 ]
-[; ;stusb4500.c: 174: if (i2c_master_read_u8(0x28, 0x30, buffer) != 0)
-"174
-[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 48 `i `uc &U _buffer -> 0 `i 903  ]
-[; ;stusb4500.c: 175: return -1;
+[; ;stusb4500.c: 175: if (i2c_master_read_u8(0x28, 0x30, buffer) != 0)
 "175
+[e $ ! != ( _i2c_master_read_u8 (3 , , -> -> 40 `i `uc -> -> 48 `i `uc &U _buffer -> 0 `i 903  ]
+[; ;stusb4500.c: 176: return -1;
+"176
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 903 ]
-[; ;stusb4500.c: 178: if (buffer[0] != ((header >> 12) & 0x07) * 4)
-"178
-[e $ ! != -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ui * & >> _header -> 12 `i -> -> 7 `i `ui -> -> 4 `i `ui 904  ]
-[; ;stusb4500.c: 179: return -1;
+[; ;stusb4500.c: 179: if (buffer[0] != ((header >> 12) & 0x07) * 4)
 "179
+[e $ ! != -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ui * & >> _header -> 12 `i -> -> 7 `i `ui -> -> 4 `i `ui 904  ]
+[; ;stusb4500.c: 180: return -1;
+"180
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 904 ]
-[; ;stusb4500.c: 181: break;
-"181
-[e $U 898  ]
+[; ;stusb4500.c: 182: break;
 "182
+[e $U 898  ]
+"183
 }
 [e :U 896 ]
-"155
+"156
 [e $U 897  ]
 [e :U 898 ]
-[; ;stusb4500.c: 182: }
-[; ;stusb4500.c: 188: if (
-[; ;stusb4500.c: 189: i2c_master_read(
-[; ;stusb4500.c: 190: 0x28, 0x33, buffer, ((header >> 12) & 0x07) * 4) !=
-[; ;stusb4500.c: 191: 0)
-"191
-[e $ ! != ( _i2c_master_read (4 , , , -> -> 40 `i `uc -> -> 51 `i `uc -> &U _buffer `*v * & >> _header -> 12 `i -> -> 7 `i `ui -> -> 4 `i `ui -> 0 `i 905  ]
-[; ;stusb4500.c: 192: return -1;
+[; ;stusb4500.c: 183: }
+[; ;stusb4500.c: 189: if (
+[; ;stusb4500.c: 190: i2c_master_read(
+[; ;stusb4500.c: 191: 0x28, 0x33, buffer, ((header >> 12) & 0x07) * 4) !=
+[; ;stusb4500.c: 192: 0)
 "192
+[e $ ! != ( _i2c_master_read (4 , , , -> -> 40 `i `uc -> -> 51 `i `uc -> &U _buffer `*v * & >> _header -> 12 `i -> -> 7 `i `ui -> -> 4 `i `ui -> 0 `i 905  ]
+[; ;stusb4500.c: 193: return -1;
+"193
 [e ) -U -> 1 `i ]
 [e $UE 893  ]
 [e :U 905 ]
-[; ;stusb4500.c: 195: return negotiate_optimal_pdo(
-[; ;stusb4500.c: 196: (uint32_t*)buffer, ((header >> 12) & 0x07));
-"196
+[; ;stusb4500.c: 196: return negotiate_optimal_pdo(
+[; ;stusb4500.c: 197: (uint32_t*)buffer, ((header >> 12) & 0x07));
+"197
 [e ) ( _negotiate_optimal_pdo (2 , -> &U _buffer `*ul -> & >> _header -> 12 `i -> -> 7 `i `ui `uc ]
 [e $UE 893  ]
-[; ;stusb4500.c: 197: }
-"197
+[; ;stusb4500.c: 198: }
+"198
 [e :UE 893 ]
 }

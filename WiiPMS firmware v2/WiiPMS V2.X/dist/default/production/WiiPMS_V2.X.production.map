@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\WiiPMS_V2.X.production.sym \
   --cmf=dist/default/production\WiiPMS_V2.X.production.cmf -z -Q16F15324 \
-  -oC:\Users\Gunnar\AppData\Local\Temp\snuk.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Gunnar\AppData\Local\Temp\sosk.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/WiiPMS_V2.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=020D3h-021EFh -pstack=STACK -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
@@ -40,7 +40,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
   -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Gunnar\AppData\Local\Temp\snuk.o \
+  C:\Users\Gunnar\AppData\Local\Temp\sosk.o \
   dist/default/production\WiiPMS_V2.X.production.o 
 
 Object code version is 3.11
@@ -50,7 +50,7 @@ Machine type is 16F15324
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Gunnar\AppData\Local\Temp\snuk.o
+C:\Users\Gunnar\AppData\Local\Temp\sosk.o
                 end_init                             6B       6B        2        8       0
                 init                                 68       68        3        8       0
                 reset_vec                             0        0        3        0       0
@@ -85,7 +85,7 @@ dist/default/production\WiiPMS_V2.X.production.o
                 text29                              AF3      AF3        C     15E6       0
                 text28                              4BD      4BD       82        8       0
                 text27                              637      637       79        8       0
-                text26                              791      791       60        8       0
+                text26                              797      797       60        8       0
                 text25                              C23      C23       20     1846       0
                 text24                              CAB      CAB       25     1956       0
                 text23                              6B0      6B0       78        8       0
@@ -105,7 +105,7 @@ dist/default/production\WiiPMS_V2.X.production.o
                 text9                               B86      B86       18     170C       0
                 text8                               B9E      B9E       18     173C       0
                 text7                               BB6      BB6       18     176C       0
-                text6                               728      728       69        8       0
+                text6                               728      728       6F        8       0
                 text5                               53F      53F       7D        8       0
                 text4                                AB       AB      157        8       0
                 text3                               320      320       FC        8       0
@@ -124,7 +124,7 @@ dist/default/production\WiiPMS_V2.X.production.o
                 dataBANK0                            6F       6F        1       21       1
                 bssBANK0                             60       60        F       21       1
                 bssCOMMON                            78       78        6       70       1
-                stringtext1                         7F1      7F1       28      FE2       0
+                stringtext1                         7F7      7F7       28      FEE       0
                 idataBANK2                          B0B      B0B        E     1616       0
                 idataBANK1                          A96      A96        4     152C       0
                 idataBANK0                            3        3        1        0       0
@@ -165,7 +165,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text29                              AF3      AF3        C         0
                 text28                              4BD      4BD       82         0
                 text27                              637      637       79         0
-                text26                              791      791       60         0
+                text26                              797      797       60         0
                 text25                              C23      C23       20         0
                 text24                              CAB      CAB       25         0
                 text23                              6B0      6B0       78         0
@@ -185,7 +185,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text9                               B86      B86       18         0
                 text8                               B9E      B9E       18         0
                 text7                               BB6      BB6       18         0
-                text6                               728      728       69         0
+                text6                               728      728       6F         0
                 text5                               53F      53F       7D         0
                 text4                                AB       AB      157         0
                 text3                               320      320       FC         0
@@ -199,7 +199,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 idataBANK0                            3        3        1         0
 
         CLASS   STRCODE        
-                stringtext1                         7F1      7F1       28         0
+                stringtext1                         7F7      7F7       28         0
 
         CLASS   STRING         
 
@@ -494,12 +494,12 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000004  000004         0       0  CODE        2
-                intentry                       000004  0007ED  0007F1         8       0  CODE        2
+                intentry                       000004  0007F3  0007F7         8       0  CODE        2
                 cstackBANK0                    000021  00004F  000070        21       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 cstackBANK1                    0000A0  000050  0000F0        A0       1  BANK1       1
                 bssBANK2                       000120  000033  000153       120       1  BANK2       1
-                stringtext1                    0007F1  000028  000819       FE2       0  STRCODE     2
+                stringtext1                    0007F7  000028  00081F       FEE       0  STRCODE     2
                 text44                         000A8E  000004  000A92      151C       0  CODE        2
                 text43                         000A92  000004  000A96      1524       0  CODE        2
                 idataBANK1                     000A96  000004  000A9A      152C       0  CODE        2
@@ -559,9 +559,9 @@ UNUSED ADDRESS RANGES
         BANK5            002A0-002EF              50           1
         BANK6            00320-0032F              10           1
         BIGRAM           02001-021EF             1EF           1
-        CODE             00819-00A8D             275           2
-        CONST            00819-00A8D             100           2
-        ENTRY            00819-00A8D             100           2
+        CODE             0081F-00A8D             26F           2
+        CONST            0081F-00A8D             100           2
+        ENTRY            0081F-00A8D             100           2
         IDLOC            08000-08003               4           2
         RAM              00153-0016F              1D           1
                          001A0-001EF              50
@@ -633,8 +633,8 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
         STACK            020D3-021EF             11D           1
-        STRCODE          00819-00A8D             275           2
-        STRING           00819-00A8D             100           2
+        STRCODE          0081F-00A8D             26F           2
+        STRING           0081F-00A8D             100           2
 
                                   Symbol Table
 
@@ -1153,7 +1153,7 @@ __Ltext                               text         00000
 __S0                                  (abs)        0800C
 __S1                                  (abs)        00153
 __S2                                  (abs)        00000
-___awdiv                              text26       00791
+___awdiv                              text26       00797
 ___awdiv@counter                      cstackBANK0  0002C
 ___awdiv@dividend                     cstackBANK0  00029
 ___awdiv@divisor                      cstackBANK0  00027
@@ -1208,7 +1208,7 @@ __end_of_PPS_unlock                   text31       00ACB
 __end_of_PWM_INIT                     text30       00E5B
 __end_of_PWM_power_down               text29       00AFF
 __end_of_RGB_fade                     text27       006B0
-__end_of___awdiv                      text26       007F1
+__end_of___awdiv                      text26       007F7
 __end_of___lldiv                      text36       00FA3
 __end_of___lmul                       text12       00DDA
 __end_of___lwdiv                      text11       00E17
@@ -1233,9 +1233,9 @@ __end_of_i2c_master_write_u8          text7        00BCE
 __end_of_led_modes                    text21       00D4C
 __end_of_main                         maintext     00320
 __end_of_negotiate_optimal_pdo        text4        00202
-__end_of_nvm_config                   stringtext1  00819
+__end_of_nvm_config                   stringtext1  0081F
 __end_of_readADC                      text2        00D22
-__end_of_reset                        text6        00791
+__end_of_reset                        text6        00797
 __end_of_stusb_negotiate              text3        0041C
 __end_of_thermal_protection           text1        00BE7
 __end_of_timer_diff                   text38       00C05
@@ -1258,7 +1258,7 @@ __pidataBANK1                         idataBANK1   00A96
 __pidataBANK2                         idataBANK2   00B0B
 __pintentry                           intentry     00004
 __pmaintext                           maintext     00202
-__pstringtext1                        stringtext1  007F1
+__pstringtext1                        stringtext1  007F7
 __ptext1                              text1        00BCE
 __ptext10                             text10       00FA3
 __ptext11                             text11       00DDA
@@ -1277,7 +1277,7 @@ __ptext22                             text22       00EA5
 __ptext23                             text23       006B0
 __ptext24                             text24       00CAB
 __ptext25                             text25       00C23
-__ptext26                             text26       00791
+__ptext26                             text26       00797
 __ptext27                             text27       00637
 __ptext28                             text28       004BD
 __ptext29                             text29       00AF3
@@ -1398,7 +1398,7 @@ _led_modes                            text21       00D22
 _main                                 maintext     00202
 _mode                                 dataBANK0    0006F
 _negotiate_optimal_pdo                text4        000AB
-_nvm_config                           stringtext1  007F1
+_nvm_config                           stringtext1  007F7
 _readADC                              text2        00CF9
 _reset                                text6        00728
 _rgb_delay                            bssBANK2     00128
@@ -1588,7 +1588,7 @@ Total ram usage:        5 bytes
 
  *************** function _stusb_negotiate *****************
  Defined at:
-		line 142 in file "stusb4500.c"
+		line 143 in file "stusb4500.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1623,7 +1623,7 @@ Total ram usage:       48 bytes
 
  *************** function _negotiate_optimal_pdo *****************
  Defined at:
-		line 108 in file "stusb4500.c"
+		line 109 in file "stusb4500.c"
  Parameters:    Size  Location     Type
   src_pdos        1    wreg     PTR unsigned long 
 		 -> stusb_negotiate@buffer(40), 
@@ -1668,7 +1668,7 @@ Total ram usage:       35 bytes
 
  *************** function _write_pdo *****************
  Defined at:
-		line 91 in file "stusb4500.c"
+		line 92 in file "stusb4500.c"
  Parameters:    Size  Location     Type
   current_mA      2   25[BANK0 ] unsigned int 
   voltage_mV      2   27[BANK0 ] unsigned int 
@@ -1702,7 +1702,7 @@ Total ram usage:       21 bytes
 
  *************** function _reset *****************
  Defined at:
-		line 65 in file "stusb4500.c"
+		line 66 in file "stusb4500.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3329,7 +3329,7 @@ C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c estimated size: 62
 
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-		___awdiv       		CODE           	0791	0000	97
+		___awdiv       		CODE           	0797	0000	97
 
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c estimated size: 97
 
@@ -3386,7 +3386,7 @@ PWM.c estimated size: 82
 shared
 		i1_get_time    		CODE           	0AD3	0000	11
 		__initialization		CODE           	006D	0000	59
-		_nvm_config    		STRCODE        	07F1	0000	41
+		_nvm_config    		STRCODE        	07F7	0000	41
 		i1_timer_diff  		CODE           	0B2A	0000	23
 
 shared estimated size: 134
@@ -3408,11 +3408,11 @@ ADC.c estimated size: 42
 
 stusb4500.c
 		_negotiate_optimal_pdo		CODE           	00AB	0000	344
-		_reset         		CODE           	0728	0000	106
+		_reset         		CODE           	0728	0000	112
 		_write_pdo     		CODE           	053F	0000	126
 		_stusb_negotiate		CODE           	0320	0000	253
 
-stusb4500.c estimated size: 829
+stusb4500.c estimated size: 835
 
 main.c
 		_ISR           		CODE           	0004	0000	101

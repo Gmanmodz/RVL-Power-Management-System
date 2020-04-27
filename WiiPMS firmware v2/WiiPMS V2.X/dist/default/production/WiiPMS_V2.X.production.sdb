@@ -103,13 +103,13 @@
 [v _PWM_INIT PWM_INIT `(v  1 e 1 0 ]
 "59
 [v _PWM_power_down PWM_power_down `(v  1 e 1 0 ]
-"65 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+"66 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 [v _reset reset `(i  1 s 2 reset ]
-"91
+"92
 [v _write_pdo write_pdo `(i  1 s 2 write_pdo ]
-"108
+"109
 [v _negotiate_optimal_pdo negotiate_optimal_pdo `(i  1 s 2 negotiate_optimal_pdo ]
-"142
+"143
 [v _stusb_negotiate stusb_negotiate `(i  1 e 2 0 ]
 "96 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
 [v _enter_write_mode enter_write_mode `(i  1 s 2 enter_write_mode ]
@@ -544,62 +544,62 @@
 [v readADC@channel channel `uc  1 a 1 4 ]
 "23
 } 0
-"142 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+"143 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 [v _stusb_negotiate stusb_negotiate `(i  1 e 2 0 ]
 {
-"143
-[v stusb_negotiate@buffer buffer `[40]uc  1 a 40 25 ]
 "144
+[v stusb_negotiate@buffer buffer `[40]uc  1 a 40 25 ]
+"145
 [v stusb_negotiate@header header `ui  1 a 2 65 ]
-"197
+"198
 } 0
-"108
+"109
 [v _negotiate_optimal_pdo negotiate_optimal_pdo `(i  1 s 2 negotiate_optimal_pdo ]
 {
 [v negotiate_optimal_pdo@src_pdos src_pdos `*.4ul  1 a 1 wreg ]
-"117
+"118
 [v negotiate_optimal_pdo@pdo pdo `ul  1 a 4 19 ]
-"122
+"123
 [v negotiate_optimal_pdo@pdo_power pdo_power `ul  1 a 4 9 ]
-"121
+"122
 [v negotiate_optimal_pdo@pdo_voltage pdo_voltage `ui  1 a 2 23 ]
-"120
+"121
 [v negotiate_optimal_pdo@pdo_current pdo_current `ui  1 a 2 13 ]
-"116
+"117
 [v negotiate_optimal_pdo@i i `i  1 a 2 15 ]
-"113
+"114
 [v negotiate_optimal_pdo@opt_pdo_power opt_pdo_power `ul  1 a 4 0 ]
-"109
+"110
 [v negotiate_optimal_pdo@ok ok `i  1 a 2 17 ]
-"112
+"113
 [v negotiate_optimal_pdo@opt_pdo_voltage opt_pdo_voltage `ui  1 a 2 6 ]
-"111
+"112
 [v negotiate_optimal_pdo@opt_pdo_current opt_pdo_current `ui  1 a 2 4 ]
-"108
+"109
 [v negotiate_optimal_pdo@src_pdos src_pdos `*.4ul  1 a 1 wreg ]
 [v negotiate_optimal_pdo@num_pdos num_pdos `uc  1 p 1 46 ]
 [v negotiate_optimal_pdo@src_pdos src_pdos `*.4ul  1 a 1 8 ]
-"140
+"141
 } 0
-"91
+"92
 [v _write_pdo write_pdo `(i  1 s 2 write_pdo ]
 {
-"95
+"96
 [v write_pdo@pdo pdo `ul  1 a 4 42 ]
-"91
+"92
 [v write_pdo@current_mA current_mA `ui  1 p 2 25 ]
 [v write_pdo@voltage_mV voltage_mV `ui  1 p 2 27 ]
 [v write_pdo@pdo_num pdo_num `uc  1 p 1 29 ]
-"106
+"107
 } 0
-"65
+"66
 [v _reset reset `(i  1 s 2 reset ]
 {
-"74
+"75
 [v reset@res res `uc  1 a 1 22 ]
-"66
+"67
 [v reset@ok ok `i  1 a 2 23 ]
-"88
+"89
 } 0
 "73 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
 [v _i2c_master_write_u8 i2c_master_write_u8 `(i  1 e 2 0 ]

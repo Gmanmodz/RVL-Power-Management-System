@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.1)-4")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.4)-1")
 
   (general
     (thickness 1.6)
@@ -41,8 +41,6 @@
     (zone_clearance 0.2)
     (zone_45_only yes)
     (trace_min 0.2)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.6)
     (via_drill 0.4)
     (via_min_size 0.4)
@@ -52,6 +50,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -3373,7 +3373,7 @@
   (gr_text VSYS (at 215.81 101.27) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
-  (gr_text "Wii PMS\nGman" (at 212.27 111.76) (layer F.SilkS)
+  (gr_text "RVL PMS\nGman" (at 212.27 111.76) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
   (gr_line (start 187.99 117.39) (end 231.57 117.39) (angle 90) (layer Edge.Cuts) (width 0.15))

@@ -1,4 +1,39 @@
-16333548037372893
+16344572035605758
+.pretty
+0603_c_smalltext
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+.pretty
+0603_res_smalltext
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+.pretty
+5051100592
+
+
+0
+7
+6
+.pretty
+ASPI-0630HI-2R2M-T15
+
+
+0
+2
+2
+.pretty
+Pogo_pin
+
+
+0
+1
+1
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -45261,6 +45296,13 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+GS2parts
+5051101492
+
+
+0
+16
+15
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -64644,6 +64686,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RVL-PMS HW2
+BQ25895
+
+
+0
+34
+25
 Relay_SMD
 Relay_DPDT_AXICOM_IMSeries_JLeg
 http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Specification+Or+Standard%7F108-98001%7FW5%7Fpdf%7FEnglish%7FENG_SS_108-98001_W5.pdf

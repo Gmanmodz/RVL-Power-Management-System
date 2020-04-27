@@ -24,7 +24,8 @@
 #define DPM_SNK_PDO1 0x85
 
 // STUSB4500 masks
-#define DEVICE_ID 0x21
+#define DEVICE_ID 0x25
+#define DEVICE_ID_B 0x21
 #define SW_RESET_ON 0x01
 #define SW_RESET_OFF 0x00
 #define ATTACH 0x01
@@ -74,7 +75,7 @@ static int reset(void) {
         uint8_t res;
         do {
             ok = i2c_master_read_u8(STUSB_ADDR, WHO_AM_I, &res);
-        } while (ok == I2C_OK && res != DEVICE_ID);
+        } while (ok == I2C_OK && res != DEVICE_ID && res != DEVICE_ID_B);
     }
 
     // TODO: Necessary? Wait for source to be ready

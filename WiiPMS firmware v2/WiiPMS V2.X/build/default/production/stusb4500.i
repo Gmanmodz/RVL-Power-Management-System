@@ -11116,7 +11116,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 56 "stusb4500.c"
+# 57 "stusb4500.c"
 static int send_pd_message(const uint16_t msg) {
 int ok = 0;
 
@@ -11138,7 +11138,7 @@ if (ok == 0) {
 uint8_t res;
 do {
 ok = i2c_master_read_u8(0x28, 0x2F, &res);
-} while (ok == 0 && res != 0x21);
+} while (ok == 0 && res != 0x25 && res != 0x21);
 }
 
 
@@ -11245,7 +11245,7 @@ return -1;
 break;
 }
 
-# 188
+# 189
 if (
 i2c_master_read(
 0x28, 0x33, buffer, ((header >> 12) & 0x07) * 4) !=
