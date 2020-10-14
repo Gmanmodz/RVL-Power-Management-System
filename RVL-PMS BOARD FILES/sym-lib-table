@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RVL-PMS-HW2-rescue)(type Legacy)(uri "${KIPRJMOD}/RVL-PMS HW2-rescue.lib")(options "")(descr ""))
+)
