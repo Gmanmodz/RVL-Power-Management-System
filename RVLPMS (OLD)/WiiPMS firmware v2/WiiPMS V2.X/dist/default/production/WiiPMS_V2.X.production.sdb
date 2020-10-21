@@ -3,9 +3,9 @@
 [d edition pro ]
 [d chip 16F15324 ]
 [d frameptr 6 ]
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
 [v _readADC readADC `(ui  1 e 2 0 ]
-"16 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"16 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_Write BQ_Write `(v  1 e 1 0 ]
 "24
 [v _BQ_Read BQ_Read `(us  1 e 2 0 ]
@@ -31,7 +31,7 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"12 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
+"12 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
 [v _I2C_bus_reset I2C_bus_reset `(v  1 e 1 0 ]
 "45
 [v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
@@ -49,7 +49,7 @@
 [v _I2C_Master_nAck I2C_Master_nAck `(v  1 e 1 0 ]
 "94
 [v _I2C_Master_Read I2C_Master_Read `(uc  1 e 1 0 ]
-"7 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
+"7 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
 [v _i2c_master_wait i2c_master_wait `(v  1 s 1 i2c_master_wait ]
 "12
 [v _i2c_master_start i2c_master_start `(v  1 s 1 i2c_master_start ]
@@ -75,7 +75,7 @@
 [v _i2c_master_read_u8 i2c_master_read_u8 `(i  1 e 2 0 ]
 "115
 [v _i2c_master_read_u16 i2c_master_read_u16 `(i  1 e 2 0 ]
-"18 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
+"18 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 [v _RGB_fade RGB_fade `(v  1 e 1 0 ]
 "48
 [v _Map Map `(uc  1 s 1 Map ]
@@ -87,7 +87,7 @@
 [v _flash_led flash_led `(v  1 e 1 0 ]
 "156
 [v _led_modes led_modes `(v  1 e 1 0 ]
-"25 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
+"25 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _PIC_SETUP PIC_SETUP `(v  1 e 1 0 ]
 "63
 [v _ISR ISR `II(v  1 e 1 0 ]
@@ -95,15 +95,15 @@
 [v _thermal_protection thermal_protection `(v  1 e 1 0 ]
 "115
 [v _main main `(v  1 e 1 0 ]
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\PPS.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\PPS.c
 [v _PPS_unlock PPS_unlock `(v  1 e 1 0 ]
 "17
 [v _PPS_lock PPS_lock `(v  1 e 1 0 ]
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\PWM.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\PWM.c
 [v _PWM_INIT PWM_INIT `(v  1 e 1 0 ]
 "59
 [v _PWM_power_down PWM_power_down `(v  1 e 1 0 ]
-"66 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+"66 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 [v _reset reset `(i  1 s 2 reset ]
 "92
 [v _write_pdo write_pdo `(i  1 s 2 write_pdo ]
@@ -111,7 +111,7 @@
 [v _negotiate_optimal_pdo negotiate_optimal_pdo `(i  1 s 2 negotiate_optimal_pdo ]
 "143
 [v _stusb_negotiate stusb_negotiate `(i  1 e 2 0 ]
-"96 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
+"96 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
 [v _enter_write_mode enter_write_mode `(i  1 s 2 enter_write_mode ]
 "176
 [v _enter_read_mode enter_read_mode `(i  1 s 2 enter_read_mode ]
@@ -121,17 +121,15 @@
 [v _write_sector write_sector `(i  1 s 2 write_sector ]
 "289
 [v _exit_rw_mode exit_rw_mode `(i  1 s 2 exit_rw_mode ]
-"309
-[v _nvm_flash nvm_flash `(i  1 e 2 0 ]
 "321
 [v _nvm_read nvm_read `(i  1 e 2 0 ]
-"13 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\time.c
+"13 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\time.c
 [v _get_time get_time `T(ul  1 e 4 0 ]
 [v i1_get_time get_time `T(ul  1 e 4 0 ]
 "17
 [v _timer_diff timer_diff `(ul  1 e 4 0 ]
 [v i1_timer_diff timer_diff `(ul  1 e 4 0 ]
-"54 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"54 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _VBUS_CHRG_STATE VBUS_CHRG_STATE `*.4uc  1 e 1 0 ]
 "55
 [v _BATTERY_VOLTAGE BATTERY_VOLTAGE `uc  1 e 1 0 ]
@@ -193,7 +191,7 @@
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 "883
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-[s S743 . 1 `uc 1 ADON 1 0 :1:0 
+[s S739 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GOnDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -203,11 +201,11 @@
 `uc 1 CHS5 1 0 :1:7 
 ]
 "904
-[s S752 . 1 `uc 1 . 1 0 :2:0 
+[s S748 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CHS 1 0 :6:2 
 ]
-[u S755 . 1 `S743 1 . 1 0 `S752 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES755  1 e 1 @157 ]
+[u S751 . 1 `S739 1 . 1 0 `S748 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES751  1 e 1 @157 ]
 "954
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "1917
@@ -220,7 +218,7 @@
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
 "2611
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
-[s S559 . 1 `uc 1 SEN 1 0 :1:0 
+[s S555 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -230,17 +228,17 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "2658
-[s S568 . 1 `uc 1 . 1 0 :1:0 
+[s S564 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADMSK 1 0 :5:1 
 ]
-[s S571 . 1 `uc 1 . 1 0 :1:0 
+[s S567 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADMSK1 1 0 :1:1 
 `uc 1 ADMSK2 1 0 :1:2 
 `uc 1 ADMSK3 1 0 :1:3 
 `uc 1 ADMSK4 1 0 :1:4 
 `uc 1 ADMSK5 1 0 :1:5 
 ]
-[s S578 . 1 `uc 1 SEN1 1 0 :1:0 
+[s S574 . 1 `uc 1 SEN1 1 0 :1:0 
 `uc 1 ADMSK11 1 0 :1:1 
 `uc 1 ADMSK21 1 0 :1:2 
 `uc 1 ADMSK31 1 0 :1:3 
@@ -249,15 +247,15 @@
 `uc 1 ACKSTAT1 1 0 :1:6 
 `uc 1 GCEN1 1 0 :1:7 
 ]
-[s S587 . 1 `uc 1 . 1 0 :1:0 
+[s S583 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RSEN1 1 0 :1:1 
 `uc 1 PEN1 1 0 :1:2 
 `uc 1 RCEN1 1 0 :1:3 
 `uc 1 ADMSK41 1 0 :1:4 
 `uc 1 ADMSK51 1 0 :1:5 
 ]
-[u S594 . 1 `S559 1 . 1 0 `S568 1 . 1 0 `S571 1 . 1 0 `S578 1 . 1 0 `S587 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES594  1 e 1 @401 ]
+[u S590 . 1 `S555 1 . 1 0 `S564 1 . 1 0 `S567 1 . 1 0 `S574 1 . 1 0 `S583 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES590  1 e 1 @401 ]
 "2798
 [v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @402 ]
 "2860
@@ -321,21 +319,21 @@
 [v _PWM3DCH PWM3DCH `VEuc  1 e 1 @789 ]
 "5026
 [v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
-[s S433 . 1 `uc 1 . 1 0 :4:0 
+[s S429 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 POL 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "5047
-[s S439 . 1 `uc 1 . 1 0 :4:0 
+[s S435 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 PWM3POL 1 0 :1:4 
 `uc 1 PWM3OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PWM3EN 1 0 :1:7 
 ]
-[u S445 . 1 `S433 1 . 1 0 `S439 1 . 1 0 ]
-[v _PWM3CONbits PWM3CONbits `VES445  1 e 1 @790 ]
+[u S441 . 1 `S429 1 . 1 0 `S435 1 . 1 0 ]
+[v _PWM3CONbits PWM3CONbits `VES441  1 e 1 @790 ]
 "5089
 [v _PWM4DCL PWM4DCL `VEuc  1 e 1 @792 ]
 "5155
@@ -343,14 +341,14 @@
 "5325
 [v _PWM4CON PWM4CON `VEuc  1 e 1 @794 ]
 "5346
-[s S467 . 1 `uc 1 . 1 0 :4:0 
+[s S463 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 PWM4POL 1 0 :1:4 
 `uc 1 PWM4OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PWM4EN 1 0 :1:7 
 ]
-[u S473 . 1 `S433 1 . 1 0 `S467 1 . 1 0 ]
-[v _PWM4CONbits PWM4CONbits `VES473  1 e 1 @794 ]
+[u S469 . 1 `S429 1 . 1 0 `S463 1 . 1 0 ]
+[v _PWM4CONbits PWM4CONbits `VES469  1 e 1 @794 ]
 "5388
 [v _PWM5DCL PWM5DCL `VEuc  1 e 1 @796 ]
 "5454
@@ -358,14 +356,14 @@
 "5624
 [v _PWM5CON PWM5CON `VEuc  1 e 1 @798 ]
 "5645
-[s S495 . 1 `uc 1 . 1 0 :4:0 
+[s S491 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 PWM5POL 1 0 :1:4 
 `uc 1 PWM5OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PWM5EN 1 0 :1:7 
 ]
-[u S501 . 1 `S433 1 . 1 0 `S495 1 . 1 0 ]
-[v _PWM5CONbits PWM5CONbits `VES501  1 e 1 @798 ]
+[u S497 . 1 `S429 1 . 1 0 `S491 1 . 1 0 ]
+[v _PWM5CONbits PWM5CONbits `VES497  1 e 1 @798 ]
 [s S171 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
@@ -388,7 +386,7 @@
 [v _NVMADRH NVMADRH `VEuc  1 e 1 @2075 ]
 "9407
 [v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
-[s S825 . 1 `uc 1 RD 1 0 :1:0 
+[s S821 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -397,8 +395,8 @@
 `uc 1 NVMREGS 1 0 :1:6 
 ]
 "9535
-[u S833 . 1 `S825 1 . 1 0 ]
-[v _NVMCON1bits NVMCON1bits `VES833  1 e 1 @2078 ]
+[u S829 . 1 `S821 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES829  1 e 1 @2078 ]
 "9575
 [v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
 [s S22 . 1 `uc 1 DOZE 1 0 :3:0 
@@ -491,7 +489,7 @@
 [v _TMR2IF TMR2IF `VEb  1 e 0 @14465 ]
 "22602
 [v _TMR2ON TMR2ON `VEb  1 e 0 @5239 ]
-"13 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
+"13 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 [v _i i `uc  1 e 1 0 ]
 "14
 [v _c c `uc  1 e 1 0 ]
@@ -509,7 +507,7 @@
 [v _flash_time flash_time `ul  1 e 4 0 ]
 "154
 [v _mode mode `uc  1 e 1 0 ]
-"23 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
+"23 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _SYS_ENABLE SYS_ENABLE `uc  1 e 1 0 ]
 "58
 [v _btn_is_pressed btn_is_pressed `uc  1 e 1 0 ]
@@ -523,11 +521,11 @@
 [v _set_stusb4500 set_stusb4500 `uc  1 e 1 0 ]
 "113
 [v _stusb4500_timeout stusb4500_timeout `ul  1 e 4 0 ]
-"72 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
+"72 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
 [v _nvm_config nvm_config `DC[5][8]uc  1 s 40 nvm_config ]
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\time.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\time.c
 [v _timer_counter timer_counter `ul  1 e 4 0 ]
-"115 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
+"115 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "200
@@ -537,7 +535,7 @@
 {
 "101
 } 0
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\ADC.c
 [v _readADC readADC `(ui  1 e 2 0 ]
 {
 [v readADC@channel channel `uc  1 a 1 wreg ]
@@ -546,7 +544,7 @@
 [v readADC@channel channel `uc  1 a 1 4 ]
 "23
 } 0
-"143 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
+"143 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\stusb4500.c
 [v _stusb_negotiate stusb_negotiate `(i  1 e 2 0 ]
 {
 "144
@@ -603,7 +601,28 @@
 [v reset@ok ok `i  1 a 2 23 ]
 "89
 } 0
-"83 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
+"73 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
+[v _i2c_master_write_u8 i2c_master_write_u8 `(i  1 e 2 0 ]
+{
+"74
+[v i2c_master_write_u8@device device `DCuc  1 a 1 wreg ]
+[v i2c_master_write_u8@device device `DCuc  1 a 1 wreg ]
+[v i2c_master_write_u8@reg reg `DCuc  1 p 1 14 ]
+[v i2c_master_write_u8@data data `DCuc  1 p 1 15 ]
+[v i2c_master_write_u8@device device `DCuc  1 a 1 17 ]
+"76
+} 0
+"111
+[v _i2c_master_read_u8 i2c_master_read_u8 `(i  1 e 2 0 ]
+{
+[v i2c_master_read_u8@device device `DCuc  1 a 1 wreg ]
+[v i2c_master_read_u8@device device `DCuc  1 a 1 wreg ]
+[v i2c_master_read_u8@reg reg `DCuc  1 p 1 13 ]
+[v i2c_master_read_u8@data data `*.4uc  1 p 1 14 ]
+[v i2c_master_read_u8@device device `DCuc  1 a 1 17 ]
+"113
+} 0
+"83
 [v _i2c_master_write_u32 i2c_master_write_u32 `(i  1 e 2 0 ]
 {
 "84
@@ -613,6 +632,23 @@
 [v i2c_master_write_u32@data data `DCul  1 p 4 15 ]
 [v i2c_master_write_u32@device device `DCuc  1 a 1 20 ]
 "86
+} 0
+"54
+[v _i2c_master_write i2c_master_write `(i  1 e 2 0 ]
+{
+"55
+[v i2c_master_write@device device `DCuc  1 a 1 wreg ]
+"59
+[v i2c_master_write@ok ok `i  1 a 2 12 ]
+"56
+[v i2c_master_write@data data `*.26uc  1 a 2 10 ]
+"55
+[v i2c_master_write@device device `DCuc  1 a 1 wreg ]
+[v i2c_master_write@reg reg `DCuc  1 p 1 4 ]
+[v i2c_master_write@buf buf `*.26DCv  1 p 2 5 ]
+[v i2c_master_write@len len `ui  1 p 2 7 ]
+[v i2c_master_write@device device `DCuc  1 a 1 9 ]
+"71
 } 0
 "5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
@@ -636,7 +672,7 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
 "129
 } 0
-"115 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
+"115 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
 [v _i2c_master_read_u16 i2c_master_read_u16 `(i  1 e 2 0 ]
 {
 "116
@@ -646,73 +682,6 @@
 [v i2c_master_read_u16@data data `*.4ui  1 p 1 14 ]
 [v i2c_master_read_u16@device device `DCuc  1 a 1 17 ]
 "118
-} 0
-"309 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\stusb4500_nvm.c
-[v _nvm_flash nvm_flash `(i  1 e 2 0 ]
-{
-"319
-} 0
-"239
-[v _write_sector write_sector `(i  1 s 2 write_sector ]
-{
-[v write_sector@sector_num sector_num `DCuc  1 a 1 wreg ]
-"242
-[v write_sector@buffer buffer `uc  1 a 1 23 ]
-"239
-[v write_sector@sector_num sector_num `DCuc  1 a 1 wreg ]
-[v write_sector@sector_data sector_data `*.25DCuc  1 p 2 18 ]
-[v write_sector@sector_num sector_num `DCuc  1 a 1 22 ]
-"287
-} 0
-"289
-[v _exit_rw_mode exit_rw_mode `(i  1 s 2 exit_rw_mode ]
-{
-"307
-} 0
-"96
-[v _enter_write_mode enter_write_mode `(i  1 s 2 enter_write_mode ]
-{
-"97
-[v enter_write_mode@buffer buffer `uc  1 a 1 22 ]
-"174
-} 0
-"73 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\i2c_driver_stusb4500.c
-[v _i2c_master_write_u8 i2c_master_write_u8 `(i  1 e 2 0 ]
-{
-"74
-[v i2c_master_write_u8@device device `DCuc  1 a 1 wreg ]
-[v i2c_master_write_u8@device device `DCuc  1 a 1 wreg ]
-[v i2c_master_write_u8@reg reg `DCuc  1 p 1 14 ]
-[v i2c_master_write_u8@data data `DCuc  1 p 1 15 ]
-[v i2c_master_write_u8@device device `DCuc  1 a 1 17 ]
-"76
-} 0
-"54
-[v _i2c_master_write i2c_master_write `(i  1 e 2 0 ]
-{
-"55
-[v i2c_master_write@device device `DCuc  1 a 1 wreg ]
-"59
-[v i2c_master_write@ok ok `i  1 a 2 12 ]
-"56
-[v i2c_master_write@data data `*.26uc  1 a 2 10 ]
-"55
-[v i2c_master_write@device device `DCuc  1 a 1 wreg ]
-[v i2c_master_write@reg reg `DCuc  1 p 1 4 ]
-[v i2c_master_write@buf buf `*.26DCv  1 p 2 5 ]
-[v i2c_master_write@len len `ui  1 p 2 7 ]
-[v i2c_master_write@device device `DCuc  1 a 1 9 ]
-"71
-} 0
-"111
-[v _i2c_master_read_u8 i2c_master_read_u8 `(i  1 e 2 0 ]
-{
-[v i2c_master_read_u8@device device `DCuc  1 a 1 wreg ]
-[v i2c_master_read_u8@device device `DCuc  1 a 1 wreg ]
-[v i2c_master_read_u8@reg reg `DCuc  1 p 1 13 ]
-[v i2c_master_read_u8@data data `*.4uc  1 p 1 14 ]
-[v i2c_master_read_u8@device device `DCuc  1 a 1 17 ]
-"113
 } 0
 "88
 [v _i2c_master_read i2c_master_read `(i  1 e 2 0 ]
@@ -770,7 +739,7 @@
 {
 "10
 } 0
-"156 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
+"156 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 [v _led_modes led_modes `(v  1 e 1 0 ]
 {
 "176
@@ -820,7 +789,7 @@
 [v ___awdiv@dividend dividend `i  1 p 2 8 ]
 "41
 } 0
-"18 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
+"18 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\LED_INTERFACE.c
 [v _RGB_fade RGB_fade `(v  1 e 1 0 ]
 {
 "46
@@ -830,7 +799,7 @@
 {
 "132
 } 0
-"59 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\PWM.c
+"59 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\PWM.c
 [v _PWM_power_down PWM_power_down `(v  1 e 1 0 ]
 {
 "70
@@ -840,7 +809,7 @@
 {
 "57
 } 0
-"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\PPS.c
+"11 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\PPS.c
 [v _PPS_unlock PPS_unlock `(v  1 e 1 0 ]
 {
 "15
@@ -850,12 +819,12 @@
 {
 "21
 } 0
-"25 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
+"25 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _PIC_SETUP PIC_SETUP `(v  1 e 1 0 ]
 {
 "56
 } 0
-"12 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
+"12 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
 [v _I2C_bus_reset I2C_bus_reset `(v  1 e 1 0 ]
 {
 "17
@@ -880,12 +849,12 @@
 [v ___lldiv@dividend dividend `ul  1 p 4 16 ]
 "30
 } 0
-"60 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"60 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_UPDATE BQ_UPDATE `(v  1 e 1 0 ]
 {
 "82
 } 0
-"17 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\time.c
+"17 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\time.c
 [v _timer_diff timer_diff `(ul  1 e 4 0 ]
 {
 [v timer_diff@t t `ul  1 p 4 0 ]
@@ -896,7 +865,7 @@
 {
 "15
 } 0
-"43 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"43 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_get_chrg_state BQ_get_chrg_state `(*.4uc  1 e 1 0 ]
 {
 "45
@@ -917,7 +886,7 @@
 [v BQ_Read@reg reg `uc  1 a 1 7 ]
 "35
 } 0
-"94 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
+"94 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
 [v _I2C_Master_Read I2C_Master_Read `(uc  1 e 1 0 ]
 {
 [v I2C_Master_Read@ack ack `uc  1 a 1 wreg ]
@@ -939,7 +908,7 @@
 {
 "86
 } 0
-"156 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"156 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_INIT BQ_INIT `(v  1 e 1 0 ]
 {
 "166
@@ -953,7 +922,7 @@
 [v BQ_Write@reg reg `uc  1 a 1 2 ]
 "22
 } 0
-"76 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
+"76 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\I2C.c
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
 {
 [v I2C_Master_Write@data data `uc  1 a 1 wreg ]
@@ -977,17 +946,17 @@
 {
 "56
 } 0
-"144 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
+"144 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\BQ25895M.c
 [v _BQ_CONFIG_INIT BQ_CONFIG_INIT `(v  1 e 1 0 ]
 {
 "154
 } 0
-"63 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\main.c
+"63 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\main.c
 [v _ISR ISR `II(v  1 e 1 0 ]
 {
 "91
 } 0
-"17 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\WiiPMS firmware v2\WiiPMS V2.X\time.c
+"17 C:\Users\Gunnar\Desktop\Wii-Power-Management-System\RVLPMS (OLD)\WiiPMS firmware v2\WiiPMS V2.X\time.c
 [v i1_timer_diff timer_diff `(ul  1 e 4 0 ]
 {
 [v i1timer_diff@t t `ul  1 p 4 0 ]

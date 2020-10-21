@@ -11284,7 +11284,7 @@ SYS_ENABLE = !SYS_ENABLE;
 if(SYS_ENABLE) {
 TRISCbits.TRISC5 = 0;
 RC5 = 1;
-nvm_flash();
+
 
 }
 else {

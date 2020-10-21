@@ -159,8 +159,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PWM_INIT `(v ~T0 @X0 0 ef ]
 "21804 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f15324.h
 [v _RC5 `Vb ~T0 @X0 0 e@117 ]
-"6 stusb4500_nvm.h
-[v _nvm_flash `(i ~T0 @X0 0 ef ]
 "20 LED_INTERFACE.h
 [v _mode `uc ~T0 @X0 0 e ]
 "23 BQ25895M.h
@@ -7809,9 +7807,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 145: RC5 = 1;
 "145
 [e = _RC5 -> -> 1 `i `b ]
-[; ;main.c: 146: nvm_flash();
-"146
-[e ( _nvm_flash ..  ]
 "148
 }
 [; ;main.c: 148: }
