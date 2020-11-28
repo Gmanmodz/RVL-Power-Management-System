@@ -8,7 +8,7 @@
   10000h - 1000Dh
   10018h - 1003Fh
   
- dist/default/production\RVLPMS_HW2_Code.production.hex ranges:
+ dist/default/production\RVLPMS_FIRMWARE.production.hex ranges:
   0h - 5h
   8h - FFFh
   163Ah - 1FFFh
@@ -25,7 +25,7 @@
   T = Trailing code
   & = Find & replace opcode
   X = Find & delete opcode
-  1 = dist/default/production\RVLPMS_HW2_Code.production.hex
+  1 = dist/default/production\RVLPMS_FIRMWARE.production.hex
 00000000: 111111--11111111111111111111111111111111111111111111111111111111
 00000040: 1111111111111111111111111111111111111111111111111111111111111111
 00000080: 1111111111111111111111111111111111111111111111111111111111111111

@@ -7683,9 +7683,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "125
 [v _CHG_TIMER `uc ~T0 @X0 1 e ]
 [i _CHG_TIMER
--> -> 10 `i `uc
+-> -> 2 `i `uc
 ]
-[; ;BQ25895M.c: 125: uint8_t CHG_TIMER = 10;
+[; ;BQ25895M.c: 125: uint8_t CHG_TIMER = 0b10;
 "128
 [v _BAT_COMP `uc ~T0 @X0 1 e ]
 [i _BAT_COMP

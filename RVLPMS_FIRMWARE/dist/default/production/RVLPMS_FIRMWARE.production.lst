@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Wed Oct 14 09:03:46 2020
+                                                                                               Sat Nov 28 09:04:24 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F15324
@@ -3222,7 +3222,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3208  0B78  3401               	retlw	1
   3209                           
   3210                           ;initializer for _CHG_TIMER
-  3211  0B79  340A               	retlw	10
+  3211  0B79  3402               	retlw	2
   3212                           
   3213                           ;initializer for _EN_TIMER
   3214  0B7A  3401               	retlw	1
@@ -10970,7 +10970,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
  10939                           
  10940                           ;BQ25895M.c: 140: REG07_config = (EN_TERM<<7)|(STAT_DIS<<6)|(WATCHDOG<<4)|(EN_TIMER<<3)|
       +                          (CHG_TIMER<<1)|0b1;
- 10941  0D21  30DD               	movlw	221
+ 10941  0D21  30CD               	movlw	205
  10942  0D22  00F0               	movwf	??_BQ_CONFIG_INIT
  10943  0D23  0870               	movf	??_BQ_CONFIG_INIT,w
  10944  0D24  00D7               	movwf	_REG07_config^(0+128)
@@ -11821,7 +11821,7 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Wed Oct 14 09:03:46 2020
+Symbol Table                                                                                   Sat Nov 28 09:04:24 2020
 
                                    _c 006E                                     _i 006F  
                    _BQ_get_chrg_state 0CC1                         _btn_long_edge 00E0  

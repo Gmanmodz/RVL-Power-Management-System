@@ -11236,7 +11236,7 @@ uint8_t EN_TERM = 1;
 uint8_t STAT_DIS = 1;
 uint8_t WATCHDOG = 0;
 uint8_t EN_TIMER = 1;
-uint8_t CHG_TIMER = 10;
+uint8_t CHG_TIMER = 0b10;
 
 
 uint8_t BAT_COMP = 0;

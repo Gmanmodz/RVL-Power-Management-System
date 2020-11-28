@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\RVLPMS_HW2_Code.production.hex">
+  <executable name="dist/default/production\RVLPMS_FIRMWARE.production.hex">
     <memory name="program">
       <units>words</units>
       <length>4096</length>

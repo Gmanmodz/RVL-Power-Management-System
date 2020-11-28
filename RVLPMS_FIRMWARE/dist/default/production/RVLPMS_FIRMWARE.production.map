@@ -3,11 +3,11 @@ Microchip MPLAB XC8 Compiler V2.10 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
-  -cs -h+dist/default/production\RVLPMS_HW2_Code.production.sym \
-  --cmf=dist/default/production\RVLPMS_HW2_Code.production.cmf -z \
-  -Q16F15324 -oC:\Users\Gunnar\AppData\Local\Temp\sa0o.2 \
+  -cs -h+dist/default/production\RVLPMS_FIRMWARE.production.sym \
+  --cmf=dist/default/production\RVLPMS_FIRMWARE.production.cmf -z \
+  -Q16F15324 -oC:\Users\Gunnar\AppData\Local\Temp\sb3o.2 \
   --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/RVLPMS_HW2_Code.production.map -E1 -ver=XC8 \
+  -Mdist/default/production/RVLPMS_FIRMWARE.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=020D4h-021EFh -pstack=STACK -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
   -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=021h-06Fh \
@@ -41,8 +41,8 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
   -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Gunnar\AppData\Local\Temp\sa0o.o \
-  dist/default/production\RVLPMS_HW2_Code.production.o 
+  C:\Users\Gunnar\AppData\Local\Temp\sb3o.o \
+  dist/default/production\RVLPMS_FIRMWARE.production.o 
 
 Object code version is 3.11
 
@@ -51,12 +51,12 @@ Machine type is 16F15324
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Gunnar\AppData\Local\Temp\sa0o.o
+C:\Users\Gunnar\AppData\Local\Temp\sb3o.o
                 end_init                             25       25        2        8       0
                 init                                 22       22        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             8007     8007        5    1000E       0
-dist/default/production\RVLPMS_HW2_Code.production.o
+dist/default/production\RVLPMS_FIRMWARE.production.o
                 cinit                                27       27       31        8       0
                 intentry                              4        4       1E        8       0
                 text51                              D04      D04       24     1A08       0
